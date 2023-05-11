@@ -135,5 +135,5 @@ You can refer to the following articles on the basics of Git and Github and also
 ## License
 
 <a href="https://github.com/ArslanYM/StarterHive/blob/main/LICENSE ">
- <img src="https://github.com/Sohoxic/StarterHive/blob/main/assets/images/MIT-licence.png" />
+ <img src="https://github.com/Sohoxic/StarterHive/blob/readme-update/assets/images/MIT-licence.png" />
 </a>
