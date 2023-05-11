@@ -17,9 +17,14 @@ A community of new developers buzzing around and collaborating on beginner-frien
 
 Following are the steps to guide you:
 
-* Step 1: Fork the repo Go to your Git terminal and clone it on your machine.
+* Step 1: Fork the repo then On your local drive open your  terminal and run 
+   ```
+   git clone https://github.com/[YourUserName]/StarterHive.git
+   
+   ```
 * Step 2: Add an upstream link to the main branch in your cloned repo
     ```
+    cd StarterHive/
     git remote add upstream https://github.com/ArslanYM/StarterHive
 
     ```
@@ -31,11 +36,15 @@ Following are the steps to guide you:
     ```
     git checkout -b <feature-name>
     ```
-* Step 5: Commit all the changes (Write commit message as "Small Message")
+* Step 5: Add your commits to the staging 
+   ```
+   git add .
+   ```
+* Step 6:  Commit all the changes (Write commit message as "Small Message")
     ```
     git commit -m "Write a meaningful but small commit message"
     ```
-* Step 6: Push the changes for review
+* Step 7: Push the changes for review
     ```
     git push origin <branch-name>
     ```
