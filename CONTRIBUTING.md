@@ -1,24 +1,16 @@
-# Contributing to StarterHive 👨🏻‍💻 👩🏻‍💻 
+# Contributing
 
-Thank you for considering contributing to StarterHive! We welcome contributions from everyone, regardless of skill level or experience.
+We love pull requests from everyone. By participating in this project, you
+agree to abide by the [Code Of Conduct](https://github.com/ArslanYM/StarterHive/blob/main/CODE_OF_CONDUCT.md).
 
-## How to Contribute
+## Steps
 
-1. Find an [issue](https://github.com/ArslanYM/StarterHive/issues) that you want to work on. If you're new to open source, we recommend starting with a "good first issue" or a "help wanted" issue.
-2. Fork the repository and create a new branch for your changes.
-3. Make your changes and commit them with a descriptive message.
-4. Push your branch to your fork.
-5. Create a pull request and describe your changes in detail.
-6. Wait for a maintainer to review your changes. We will provide feedback and suggest any necessary changes.
-7. Once your changes are approved, they will be merged into the main branch.
+1. [Fork](https://help.github.com/articles/fork-a-repo/) this project
+2. [Clone](https://help.github.com/articles/fork-a-repo/#step-2-create-a-local-clone-of-your-fork) your forked version `git clone git@github.com:<YOUR-USERNAME>/StarterHive.git`
+3. Make changes
+4. Create a [branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches#working-with-branches)
+5. [Commit](https://help.github.com/articles/adding-a-file-to-a-repository-using-the-command-line/) your changes (write a short descriptive message of what you have done)
+6. [Push](https://help.github.com/articles/pushing-to-a-remote/) your changes to your forked version
+7. Go to the original project on GitHub & Create a [Pull Request](https://help.github.com/articles/about-pull-requests/)
 
-## Guidelines
-
-- Be respectful and kind towards other contributors.
-- Follow the project's code style and conventions.
-- Write clear and concise commit messages.
-- Make sure your changes are thoroughly tested.
-- Document any new features or changes that may affect the project's users.
-- Be open to feedback and willing to make changes based on reviewers' suggestions.
-
-If you have any questions or need help with contributing, please don't hesitate to reach out to us on our Discord server.
+## DONE 🥳
