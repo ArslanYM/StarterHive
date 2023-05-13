@@ -36,19 +36,21 @@ Following are the steps to guide you:
     ```
     git checkout -b <feature-name>
     ```
-* Step 5: Add your commits to the staging 
+* step 5: Make the changes as per your issue/feature.
+
+* Step 6: Add your commits to the staging
    ```
    git add .
    ```
-* Step 6:  Commit all the changes (Write commit message as "Small Message")
+* Step 7:  Commit all the changes (Write commit message as "Small Message")
     ```
     git commit -m "Write a meaningful but small commit message"
     ```
-* Step 7: Push the changes for review
+* Step 8: Push the changes for review
     ```
     git push origin <branch-name>
     ```
-* Step 7: Create a PR on Github. (Don't just hit the create a pull request button, you must write a PR message to clarify why and what are you contributing)
+* Step 9: Create a PR on Github. (Don't just hit the create a pull request button, you must write a PR message to clarify why and what are you contributing)
 
 
 ### 🔨Note:
