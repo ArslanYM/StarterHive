@@ -100,10 +100,12 @@ another person in the queue.
 We want your work to be readable by others; therefore, we encourage you to note the following:
 
 - Folder names should not have spaces and if space is needed it should follow `snake_case`.
+- File names for Components should be same as the component name and should follow `PascalCase`.
+- Use seperate file for each individual React component.
 - File extension for Components should be `.jsx` and other javascript files `.js`.
-- Please avoid creating new directories if at all possible. Try to fit your work into the existing directory structure you have created for your project. If you want to, please contact me before doing so.
+- Please avoid creating new directories if at all possible. Try to fit your work into the existing directories.
 - The [README.md] file should be concise and clear about what the script is about and what it does.
-- It should be documented briefly enough to let readers understand. 
+- It should be documented briefly enough to let readers understand.
 - If you have modified/added code work, make sure that code works before submitting.
 - If you have modified/added documentation work, ensure your language is concise and contains no grammar errors.
 - Follow the project structure.
