@@ -99,9 +99,8 @@ another person in the queue.
 
 We want your work to be readable by others; therefore, we encourage you to note the following:
 
-- If LED Blinking is submitted, for example, the Folder Name should be "LED Blinking" and the File Name as "led_blinking.c" and will be pushed into the appropriate repository.
-- File extension for code should be `.py` or `.c` or `.cpp` etc.. 
-- Strictly use snake_case (underscore_separated) in your file_name, as it will be easy to parse in future using scripts.
+- Folder names should not have spaces and if space is needed it should follow `snake_case`.
+- File extension for Components should be `.jsx` and other javascript files `.js`.
 - Please avoid creating new directories if at all possible. Try to fit your work into the existing directory structure you have created for your project. If you want to, please contact me before doing so.
 - The [README.md] file should be concise and clear about what the script is about and what it does.
 - It should be documented briefly enough to let readers understand. 
