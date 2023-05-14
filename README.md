@@ -133,9 +133,16 @@ You can refer to the following articles on the basics of Git and Github and also
 
 
 ## Contributors
+
+Thank you for your dedication and hard work. Your contributions are invaluable to our team, and we are so grateful for all that you do. Your hard work and dedication is truly admirable. Thank you for your unwavering commitment and for all that you do for our team.
+
+Please visit [Contributors](/CONTRIBUTORS.md) to check the list of contributors
+
 <a href="https://github.com/ArslanYM/StarterHive/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ArslanYM/StarterHive" />
 </a>
+
+
 
 ## License
 
