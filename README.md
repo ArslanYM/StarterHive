@@ -6,7 +6,7 @@ A community of new developers buzzing around and collaborating on beginner-frien
 ## Table of Content
 
 - [Contributing](#contributing)
-- [Good First and Beginner Friendly Issues](#good-first-and-beginner-friendly-issues)
+- [Issues](#issues)
 - [Our talented Contributors](#contributors)
 - [License](#license)
 
@@ -125,20 +125,12 @@ You can refer to the following articles on the basics of Git and Github and also
 - [Learn GitHub from Scratch](https://lab.github.com/githubtraining/introduction-to-github)
 
  </details>
+ 
+## Issues
   
-## Good First and Beginner Friendly Issues
+- [Good First and Beginner Friendly Issues](ISSUES/issues.md)
 
-### [Technology/Language 1]
 
-- [Issue 1](https://github.com/[username]/[repository]/issues/1)
-- [Issue 2](https://github.com/[username]/[repository]/issues/2)
-- [Issue 3](https://github.com/[username]/[repository]/issues/3)
-
-### [Technology/Language 2]
-
-- [Issue 1](https://github.com/[username]/[repository]/issues/4)
-- [Issue 2](https://github.com/[username]/[repository]/issues/5)
-- [Issue 3](https://github.com/[username]/[repository]/issues/6)
 
 ## Contributors
 <a href="https://github.com/ArslanYM/StarterHive/graphs/contributors">
