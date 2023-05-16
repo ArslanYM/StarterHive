@@ -91,6 +91,7 @@ Please visit [Contributors](/CONTRIBUTORS.md) to check the list of contributors 
 
 
 ## Guidelines 
+ - Make sure you are following the Guidelines of this project while contributing. Take a look at [Guidelines](GUIDELINES.md).
 
 ## License
 
