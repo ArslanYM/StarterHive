@@ -3,6 +3,10 @@
 
 A community of new developers buzzing around and collaborating on beginner-friendly issues.
 
+## Introduction 
+
+Start Hive is an open-source project dedicated to helping beginners make their first contributions to open source. By posting beginner-friendly issues, the projects offers individuals the opportunity to learn open source development process. Starter Hive aims to facilitate learning, encourage contribution, and build a supportive community for beginners. 
+
 ## Table of Content
 
 - [Contributing](#contributing)
@@ -92,6 +96,9 @@ Please visit [Contributors](/CONTRIBUTORS.md) to check the list of contributors 
 
 ## Guidelines 
  - Make sure you are following the Guidelines of this project while contributing. Take a look at [Guidelines](GUIDELINES.md).
+
+## Links
+[Discord](https://www.discord.com)
 
 ## License
 
