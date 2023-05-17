@@ -94,7 +94,4 @@ Please visit [Contributors](/CONTRIBUTORS.md) to check the list of contributors 
  - Make sure you are following the Guidelines of this project while contributing. Take a look at [Guidelines](GUIDELINES.md).
 
 ## License
-
-<a href="https://github.com/ArslanYM/StarterHive/blob/main/LICENSE ">
- <img src="assets/images/licence.png" />
-</a>
+Starter Hive is licensed under the MIT License. See the [LICENSE](https://github.com/ArslanYM/StarterHive/blob/main/LICENSE) file for more information.
