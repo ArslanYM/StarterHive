@@ -1,19 +1,20 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
-import { Header } from './components/Header'
-import { Hero } from './components/Hero'
-import { Footer } from './components/Footer'
-
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home, About } from "./pages";
+import MasterLayout from "./layouts";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Hero />
-      <Footer />
-    </div>
-
+    <MasterLayout>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </BrowserRouter>
+    </MasterLayout>
   );
 }
 
-export default App
+export default App;
