@@ -47,8 +47,11 @@ npm install
 ```
 npm run dev
 ```
+---
 
-## The React/vite app is up and running , now its time to make contributions 🚀
+# The React/vite app is up and running , now its time to make contributions 🚀
+
+## Steps to make a contribution
 
 ### But first what is a pull request??
 #### You can read more about pull requests [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
