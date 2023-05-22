@@ -75,9 +75,9 @@ git push origin <branch-name>
 ##### Step 5.1: Go to your forked repository, where you will find a 'Contribute' button
 ![image](https://github.com/shobhitexe/StarterHive/assets/29349136/1fde1c2b-b64e-4fc5-b9b1-0363290a1900)
 ##### Step 5.2: When you click on that button, you will find an 'Open pull request' button. Click on it to create a pull request
-![image](https://github.com/shobhitexe/StarterHive/assets/29349136/fbad9a46-275d-435d-bc7c-88a93d9aafb1)
+![image](https://github.com/shobhitexe/StarterHive/assets/29349136/0d8dfc8b-57f7-47b3-be34-7b08f337a081)
 ##### Step 5.3: Now, on this page, write a good and descriptive title and comment. Click on the 'Create pull request' button to submit a pull request
-![image](https://github.com/shobhitexe/StarterHive/assets/29349136/031a92e1-b626-47d0-863f-37409ccf2c33)
+![image](https://github.com/shobhitexe/StarterHive/assets/29349136/a7bafbd3-b1d8-41f9-996d-479eb04f5ac5)
 
 ## Tada! 🥳 You have just created your first pull request. Once the maintainers review and accept it, your contribution will be merged.
 
@@ -110,4 +110,4 @@ git push origin <branch-name>
  <li>Don't rush the process; take the time to ensure your changes are well-implemented and thoroughly tested.</li>
  </ul>
  
-# Happy Contributing 🚀🚀
+# Happy Contributing 🚀🚀 Make sure to share this Repo with your friends and Star the Repo
