@@ -64,6 +64,12 @@ You can also contribute to this project if you are new to open source:
  </details>
 
 
+ ### 🏊 Jump In:
+StarterHive is an open source project that helps global new developers in contributing to beginner friendly issues.Accelerating skills dvelopment,
+paving the way for inclusive open-source contribtion worldwide.
+You can get started immediately by looking at the web app directory [Here](web)
+
+
 ### 🔨Note:
 
 > - Do not edit/delete someone else's script in this repository. You can only insert new files/folders into this repository.
