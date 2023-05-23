@@ -1,19 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useRef } from "react";
-import "./header.css"; // Import the CSS file
 
 const Header = () => {
-  const titleRef = useRef(null);
-
-  useEffect(() => {
-    const titleElement = titleRef.current;
-    titleElement.classList.add("fade-in");
-
-    return () => {
-      titleElement.classList.remove("fade-in");
-    };
-  }, []);
-
   return (
     <header className="text-gray-400 bg-gray-900 body-font">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -24,10 +12,7 @@ const Header = () => {
           <a className="hover:text-white">Find Issues</a>
         </nav>
         <a className="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
-          <span
-            ref={titleRef}
-            className="ml-3 text-4xl xl:block font-bold lg:hidden text-white"
-          >
+          <span className="ml-3 text-4xl xl:block font-bold lg:hidden text-white">
             Starter Hive✨
           </span>
         </a>
