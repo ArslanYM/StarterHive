@@ -1,7 +1,7 @@
 ---
 name: Question/Doubt
 about: Have a doubt related to the project
-title: "[💁🏼HELP]:"
+title: "💁🏼HELP:"
 labels: ''
 assignees: ''
 
