@@ -1,56 +1,86 @@
 
-# Starter Hive ✨
-
-A community of new developers buzzing around and collaborating on beginner-friendly issues.
+<h1 align="center" >Starter Hive ✨</h1>
+<p align= "center" > This project aims to simplify and guide the way beginners make their first contribution.</p>
 
 ## Table of Content
 
 - [Contributing](#contributing)
 - [Issues](#issues)
-- [Our talented Contributors](#contributors)
+- [Contributors](#contributors)
 - [License](#license)
 
 
 ## Contributing
-
-  ### 🔖Steps to Contribute
-
 Following are the steps to guide you:
 
-* Step 1: Fork the repo then On your local drive open your  terminal and run 
+### Step 1
+- Fork this repository 
+
+![fork](https://github.com/ArslanYM/StarterHive/assets/104521101/b2863384-753d-448b-9c8f-cc2122121c2b)
+
+
+### Step 2:
+- Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click the copy to clipboard icon.
+
+![clone](https://github.com/ArslanYM/StarterHive/assets/104521101/ffe2cb3b-d7e9-41fb-a7e6-8f5ca9d50dd0)
+
+Open a terminal and run the following git command:
    ```
-   git clone https://github.com/[YourUserName]/StarterHive.git
+   git clone "url you just copied"
    
    ```
-* Step 2: Add an upstream link to the main branch in your cloned repo
-    ```
-    cd StarterHive/
-    git remote add upstream https://github.com/ArslanYM/StarterHive
+where "url you just copied" (without the quotation marks) is the url to this repository (your fork of this project). See the previous steps to obtain the url.
+
+![opy](https://github.com/ArslanYM/StarterHive/assets/104521101/5947298f-dd52-478c-9cd9-f22791eea4a5)
+
+The code will look something like this : 
+```
+git clone https://github.com/{your user name}/StarterHive.git
+
+```
+
+
+### Step 3: 
+- Navigate to StarterHive on your device
+
+```
+cd StaterHive/
+
+```
+### Step 4:
+- Add an upstream link to the main branch in your cloned repo
 
     ```
-* Step 3: Keep your cloned repo up to date by pulling from upstream (this will also avoid any merge conflicts while committing new changes)
+    git remote add upstream https://github.com/ArslanYM/StarterHive
+    ```
+- Keep your cloned repo up to date by pulling from upstream (this will also avoid any merge conflicts while committing new changes)
     ```
     git pull upstream main
     ```
-* Step 4: Create your feature branch (This is a necessary step, so don't skip it)
+### Step 5: 
+- Create your feature branch (This is a necessary step, so don't skip it)
     ```
     git checkout -b <feature-name>
     ```
-* Step 5: Make the changes as per your issue/feature.
-
-* Step 6: Add your commits to the staging
+### Step 6: Make necessary changes and commit those changes
+- Add your commits to the staging
    ```
    git add .
    ```
-* Step 7:  Commit all the changes (Write commit message as "Small Message")
+   
+### Step 7:  Now commit those changes using the `git commit`  command:
+
     ```
     git commit -m "Write a meaningful but small commit message"
     ```
-* Step 8: Push the changes for review
+    
+### Step 8: Push your changes using the command `git push` :
     ```
-    git push origin <branch-name>
+    git push -u origin your-branch-name
+    
     ```
-* Step 9: Create a PR on Github. (Don't just hit the create a pull request button, you must write a PR message to clarify why and what are you contributing)
+### Step 9:
+- Create a PR on Github. (Don't just hit the create a pull request button, you must write a PR message to clarify why and what are you contributing)
 
 <details> 
  
@@ -62,21 +92,6 @@ You can also contribute to this project if you are new to open source:
 - [Check out the `CONTRIBUTORS.md` file to get started](CONTRIBUTORS.md)
 
  </details>
-
-
-### 🔨Note:
-
-> - Do not edit/delete someone else's script in this repository. You can only insert new files/folders into this repository.
-
-  > - Give a meaningful name to whatever file or folder you are adding. (E.g., if you have written a script on LED Blinking, then 
-  > led_blinking.c is one example of the valid name)
-
-
-
-## Issues
-- Are you exhausted from manually searching through repositories one at a time in order to find issues to resolve?  Here's a list of issues you can solve based on your tech stack.
- - [Good First and Beginner Friendly Issues](ISSUES/issues.md)
-
 
 
 ## Contributors
