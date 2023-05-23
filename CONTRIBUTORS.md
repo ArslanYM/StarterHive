@@ -1,6 +1,6 @@
 # Contributors
 
-## Starter Hived Practice Contribution
+## StarterHive Practice Contribution
 
 Repository for you to raise a Pull Request to **practice** open-source! 🎉
 
