@@ -30,7 +30,6 @@ const Header = () => {
           >
             Starter Hive✨
           </span>
-          {/* <span className="ml-3 text-xl xl:block lg:hidden font-bold text-white">Starter Hive<span className="text-yellow-400">✨</span></span> */}
         </a>
         <div className="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
           <button className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
