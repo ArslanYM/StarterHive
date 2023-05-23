@@ -5,7 +5,6 @@
 ## Table of Content
 
 - [Contributing](#contributing)
-- [Issues](#issues)
 - [Contributors](#contributors)
 - [License](#license)
 
