@@ -10,80 +10,88 @@ A community of new developers buzzing around and collaborating on beginner-frien
 - [Our talented Contributors](#contributors)
 - [License](#license)
 
-
 ## Contributing
 
-  ### 🔖Steps to Contribute
+### 🔖Steps to Contribute
 
 Following are the steps to guide you:
 
-* Step 1: Fork the repo then On your local drive open your  terminal and run 
+- Step 1: Fork the repo then On your local drive open your  terminal and run
+
    ```
    git clone https://github.com/[YourUserName]/StarterHive.git
    
    ```
-* Step 2: Add an upstream link to the main branch in your cloned repo
+
+- Step 2: Add an upstream link to the main branch in your cloned repo
+
     ```
     cd StarterHive/
     git remote add upstream https://github.com/ArslanYM/StarterHive
 
     ```
-* Step 3: Keep your cloned repo up to date by pulling from upstream (this will also avoid any merge conflicts while committing new changes)
+
+- Step 3: Keep your cloned repo up to date by pulling from upstream (this will also avoid any merge conflicts while committing new changes)
+
     ```
     git pull upstream main
     ```
-* Step 4: Create your feature branch (This is a necessary step, so don't skip it)
+
+- Step 4: Create your feature branch (This is a necessary step, so don't skip it)
+
     ```
     git checkout -b <feature-name>
     ```
-* Step 5: Make the changes as per your issue/feature.
 
-* Step 6: Add your commits to the staging
+- Step 5: Make the changes as per your issue/feature.
+
+- Step 6: Add your commits to the staging
+
    ```
    git add .
    ```
-* Step 7:  Commit all the changes (Write commit message as "Small Message")
+
+- Step 7:  Commit all the changes (Write commit message as "Small Message")
+
     ```
     git commit -m "Write a meaningful but small commit message"
     ```
-* Step 8: Push the changes for review
+
+- Step 8: Push the changes for review
+
     ```
     git push origin <branch-name>
     ```
-* Step 9: Create a PR on Github. (Don't just hit the create a pull request button, you must write a PR message to clarify why and what are you contributing)
 
-<details> 
- 
+- Step 9: Create a PR on Github. (Don't just hit the create a pull request button, you must write a PR message to clarify why and what are you contributing)
+
+<details>
+
 <summary> New to open-source?
  </summary>
 
-
 You can also contribute to this project if you are new to open source:
+
 - [Check out the `CONTRIBUTORS.md` file to get started](CONTRIBUTORS.md)
 
  </details>
 
+### 🏊 Jump In
 
- ### 🏊 Jump In:
-StarterHive is an open source project that helps global new developers in contributing to beginner friendly issues.Accelerating skills dvelopment,
-paving the way for inclusive open-source contribtion worldwide.
-You can get started immediately by looking at the web app directory [Here](web)
+Starter Hive is a powerful open source tool that helps you identify and fix issues in projects and codebases run by remote-hire companies.
+Starter Hive is a must-have tool for anyone who wants to work for a remote-hire company so you can be confident that you are working on high-quality projects. [Here](web)
 
-
-### 🔨Note:
+### 🔨Note
 
 > - Do not edit/delete someone else's script in this repository. You can only insert new files/folders into this repository.
 
-  > - Give a meaningful name to whatever file or folder you are adding. (E.g., if you have written a script on LED Blinking, then 
+  > - Give a meaningful name to whatever file or folder you are adding. (E.g., if you have written a script on LED Blinking, then
   > led_blinking.c is one example of the valid name)
 
-
-
 ## Issues
+
 - Are you exhausted from manually searching through repositories one at a time in order to find issues to resolve?  Here's a list of issues you can solve based on your tech stack.
- - [Good First and Beginner Friendly Issues](ISSUES/issues.md)
-
-
+- [Good First and Beginner Friendly Issues](ISSUES/issues.md)
 
 ## Contributors
 
@@ -95,9 +103,10 @@ Please visit [Contributors](/CONTRIBUTORS.md) to check the list of contributors 
   <img src="https://contrib.rocks/image?repo=ArslanYM/StarterHive" />
 </a>
 
+## Guidelines
 
-## Guidelines 
- - Make sure you are following the Guidelines of this project while contributing. Take a look at [Guidelines](GUIDELINES.md).
+- Make sure you are following the Guidelines of this project while contributing. Take a look at [Guidelines](GUIDELINES.md).
 
 ## License
+
 Starter Hive is licensed under the MIT License. See the [LICENSE](https://github.com/ArslanYM/StarterHive/blob/main/LICENSE) file for more information.
