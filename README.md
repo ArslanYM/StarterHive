@@ -64,13 +64,15 @@ cd StaterHive/
    git add .
    ```
    
-### Step 7:  Now commit those changes using the `git commit`  command:
-
+### Step 7:  Commit the changes
+- Now commit those changes using the `git commit`  command:
     ```
     git commit -m "Write a meaningful but small commit message"
-    ```
-    
-### Step 8: Push your changes using the command `git push` :
+    ```   
+- Follow this [Guide](https://gist.github.com/tonibardina/9290fbc7d605b4f86919426e614fe692) for commit messages.
+- 
+### Step 8: Push your code.
+- Push your changes using the command `git push` :
     ```
     git push -u origin your-branch-name
     ```
