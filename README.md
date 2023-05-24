@@ -70,7 +70,7 @@ cd StaterHive/
     git commit -m "Write a meaningful but small commit message"
     ```   
 - Follow this [Guide](https://gist.github.com/tonibardina/9290fbc7d605b4f86919426e614fe692) for commit messages.
-- 
+
 ### Step 8: Push your code.
 - Push your changes using the command `git push` :
     ```
