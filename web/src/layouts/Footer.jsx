@@ -16,13 +16,13 @@ const Footer = () => {
                 </p>
                 <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                     <a href="https://twitter.com/ArsalanYmalik" className="text-gray-400">
-                        <FaTwitter />
+                        <FaTwitter className="text-2xl duration-300 hover:fill-sky-500" />
                     </a>
-                    <a href="https://github.com/ArslanYM/StarterHive" className="ml-3 text-gray-400">
-                        <FaGithub />
+                    <a href="https://github.com/ArslanYM/StarterHive" className="ml-5 text-gray-400">
+                        <FaGithub className="text-2xl duration-300 hover:fill-gray-600" />
                     </a>
-                    <a href="https://discord.gg/QBwU8KaJ" className="ml-3 text-gray-400">
-                        <FaDiscord /> 
+                    <a href="https://discord.gg/QBwU8KaJ" className=" ml-5 text-gray-400">
+                        <FaDiscord className="text-2xl duration-300 hover:fill-violet-500" /> 
                     </a>
                 </span>
             </div>
