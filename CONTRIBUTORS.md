@@ -220,6 +220,7 @@ A GitHub conflict is when people make changes to the same area or line in a file
 - ### **S**
     
     - [Shobhit Gupta](https://github.com/shobhitexe)
+    - [Samuel Kalu](https://github.com/eskayML)
     
 | [`Back To Top`](#contents) |
 - ### **T**
