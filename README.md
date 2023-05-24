@@ -26,7 +26,6 @@ Following are the steps to guide you:
 Open a terminal and run the following git command:
    ```
    git clone "url you just copied"
-   
    ```
 where "url you just copied" (without the quotation marks) is the url to this repository (your fork of this project). See the previous steps to obtain the url.
 
@@ -35,7 +34,6 @@ where "url you just copied" (without the quotation marks) is the url to this rep
 The code will look something like this : 
 ```
 git clone https://github.com/{your user name}/StarterHive.git
-
 ```
 
 
@@ -44,7 +42,6 @@ git clone https://github.com/{your user name}/StarterHive.git
 
 ```
 cd StaterHive/
-
 ```
 ### Step 4:
 - Add an upstream link to the main branch in your cloned repo
@@ -76,7 +73,6 @@ cd StaterHive/
 ### Step 8: Push your changes using the command `git push` :
     ```
     git push -u origin your-branch-name
-    
     ```
 ### Step 9:
 - Create a PR on Github. (Don't just hit the create a pull request button, you must write a PR message to clarify why and what are you contributing)
