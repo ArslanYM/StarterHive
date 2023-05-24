@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useRef } from "react";
+import { FaGithub } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -12,13 +13,20 @@ const Header = () => {
           <a className="hover:text-white">Find Issues</a>
         </nav>
         <a className="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
-          <span className="ml-3 text-4xl xl:block font-bold lg:hidden text-white">
+          <span className="ml-3 text-3xl xl:block font-bold lg:hidden text-white">
             Starter Hive✨
           </span>
         </a>
         <div className="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-          <button className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
-            Github
+          <button className="inline-flex bg-gray-800 py-1 px-3 focus:outline-none duration-300 hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
+            <a
+              href="https://github.com/ArslanYM/StarterHive"
+              aria-label="github-link"
+              className="space-x-2 flex items-center"
+            >
+              <span>GitHub</span>
+              <FaGithub className="text-2xl" />
+            </a>
           </button>
         </div>
       </div>
