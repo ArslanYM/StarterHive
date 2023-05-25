@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import {FaDiscord,FaGithub,FaTwitter} from 'react-icons/fa'
+
 const Footer = () => {
     return (
         <footer className="text-gray-400 bg-gray-900 body-font">

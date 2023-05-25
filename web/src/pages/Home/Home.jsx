@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import { DummyComponent } from "../components";
+import { DummyComponent } from "../../components";
 
 const Home = () => {
   return (
@@ -12,3 +12,4 @@ const Home = () => {
 };
 
 export default Home;
+  
