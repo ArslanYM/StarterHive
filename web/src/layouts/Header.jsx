@@ -23,6 +23,8 @@ const Header = () => {
     <a
       href="https://github.com/ArslanYM/StarterHive"
       aria-label="github-link"
+      target="_blank"
+      rel="noreferrer"
       className="space-x-2 flex items-center"
     >
       <span>GitHub</span>
