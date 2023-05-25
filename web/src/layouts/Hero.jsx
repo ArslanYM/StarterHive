@@ -1,7 +1,6 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React from 'react'
 import PropTypes from "prop-types";
-import heroPicture from "../assets/hero_picture.png";
 
 const Hero = ({ children }) => {
     
@@ -32,10 +31,8 @@ const Hero = ({ children }) => {
     )
 }
 
-  
-
 export default Hero;
 
 Hero.propTypes = {
-  children: PropTypes.element.isRequired,
+    children: PropTypes.element.isRequired,
 };
