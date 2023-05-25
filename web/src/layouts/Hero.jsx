@@ -10,10 +10,15 @@ const Hero = ({ children }) => {
                 <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                     <div className="lg:flex-grow md:w-1/2 lg:pr-20 lg:pl-12 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                         <div>{children}</div>
-                        <h1 className="title-font sm:text-5xl text-4xl mb-4 font-extrabold text-white">
-                            Contribute to<br className="hidden lg:inline-block" /> the world of
-                            <span className="text-blue-500 font-roboto-slab font-extrabold ml-5">Open Source</span>
-                        </h1>
+                        <h1 className=" title-font sm:text-5xl text-4xl mb-4 font-extrabold text-white">
+  Contribute to
+<div className="flex text-white font-extrabold ">
+ the wolrd of  <p className='ml-3 text-yellow-500 hover:scale-90 transition-transform' >Open Source</p>
+</div>
+</h1>
+
+
+
 
                         <p className="mb-8 leading-relaxed">Starter Hive is a platform that helps beginners to contribute to open source projects of remotely hiring organizations.</p>
                         <div className="flex justify-center">
