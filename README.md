@@ -1,6 +1,8 @@
 
 <h1 align="center" >Starter Hive ✨</h1>
-<p align= "center" > This project aims to simplify and guide the way beginners make their first contribution.</p>
+<h3 align= "center" > This project aims to simplify and guide the way beginners make their first contribution.</h3>
+
+![Untitled design](https://github.com/ArslanYM/StarterHive/assets/104521101/21cebff4-c395-4ec2-b7f9-3bbf199f51da)
 
 ## Table of Content
 

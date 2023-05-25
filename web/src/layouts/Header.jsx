@@ -1,6 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { FaGithub } from "react-icons/fa";
+
+
 const Header = () => {
   return (
     <header className="text-gray-400 bg-gray-900 body-font">
@@ -21,6 +23,8 @@ const Header = () => {
     <a
       href="https://github.com/ArslanYM/StarterHive"
       aria-label="github-link"
+      target="_blank"
+      rel="noreferrer"
       className="space-x-2 flex items-center"
     >
       <span>GitHub</span>

@@ -6,7 +6,7 @@
 4. Participants/contributors can also **open their issues**, but it needs to be verified and labelled by the maintainer. We respect all your contributions, whether it is an Issue or a Pull Request.
 6. When you raise an issue, make sure you get it assigned to you before you start working on that project.
 7. Each participant/contributor will be **assigned 1 issue (max)** at a time to work.
-8. Participants are expected to follow **project guidelines** and [**coding style**](https://pep8.org/"). **Structured code** is one of our top priorities.
+8. Participants are expected to follow **project guidelines** and [**coding style**](https://github.com/airbnb/javascript/). **Structured code** is one of our top priorities.
 9. Try to **explain your approach** to solve any issue in the comments. This will increase the chances of you being assigned.
 10. Don't create issues that are **already listed**.
 11. Please don't pick up an issue already assigned to someone else. Work on the issues after it gets **assigned to you**.
