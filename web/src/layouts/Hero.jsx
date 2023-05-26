@@ -2,6 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import heroPicture from "../assets/hero_picture.png";
+import HeroImg from "../components/HeroImg";
 
 const Hero = ({ children }) => {
   return (
@@ -24,12 +25,17 @@ const Hero = ({ children }) => {
               </button>
             </div>
           </div>
-          <div className="lg:max-w-md lg:w-full md:w-1/2 w-5/6">
+          {/* <div className="lg:max-w-md lg:w-full md:w-1/2 w-5/6">
             <img
               className="object-cover object-center rounded"
               alt="hero"
               src={heroPicture}
             />
+          </div> */}
+          <div className="lg:max-w-md lg:w-full md:w-1/2 w-5/6 gap-3 flex flex-wrap flex-row">
+            <HeroImg />
+            <HeroImg className="mt-36" />
+            <HeroImg className="mt-[-9rem]" />
           </div>
         </div>
       </section>
