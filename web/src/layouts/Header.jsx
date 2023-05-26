@@ -8,13 +8,13 @@ const Header = () => {
     <header className="text-gray-400 bg-gray-900 body-font">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <nav className="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
-          <a className="mr-5 hover:text-white">Home</a>
-          <a className="mr-5 hover:text-white">Contributors</a>
-          <a className="mr-5 hover:text-white">Docs</a>
-          <a className="hover:text-white">Find Issues</a>
+          <a className="mr-5 hover:text-white cursor-pointer">Home</a>
+          <a className="mr-5 hover:text-white cursor-pointer">Contributors</a>
+          <a className="mr-5 hover:text-white cursor-pointer">Docs</a>
+          <a className="hover:text-white cursor-pointer">Find Issues</a>
         </nav>
         <a className="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
-          <span className="ml-3 text-xl xl:block lg:hidden">
+          <span className="ml-3 text-xl xl:block lg:hidden cursor-pointer">
             Starter Hive✨
           </span>
         </a>
