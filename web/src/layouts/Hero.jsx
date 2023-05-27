@@ -1,23 +1,27 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React from 'react'
 import PropTypes from "prop-types";
 import heroPicture from "../assets/hero_picture.png";
-import HeroImg from "../components/HeroImg";
+import HeroImg from "../components/Heroimg";
+
 
 const Hero = ({ children }) => {
   return (
     <>
       <section className="text-gray-400 bg-gray-900 body-font min-h-[80vh]">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <div className="lg:flex-grow md:w-1/2 sm:ml-10 lg:pr-20 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <div>{children}</div>
-            <h1 className="title-font sm:text-5xl text-4xl mb-4 font-extrabold text-white">
-              Contribute to
-              <br className="hidden lg:inline-block" /> the world of Open Source
-            </h1>
+           <h1 className=" block title-font sm:text-5xl text-4xl mb-4 font-extrabold text-white">
+                                Contribute to the world of 
+ 
+                        <p className="sm:inline-block  sm:ml-4 md:ml-0 text-yellow-500 hover:scale-90 transition-transform">
+                              Open Source
+                        </p>
+                        </h1>
             <p className="font-bold mb-8 leading-relaxed">
               Starter Hive is a platform that helps beginners to contribute to
-              open source projects of remotely hiring organizations.
+              <p>open source projects of remotely hiring organizations.</p>
             </p>
             <div className="flex justify-center">
               <button className="inline-flex text-white bg-purple-500 border-0 py-3 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg font-bold hover:translate-y-[-5px] transition-transform duration-300">
@@ -43,8 +47,9 @@ const Hero = ({ children }) => {
   );
 };
 
+
 export default Hero;
 
 Hero.propTypes = {
-  children: PropTypes.element.isRequired,
+    children: PropTypes.element.isRequired,
 };
