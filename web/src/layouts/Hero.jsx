@@ -37,16 +37,16 @@ const Hero = ({ children }) => {
             />
           </div> */}
           <div className="lg:max-w-md lg:w-full md:w-1/2 w-11/12 h-96gap-3 flex items-center justify-center">
-            <div className='flex flex-col gap-3'>
+            <div className='flex flex-col gap-3 animate-floating'>
               <HeroImg imgSrc={"https://user-images.githubusercontent.com/104521101/241361621-fcf0d93f-8cc4-41e3-afb5-cbfad6f25486.png"} className={"w-full h-full object-cover object-center"} altText={"logo"}/>
               <HeroImg imgSrc={"https://user-images.githubusercontent.com/104521101/241361628-b0543c0d-9531-4c9d-94ee-a4688384fb53.png"} className={"w-full h-full object-cover object-center"} altText={"logo"}/>
             </div>
-            <div className='flex flex-col gap-3 ml-5 mr-5'>
+            <div className='flex flex-col gap-3 ml-5 mr-5 animate-floating'>
               <HeroImg imgSrc={"https://user-images.githubusercontent.com/104521101/241361627-02f6dece-11f7-405a-be9f-cc4ec060bcfa.png"} className={"w-full h-full object-cover object-center"} altText={"logo"}/>
               <HeroImg imgSrc={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnCs__s5xhjECCz-_ejtemS2CzXLbdO_DNBA&usqp=CAU"} className={"w-full h-full object-cover object-center"} altText={"logo"}/>
               <HeroImg imgSrc={"https://user-images.githubusercontent.com/104521101/241361625-7d32570f-c1f1-4620-84a0-f763e1dde741.png"} className={"w-full h-full object-cover object-center"} altText={"logo"}/>
             </div>
-            <div className='flex flex-col gap-3'>
+            <div className='flex flex-col gap-3 animate-floating'>
               <HeroImg imgSrc={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnCs__s5xhjECCz-_ejtemS2CzXLbdO_DNBA&usqp=CAU"} className={"w-full h-full object-cover object-center"} altText={"logo"}/>
               <HeroImg imgSrc={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnCs__s5xhjECCz-_ejtemS2CzXLbdO_DNBA&usqp=CAU"} className={"w-full h-full object-cover object-center"} altText={"logo"}/>
             </div>
