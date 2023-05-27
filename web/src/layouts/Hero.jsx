@@ -19,7 +19,7 @@ const Hero = ({ children }) => {
               open source projects of remotely hiring organizations.
             </p>
             <div className="flex justify-center">
-              <button className="inline-flex text-white bg-purple-500 border-0 py-3 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg font-bold">
+              <button className="inline-flex text-white bg-purple-500 border-0 py-3 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg font-bold hover:translate-y-[-5px] transition-transform duration-300">
                 Find Issues
               </button>
             </div>
