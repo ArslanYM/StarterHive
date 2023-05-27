@@ -15,13 +15,13 @@
 Following are the steps to guide you:
 
 ## Step 1
-- Fork this repository 
+Fork this repository 
 
 ![fork](https://github.com/ArslanYM/StarterHive/assets/104521101/b2863384-753d-448b-9c8f-cc2122121c2b)
 
 
 ## Step 2:
-- Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click the copy to clipboard icon.
+- Clone the forked repository to your machine.Select the forked repository.Click on the code button and then click the copy button to clipboard.
 
 ![clone](https://github.com/ArslanYM/StarterHive/assets/104521101/ffe2cb3b-d7e9-41fb-a7e6-8f5ca9d50dd0)
 
@@ -55,31 +55,41 @@ cd StaterHive/
     ```
     git pull upstream main
     ```
-## Step 5: 
+    ![remote upstream](assets/images/remote-indicator.png)
+### Step 5: 
 - Create your feature branch (This is a necessary step, so don't skip it)
     ```
-    git checkout -b <feature-name>
+     git branch <branch-name>
     ```
-## Step 6: Make necessary changes and commit those changes
-- Add your commits to the staging
+![new branch](assets/images/git-menu-new-branch.png)
+### Step 6:
+Checkout the feature branch created in Step 5
+```
+    git checkout <branch-name>
+```
+
+### Step 7: Make necessary changes and commit those changes
+- Enter the commnad below in your terminal
    ```
    git add .
    ```
    
-## Step 7:  Commit the changes
+## Step 8:  Commit the changes
 - Now commit those changes using the `git commit`  command:
     ```
     git commit -m "Write a meaningful but small commit message"
     ```   
 - Follow this [Guide](https://gist.github.com/tonibardina/9290fbc7d605b4f86919426e614fe692) for commit messages.
 
-## Step 8: Push your code.
+## Step 9: Push your code.
 - Push your changes using the command `git push` :
     ```
     git push -u origin your-branch-name
     ```
-## Step 9:
+    ![push icon](assets/images/pasted-image-0-16.png)
+## Step 10:
 - Create a PR on Github. (Don't just hit the create a pull request button, you must write a PR message to clarify why and what are you contributing)
+    ![pull request](assets/images/Screenshot%20from%202023-05-27%2021-19-09.png)
 
 <details> 
  
