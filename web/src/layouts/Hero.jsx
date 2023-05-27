@@ -3,7 +3,6 @@ import React from 'react'
 import PropTypes from "prop-types";
 import heroPicture from "../assets/hero_picture.png";
 import HeroImg from "../components/Heroimg";
-
 const Hero = ({ children }) => {
   return (
     <>
