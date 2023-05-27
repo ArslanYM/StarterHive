@@ -15,7 +15,7 @@ const Hero = ({ children }) => {
            <h1 className=" block title-font sm:text-5xl text-4xl mb-4 font-extrabold text-white">
                                 Contribute to the world of 
  
-                        <p className="sm:inline-block  sm:ml-4 md:ml-0 text-yellow-500 hover:scale-90 transition-transform">
+                        <p className="sm:inline-block  sm:ml-4 md:ml-0 text-yellow-500 hover:scale-110 transition-transform">
                               Open Source
                         </p>
                         </h1>
