@@ -1,0 +1,62 @@
+[
+  {
+    "issue_id": 1,
+    "repo_name": "StarterHive",
+    "issue_url": "https://github.com/ArslanYM/StarterHive/issues/110",
+    "issue_title": "Add floating action to image divs",
+    "issue_labels": ["good-first-issue", "bug"],
+    "status": "open",
+    "languages": ["javascript", "html", "css"],
+    "libraries": ["react"],
+    "stars": 69,
+    "forks": 44,
+    "createdBy": "Nadeem Choudhary",
+    "createdAt": "2023-05-27",
+    "updatedAt": "2023-05-27"
+  },
+  {
+    "issue_id": 2,
+    "repo_name": "StarterHive",
+    "issue_url": "https://github.com/ArslanYM/StarterHive/issues/108",
+    "issue_title": "navbar and hero section both are not aligned properly",
+    "issue_labels": ["good-first-issue", "bug", "enhancement", "frontend"],
+    "status": "assigned",
+    "languages": ["javascript", "html", "css"],
+    "libraries": ["react"],
+    "stars": 69,
+    "forks": 44,
+    "createdBy": "Nadeem Choudhary",
+    "createdAt": "2023-05-27",
+    "updatedAt": "2023-05-27"
+  },
+  {
+    "issue_id": 3,
+    "repo_name": "StarterHive",
+    "issue_url": "https://github.com/ArslanYM/StarterHive/issues/102",
+    "issue_title": "Add images to the hero divs",
+    "issue_labels": ["good-first-issue", "bug", "frontend", "help-wanted"],
+    "status": "closed",
+    "languages": ["javascript", "html", "css"],
+    "libraries": ["react"],
+    "stars": 69,
+    "forks": 44,
+    "createdBy": "Nadeem Choudhary",
+    "createdAt": "2023-05-27",
+    "updatedAt": "2023-05-27"
+  },
+  {
+    "issue_id": 4,
+    "repo_name": "StarterHive",
+    "issue_url": "https://github.com/ArslanYM/StarterHive/issues/85",
+    "issue_title": "make the already existing readme.md guide better looking in web folder",
+    "issue_labels": ["good-first-issue", "bug", "frontend", "help-wanted"],
+    "status": "open",
+    "languages": ["javascript", "html", "css"],
+    "libraries": ["react"],
+    "stars": 69,
+    "forks": 44,
+    "createdBy": "Nadeem Choudhary",
+    "createdAt": "2023-05-27",
+    "updatedAt": "2023-05-27"
+  }
+]

@@ -1,18 +1,21 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home } from "./pages";
+import { Home, Contributors, Guid, IssuesList } from "./pages";
 import MasterLayout from "./layouts";
 
 function App() {
   return (
-    <MasterLayout>
-      <BrowserRouter>
+    <BrowserRouter>
+      <MasterLayout>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/contributors" element={<Contributors />} />
+          <Route path="/Docs" element={<Guid />} />
+          <Route path="/issues" element={<IssuesList />} />
         </Routes>
-      </BrowserRouter>
-    </MasterLayout>
+      </MasterLayout>
+    </BrowserRouter>
   );
 }
 
