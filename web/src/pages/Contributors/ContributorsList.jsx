@@ -1,18 +1,39 @@
-import ContributorItem from "./ContributorItem";
-let contributors = [
-    { 'name': "Holden Caulfield", 'position': "UI Designer" },
-    { 'name': "Henry Letham", 'position': "CTO" },
-    { 'name': "Oskar Blinde", 'position': "Founder" }
-]
+import ContributorItem from './ContributorItem'
+import { useState, useEffect } from 'react';
+
+import axios from 'axios';
+
 const ContributorsList = () => {
+    const [contributors, setContributors] = useState([]);
+
+    useEffect(() => {
+        const fetchContributors = async () => {
+            try {
+                const response = await axios.get(
+                    'https://api.github.com/repos/ArslanYM/StarterHive/contributors',
+                    {
+                        headers: {
+                            Authorization: ``,
+                        },
+                    }
+                );
+                setContributors(response.data);
+            } catch (error) {
+                console.error(error);
+            }
+        };
+
+        fetchContributors();
+    }, []);
+
     return (
         <div className="flex flex-wrap -m-2">
-            {contributors.map((contrib, index) => {
-                return <ContributorItem name={contrib.name} position={contrib.position} key={index} />
+            {contributors.map((contributor, index) => {
+                return <ContributorItem image={contributor.avatar_url} name={contributor.login} position={contributor.html_url} key={index} />
             })
             }
         </div>
-    )
-}
+    );
+};
 
-export default ContributorsList
+export default ContributorsList;
