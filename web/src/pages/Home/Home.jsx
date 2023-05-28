@@ -12,10 +12,10 @@ const Home = () => {
         <div className="container flex flex-col items-center min-h-screen px-5 py-12 mx-auto md:flex-row">
           <div className="flex flex-col items-center mb-16 text-center lg:flex-grow md:w-1/2 lg:pr-20 md:pr-16 md:items-start md:text-left md:mb-0">
             <h1 className="block mb-4 text-4xl font-extrabold text-white title-font sm:text-5xl">
-              Contribute to the world of
-              <p className="text-yellow-400 transition-transform sm:inline-block sm:ml-4 md:ml-0 hover:scale-110">
+              Contribute to the world of{" "}
+              <span className="text-yellow-400 transition-transform sm:inline-block sm:ml-4 md:ml-0 hover:scale-110">
                 Open Source
-              </p>
+              </span>
             </h1>
             <p className="mb-8 font-bold leading-relaxed">
               Starter Hive is a platform that helps beginners to contribute to
