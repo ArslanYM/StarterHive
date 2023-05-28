@@ -27,7 +27,7 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          <div className="lg:max-w-md lg:w-full md:w-1/2 w-11/12 h-96gap-3 flex items-center justify-center">
+          <div className="lg:max-w-md lg:w-full md:w-1/2 w-11/12 h-96 gap-3 flex items-center justify-center">
             <div className="flex flex-col gap-3 animate-floating">
               <HeroImg
                 imgSrc={"https://user-images.githubusercontent.com/104521101/241361621-fcf0d93f-8cc4-41e3-afb5-cbfad6f25486.png"}
