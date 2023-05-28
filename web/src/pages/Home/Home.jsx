@@ -8,14 +8,16 @@ import HeroImg from "../../components/HeroImage";
 const Home = () => {
   return (
     <>
-      <section className="text-gray-400 bg-gray-900 body-font min-h-[80vh]">
-        <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
-          <div className="lg:flex-grow md:w-1/2  lg:pr-20 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className=" block title-font sm:text-5xl text-4xl mb-4 font-extrabold text-white">
+      <section className="text-gray-400 bg-gray-900 body-font">
+        <div className="container flex flex-col items-center min-h-screen px-5 py-12 mx-auto md:flex-row">
+          <div className="flex flex-col items-center mb-16 text-center lg:flex-grow md:w-1/2 lg:pr-20 md:pr-16 md:items-start md:text-left md:mb-0">
+            <h1 className="block mb-4 text-4xl font-extrabold text-white title-font sm:text-5xl">
               Contribute to the world of
-              <p className="sm:inline-block  sm:ml-4 md:ml-0 text-yellow-400 hover:scale-110 transition-transform">Open Source</p>
+              <p className="text-yellow-400 transition-transform sm:inline-block sm:ml-4 md:ml-0 hover:scale-110">
+                Open Source
+              </p>
             </h1>
-            <p className="font-bold mb-8 leading-relaxed">
+            <p className="mb-8 font-bold leading-relaxed">
               Starter Hive is a platform that helps beginners to contribute to
               <p>open source projects of remotely hiring organizations.</p>
             </p>
@@ -27,44 +29,58 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          <div className="lg:max-w-md lg:w-full md:w-1/2 w-11/12 h-96 gap-3 flex items-center justify-center">
+          <div className="flex items-center justify-center w-11/12 gap-3 lg:max-w-md lg:w-full md:w-1/2 h-96">
             <div className="flex flex-col gap-3 animate-floating">
               <HeroImg
-                imgSrc={"https://user-images.githubusercontent.com/104521101/241361621-fcf0d93f-8cc4-41e3-afb5-cbfad6f25486.png"}
+                imgSrc={
+                  "https://user-images.githubusercontent.com/104521101/241361621-fcf0d93f-8cc4-41e3-afb5-cbfad6f25486.png"
+                }
                 className={"w-full h-full object-cover object-center"}
                 altText={"logo"}
               />
               <HeroImg
-                imgSrc={"https://user-images.githubusercontent.com/104521101/241361628-b0543c0d-9531-4c9d-94ee-a4688384fb53.png"}
+                imgSrc={
+                  "https://user-images.githubusercontent.com/104521101/241361628-b0543c0d-9531-4c9d-94ee-a4688384fb53.png"
+                }
                 className={"w-full h-full object-cover object-center"}
                 altText={"logo"}
               />
             </div>
             <div className="flex flex-col gap-3 ml-5 mr-5 animate-floating">
               <HeroImg
-                imgSrc={"https://user-images.githubusercontent.com/104521101/241361627-02f6dece-11f7-405a-be9f-cc4ec060bcfa.png"}
+                imgSrc={
+                  "https://user-images.githubusercontent.com/104521101/241361627-02f6dece-11f7-405a-be9f-cc4ec060bcfa.png"
+                }
                 className={"w-full h-full object-cover object-center"}
                 altText={"logo"}
               />
               <HeroImg
-                imgSrc={"https://user-images.githubusercontent.com/104521101/241361625-7d32570f-c1f1-4620-84a0-f763e1dde741.png"}
+                imgSrc={
+                  "https://user-images.githubusercontent.com/104521101/241361625-7d32570f-c1f1-4620-84a0-f763e1dde741.png"
+                }
                 className={"w-full h-full object-cover object-center"}
                 altText={"logo"}
               />
               <HeroImg
-                imgSrc={"https://user-images.githubusercontent.com/104521101/241361625-7d32570f-c1f1-4620-84a0-f763e1dde741.png"}
+                imgSrc={
+                  "https://user-images.githubusercontent.com/104521101/241361625-7d32570f-c1f1-4620-84a0-f763e1dde741.png"
+                }
                 className={"w-full h-full object-cover object-center"}
                 altText={"logo"}
               />
             </div>
             <div className="flex flex-col gap-3 animate-floating">
               <HeroImg
-                imgSrc={"https://user-images.githubusercontent.com/104521101/241361625-7d32570f-c1f1-4620-84a0-f763e1dde741.png"}
+                imgSrc={
+                  "https://user-images.githubusercontent.com/104521101/241361625-7d32570f-c1f1-4620-84a0-f763e1dde741.png"
+                }
                 className={"w-full h-full object-cover object-center"}
                 altText={"logo"}
               />
               <HeroImg
-                imgSrc={"https://user-images.githubusercontent.com/104521101/241361625-7d32570f-c1f1-4620-84a0-f763e1dde741.png"}
+                imgSrc={
+                  "https://user-images.githubusercontent.com/104521101/241361625-7d32570f-c1f1-4620-84a0-f763e1dde741.png"
+                }
                 className={"w-full h-full object-cover object-center"}
                 altText={"logo"}
               />
