@@ -4,7 +4,7 @@ import {FaDiscord,FaGithub,FaTwitter} from 'react-icons/fa'
 import footer_icon from '../assets/hive.svg'
 const Footer = () => {
     return (
-        <footer className="text-gray-400 bg-gray-900 body-font">
+        <footer className="text-gray-400 bg-gradient-to-r from-gray-700 via-gray-900 to-black body-font">
             <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
                 <a className="flex title-font font-medium items-center md:justify-start justify-center text-white" >
 <img className='object-contain h-6 w-6' src={footer_icon}/>
