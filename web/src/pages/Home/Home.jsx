@@ -35,14 +35,14 @@ const Home = () => {
                 imgSrc={
                   "https://user-images.githubusercontent.com/104521101/241361621-fcf0d93f-8cc4-41e3-afb5-cbfad6f25486.png"
                 }
-                className={"w-full h-full object-cover object-center"}
+                className={"w-full  object-cover object-center"}
                 altText={"logo"}
               />
               <HeroImg
                 imgSrc={
                   "https://user-images.githubusercontent.com/104521101/241361628-b0543c0d-9531-4c9d-94ee-a4688384fb53.png"
                 }
-                className={"w-full h-full object-cover object-center"}
+                className={"w-full  object-cover object-center"}
                 altText={"logo"}
               />
             </div>
@@ -51,21 +51,21 @@ const Home = () => {
                 imgSrc={
                   "https://user-images.githubusercontent.com/104521101/241361627-02f6dece-11f7-405a-be9f-cc4ec060bcfa.png"
                 }
-                className={"w-full h-full object-cover object-center"}
+                className={"w-full  object-cover object-center"}
                 altText={"logo"}
               />
               <HeroImg
                 imgSrc={
                   "https://user-images.githubusercontent.com/104521101/241361625-7d32570f-c1f1-4620-84a0-f763e1dde741.png"
                 }
-                className={"w-full h-full object-cover object-center"}
+                className={"w-full  object-cover object-center"}
                 altText={"logo"}
               />
               <HeroImg
                 imgSrc={
                   "https://user-images.githubusercontent.com/104521101/241361625-7d32570f-c1f1-4620-84a0-f763e1dde741.png"
                 }
-                className={"w-full h-full object-cover object-center"}
+                className={"w-full  object-cover object-center"}
                 altText={"logo"}
               />
             </div>
@@ -74,14 +74,14 @@ const Home = () => {
                 imgSrc={
                   "https://user-images.githubusercontent.com/104521101/241361625-7d32570f-c1f1-4620-84a0-f763e1dde741.png"
                 }
-                className={"w-full h-full object-cover object-center"}
+                className={"w-full  object-cover object-center"}
                 altText={"logo"}
               />
               <HeroImg
                 imgSrc={
                   "https://user-images.githubusercontent.com/104521101/241361625-7d32570f-c1f1-4620-84a0-f763e1dde741.png"
                 }
-                className={"w-full h-full object-cover object-center"}
+                className={"w-full  object-cover object-center"}
                 altText={"logo"}
               />
             </div>
