@@ -6,7 +6,7 @@ import Issue from "./Issue";
 const IssuesList = () => {
   console.log(issues);
   return (
-    <div className="flex flex-col gap-4 bg-gray-900 items-start">
+    <div className="flex flex-col gap-4 bg-gradient-to-r from-gray-700 via-gray-900 to-black items-start">
       {issues.map((issue) => (
         <Issue
           key={issue.issue_id}
