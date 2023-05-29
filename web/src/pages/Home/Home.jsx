@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <section className="text-gray-400 bg-gray-900 body-font">
-        <div className="container flex flex-col items-center min-h-screen px-5 py-12 mx-auto md:flex-row">
+        <div className="container flex flex-col items-center min-h-screen px-5 py-6 md:py-10 mx-auto md:flex-row">
           <div className="flex flex-col items-center mb-16 text-center lg:flex-grow md:w-1/2 lg:pr-20 md:pr-16 md:items-start md:text-left md:mb-0">
             <h1 className="block mb-4 text-4xl font-extrabold text-white title-font sm:text-5xl">
               Contribute to the world of{" "}
@@ -29,7 +29,7 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          <div className="flex items-center justify-center w-11/12 gap-3 lg:max-w-md lg:w-full md:w-1/2 h-96">
+          <div className="flex items-center justify-center w-11/12 gap-3 lg:max-w-md lg:w-full md:w-1/2 ">
             <div className="flex flex-col gap-3 animate-floating">
               <HeroImg
                 imgSrc={
