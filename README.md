@@ -91,7 +91,54 @@ You can also contribute to this project if you are new to open source:
 - [Check out the `CONTRIBUTORS.md` file to get started](CONTRIBUTORS.md)
 
  </details>
+ 
+<h1 align=center> Project Admin </h1>
+<table align=center >
+  <tr>
+    <td align="center">
+      <a href="https://github.com/ArslanYM">
+        <img alt="Arsalan" src="https://github.com/ArslanYM.png" width="100px;">
+        <br>
+        <sub>
+          <b>
+            Arslan Malik
+          </b>
+        </sub>
+      </a>
+      <br>
+    </td> 
+  </tr>
+</table>
 
+<h1 align=center> Project Mentors </h1>
+<table align=center>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/nadeem099">
+        <img alt="Nadeem" src="https://github.com/nadeem099.png" width="100px;">
+        <br>
+        <sub>
+          <b>
+              Nadeem 
+          </b>
+        </sub>
+      </a>
+      <br>
+    </td>
+    <td align="center">
+      <a href="https://github.com/rahilansari261">
+        <img alt="Rahil" src="https://github.com/rahilansari261.png" width="100px;">
+        <br>
+        <sub>
+          <b>
+              Rahil Ansari  
+          </b>
+        </sub>
+      </a>
+      <br>
+    </td>
+  </tr>
+</table>
 
 ## Contributors
 
