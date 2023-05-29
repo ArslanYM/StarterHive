@@ -48,7 +48,7 @@ const Header = () => {
           to="/"
           className="flex order-first  title-font font-medium items-center text-white  mb-4 md:mb-0"
         >
-          <span className="ml-3 text-xl cursor-pointer">Starter Hive ✨</span>
+          <span className="text-xl cursor-pointer">Starter Hive ✨</span>
         </Link>
         <div className=" inline-flex ">
           <button className="inline-flex bg-gray-800 py-2 px-3 focus:outline-none duration-300 hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
