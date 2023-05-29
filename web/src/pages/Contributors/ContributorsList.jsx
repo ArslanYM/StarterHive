@@ -29,7 +29,7 @@ const ContributorsList = () => {
     return (
         <div className="flex flex-wrap -m-2">
             {contributors.map((contributor, index) => {
-                return <ContributorItem image={contributor.avatar_url} name={contributor.login} position={contributor.html_url} key={index} />
+                return <ContributorItem image={contributor.avatar_url} name={contributor.login} url={contributor.html_url} key={index} />
             })
             }
         </div>
