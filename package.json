@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@mdx-js/rollup": "^2.3.0",
+    "react-syntax-highlighter": "^15.5.0"
+  }
+}
