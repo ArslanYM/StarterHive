@@ -6,7 +6,7 @@ const Contributors = () => {
   return (
     <>
       <section className="text-gray-400 
-      bg-gradient-to-r from-gray-700 via-gray-900 to-black body-font">
+      bg-gradient-to-r from-gray-700 via-gray-900 to-black body-font min-h-screen">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-white "> A <span className="text-4xl text-yellow-400 font-extrabold">Big Thanks</span> to all our Contributors.</h1>
