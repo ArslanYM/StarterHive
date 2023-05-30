@@ -1,4 +1,4 @@
-![StarterHive README Header](./assets/images/GitHub%20Header.png)
+![StarterHive README Header](https://github.com/captainWaheed/StarterHive/blob/readme-header/assets/images/GitHub%20Header.png)
 
 <h1 align="center" >Starter Hive ✨</h1>
 <h3 align= "center" > This project aims to simplify and guide the way beginners make their first contribution.</h3>
