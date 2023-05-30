@@ -17,59 +17,46 @@ const Issue = ({
 }) => {
   const statusClassName =
     status === "open"
-      ? "text-green-600"
+      ? "text-green-700 border-green-500"
       : status === "assigned"
-      ? "text-orange-500"
-      : status === "closed"
-      ? "text-red-600"
-      : "white";
+        ? "text-orange-700 border-orange-500"
+        : status === "closed"
+          ? "text-red-700 border-red-500"
+          : "white";
 
   return (
-    <div className="basis-8 text-gray-400 hover:bg-purple-300 rounded px-8 py-4 hover:translate-x-4 transition-all">
-      <p>
-        <span className="text-yellow-500 mr-2">Repo Name:</span> {repo_name}
-      </p>
-      <p>
-        <span className="text-yellow-500 mr-2">URL:</span>{" "}
-        <a
-          href={issue_url}
-          target="_blank"
-          rel="noreferrer"
-          className="underline decoration-purple-100"
-        >
-          {issue_url}
-        </a>
-      </p>
-      <p>
-        <span className="text-yellow-500 mr-2">Title:</span> {issue_title}
-      </p>
-      <p>
-        <span className="text-yellow-500 mr-2">Labels:</span> {issue_labels.join(", ")}
-      </p>
-      <p>
-        <span className="text-yellow-500 mr-2">Current status:</span>{" "}
-        <span className={statusClassName}>{status}</span>
-      </p>
-      <p>
-        <span className="text-yellow-500 mr-2">Languages used:</span>{" "}
-        {languages.join(", ")}
-      </p>
-      <p>
-        <span className="text-yellow-500 mr-2">
-          libraries and frameworks used:
-        </span>{" "}
-        {libraries.join(", ")}
-      </p>
-      <p>
-        <span className="text-yellow-500 mr-2">stars:</span> {stars}
-      </p>
-      <p>
-        <span className="text-yellow-500 mr-2">forks:</span> {forks}
-      </p>
-      <p>
-        <span className="text-yellow-500 mr-2">Contributed by:</span>{" "}
-        {createdBy}
-      </p>
+    <div className="border  border-gray-800 rounded-lg hover:shadow-sm hover:shadow-purple-900 hover:border-gray-700 transition-all w-11/12 lg:w-3/4">
+      <div className="p-2  shadow-lg ">
+        <h1 className="text-lg font-bold text-gray-300">{issue_title} <span className={`px-2 text-sm font-semibold rounded-full border ${statusClassName}`}>{status}</span></h1>
+        <div className="flex justify-between">
+          <h3 className="text-gray-400 font-mono font-semibold">Repo:  <span className="italic">{repo_name}</span></h3>
+          <div className="flex gap-2">
+            <div className="border border-gray-700 rounded-lg px-2"><span className="border-r h-full border-gray-500 pr-1 text-gray-300 font-medium">Fork</span><span className="text-gray-300 ml-1 bg-gray-900 rounded-full px-1 font-mono">{forks}</span></div>
+            <div className="border border-gray-700 rounded-lg px-2"><span className="border-r h-full border-gray-500 pr-1 text-gray-300 font-medium">Star</span><span className="text-gray-300 ml-1 bg-gray-900 rounded-full px-1 font-mono">{stars}</span></div>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-between px-2 mt-2">
+        <div>
+          <h2 className="text-sm text-white font-semibold">Languages</h2><br />
+          <div className="flex gap-2">
+            {languages.map((item) => {
+              return <span className="text-white font-mono text-base bg-slate-500 rounded-lg px-1" key={item}>{item}</span>
+            })}
+          </div>
+        </div>
+        <div>
+          <h2 className="text-sm text-white font-semibold">Framework/Libraries</h2><br />
+          <div className="flex gap-2">
+            {libraries.map((item) => {
+              return <span className="text-white font-mono text-base border border-slate-500 rounded-lg px-1" key={item}>{item}</span>
+            })}
+          </div>
+        </div>
+      </div>
+      <div>Lables</div>
+      <div>Created by</div>
+      <div>URL</div>
     </div>
   );
 };
