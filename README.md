@@ -1,4 +1,4 @@
-<h1 align="center"> Starter Hive ✨</h1>
+<h1 align="center">Starter Hive ✨</h1>
 
 <p align="center">
   <img src="https://img.shields.io/github/license/ArslanYM/StarterHive" alt="License">
@@ -8,9 +8,9 @@
   <img src="https://github.com/ArslanYM/StarterHive/assets/104521101/df4450df-4c47-475c-b369-53353c8ce17f" alt="GitHub Header">
 </p>
 
-<h3 align="center">🚀 Simplifying and Guiding First Contributions for Beginners 🚀</h3>
+<h3 align="center"><strong>🚀 Simplifying and Guiding First Contributions for Beginners 🚀</strong></h3>
 
-Welcome to Starter Hive! This project is designed to make it easier for beginners to get started with their first contribution. Whether you're new to programming or looking to contribute to open-source projects, this repository provides the resources and guidance you need.
+<p align="center"><em>Welcome to Starter Hive!</em> This project aims to make it easier for beginners to make their first contributions. Whether you're new to programming or looking to contribute to open-source projects, this repository provides the necessary resources and guidance.</p>
 
 ## 📖 Table of Contents
 
@@ -22,99 +22,99 @@ Welcome to Starter Hive! This project is designed to make it easier for beginner
 
 ## 🤝 Contributing
 
-Following are the steps to guide you:
+Follow these steps to contribute to the project:
 
-### Step 1
+- ### Step 1
 
-- Fork this repository
+  Fork this repository
 
-![fork](https://github.com/ArslanYM/StarterHive/assets/104521101/b2863384-753d-448b-9c8f-cc2122121c2b)
+  ![fork](https://github.com/ArslanYM/StarterHive/assets/104521101/b2863384-753d-448b-9c8f-cc2122121c2b)
 
-### Step 2:
+- ### Step 2:
 
-- Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click the copy to clipboard icon.
+  Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click the copy to clipboard icon.
 
-![clone](https://github.com/ArslanYM/StarterHive/assets/104521101/ffe2cb3b-d7e9-41fb-a7e6-8f5ca9d50dd0)
+  ![clone](https://github.com/ArslanYM/StarterHive/assets/104521101/ffe2cb3b-d7e9-41fb-a7e6-8f5ca9d50dd0)
 
-Open a terminal and run the following git command:
+  Open a terminal and run the following git command:
 
-```bash
-git clone "url you just copied"
-```
+  ```bash
+  git clone "url you just copied"
+  ```
 
-where "url you just copied" (without the quotation marks) is the url to this repository (your fork of this project). See the previous steps to obtain the url.
+  where "url you just copied" (without the quotation marks) is the url to this repository (your fork of this project). See the previous steps to obtain the url.
 
-![opy](https://github.com/ArslanYM/StarterHive/assets/104521101/5947298f-dd52-478c-9cd9-f22791eea4a5)
+  ![opy](https://github.com/ArslanYM/StarterHive/assets/104521101/5947298f-dd52-478c-9cd9-f22791eea4a5)
 
-The code will look something like this :
+  The code will look something like this :
 
-```bash
-git clone https://github.com/{your user name}/StarterHive.git
-```
+  ```bash
+  git clone https://github.com/{your user name}/StarterHive.git
+  ```
 
-### Step 3:
+- ### Step 3:
 
-- Navigate to StarterHive on your device
+  Navigate to StarterHive on your device
 
-```bash
-cd StaterHive/
-```
+  ```bash
+  cd StaterHive/
+  ```
 
-### Step 4:
+- ### Step 4:
 
-- Add an upstream link to the main branch in your cloned repo
+  - Add an upstream link to the main branch in your cloned repo
 
-```bash
-git remote add upstream https://github.com/ArslanYM/StarterHive
-```
+  ```bash
+  git remote add upstream https://github.com/ArslanYM/StarterHive
+  ```
 
-- Keep your cloned repo up to date by pulling from upstream (this will also avoid any merge conflicts while committing new changes)
+  - Keep your cloned repo up to date by pulling from upstream (this will also avoid any merge conflicts while committing new changes)
 
-```bash
-git pull upstream main
-```
+  ```bash
+  git pull upstream main
+  ```
 
-### Step 5:
+- ### Step 5:
 
-- Create your feature branch (This is a necessary step, so don't skip it)
+  Create your feature branch (This is a necessary step, so don't skip it)
 
-```bash
-git checkout -b <feature-name>
-```
+  ```bash
+  git checkout -b <feature-name>
+  ```
 
-### Step 6: Make necessary changes and commit those changes
+- ### Step 6: Make necessary changes and commit those changes
 
-- Add your commits to the staging
+  Add your commits to the staging
 
-```
-git add .
-```
+  ```
+  git add .
+  ```
 
-### Step 7: Commit the changes
+- ### Step 7: Commit the changes
 
-- Now commit those changes using the `git commit` command:
+  - Now commit those changes using the `git commit` command:
 
-```bash
-git commit -m "Write a meaningful but small commit message"
-```
+  ```bash
+  git commit -m "Write a meaningful but small commit message"
+  ```
 
-- Follow this [Guide](https://gist.github.com/tonibardina/9290fbc7d605b4f86919426e614fe692) for commit messages.
+  - Follow this [Guide](https://gist.github.com/tonibardina/9290fbc7d605b4f86919426e614fe692) for commit messages.
 
-### Step 8: Push your code.
+- ### Step 8: Push your code.
 
-- Push your changes using the command `git push` :
+  Push your changes using the command `git push` :
 
-```bash
-git push -u origin your-branch-name
-```
+  ```bash
+  git push -u origin your-branch-name
+  ```
 
-### Step 9:
+- ### Step 9:
 
-- Create a PR on Github. (Don't just hit the create a pull request button, you must write a PR message to clarify why and what are you contributing)
+  Create a PR on Github. (Don't just hit the create a pull request button, you must write a PR message to clarify why and what are you contributing)
 
 <details>
 
-<summary> New to open-source?
+<summary> <b>New to open-source?</b>
 </summary>
 
 You can also contribute to this project if you are new to open source:
@@ -135,38 +135,40 @@ You can also contribute to this project if you are new to open source:
 
 ## ✨ Contributors
 
-Thank you for your dedication and hard work. Your contributions are invaluable to our team, and we are so grateful for all that you do. Your hard work and dedication are truly admirable. Thank you for your unwavering commitment and for all that you do for our team.
+Thank you for your <strong>dedication and hard work</strong>. Your contributions are <strong>invaluable</strong> to our team, and we are so <strong>grateful</strong> for all that you do. Your hard work and dedication are truly <strong>admirable</strong>. Thank you for your <strong>unwavering commitment</strong> and for all that you do for our team.
 
 Please visit [Contributors](/CONTRIBUTORS.md) to check the list of contributors and add your name to the list to become a contributor.
 
-<a href="https://github.com/ArslanYM/StarterHive/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=ArslanYM/StarterHive" alt="Contributors"/>
-</a>
+<p align="center">
+  <a href="https://github.com/ArslanYM/StarterHive/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=ArslanYM/StarterHive" alt="Contributors" />
+  </a>
+</p>
 
 ## 🎨 Frontend Development
 
-Calling all frontend developers! We invite you to contribute to the `web/` directory of this project. The `web/` directory contains all the frontend code and assets. Whether you're experienced or just starting with frontend development, your contributions are highly appreciated.
+Calling all <strong>frontend developers</strong>! We invite you to contribute to the `web/` directory of this project. The `web/` directory contains all the frontend code and assets. Whether you're experienced or just starting with frontend development, your contributions are highly appreciated.
 
 Feel free to explore the `web/` directory, make improvements, fix bugs, or add new features. Don't hesitate to share your ideas and suggestions to enhance the user experience.
 
 To contribute to the frontend development:
 
-1. Fork this repository.
+1. <strong>Fork</strong> this repository.
 2. Make your changes in the `web/` directory.
-3. Submit a pull request explaining the changes you made and why they are valuable.
+3. Submit a <strong>pull request</strong> explaining the changes you made and why they are valuable.
 
 Let's work together to create an amazing frontend experience for our users!
 
 ## 📝 Guidelines
 
-Please ensure that you adhere to the project's guidelines while making contributions. You can find detailed guidelines in the [Guidelines](GUIDELINES.md) document.
+Please ensure that you adhere to the project's guidelines while making contributions. You can find <strong>detailed guidelines</strong> in the [Guidelines](GUIDELINES.md) document.
 
 ## 📄 License
 
-Starter Hive is licensed under the MIT License. For more information, please see the [LICENSE](https://github.com/ArslanYM/StarterHive/blob/main/LICENSE) file.
+Starter Hive is licensed under the <strong>MIT License</strong>. For more information, please see the [LICENSE](https://github.com/ArslanYM/StarterHive/blob/main/LICENSE) file.
 
 ---
 
 <p align="center">
-<i>Thank you for choosing Starter Hive! We hope this repository helps you in your journey as an open-source contributor. Let's create amazing things together! ✨</i>
+  <em>Thank you for choosing Starter Hive! We hope this repository helps you in your journey as an open-source contributor. Let's create amazing things together! ✨</em>
 </p>
