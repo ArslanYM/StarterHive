@@ -27,9 +27,9 @@ Follow these steps to contribute to the project:
 - ### Step 1
 
   Fork this repository
-  <div style="text-align: center;">
-    <img src="https://github.com/ArslanYM/StarterHive/assets/104521101/b2863384-753d-448b-9c8f-cc2122121c2b" alt="fork" style="display: block; margin: 0 auto;">
-  </div>
+<p align="center">
+  <img src="https://github.com/ArslanYM/StarterHive/assets/104521101/b2863384-753d-448b-9c8f-cc2122121c2b" alt="fork" style="display: block; margin: 0 auto;">
+</p>
 
 - ### Step 2:
 
