@@ -1,15 +1,26 @@
-<h1 align="center" >Starter Hive ✨</h1>
-<h3 align= "center" > This project aims to simplify and guide the way beginners make their first contribution.</h3>
+<h1 align="center"> Starter Hive ✨</h1>
 
-![github-header](https://github.com/ArslanYM/StarterHive/assets/104521101/df4450df-4c47-475c-b369-53353c8ce17f)
+<p align="center">
+  <img src="https://img.shields.io/github/license/ArslanYM/StarterHive" alt="License">
+</p>
 
-## Table of Content
+<p align="center">
+  <img src="https://github.com/ArslanYM/StarterHive/assets/104521101/df4450df-4c47-475c-b369-53353c8ce17f" alt="GitHub Header">
+</p>
 
-- [Contributing](#contributing)
-- [Contributors](#contributors)
-- [License](#license)
+<h3 align="center">🚀 Simplifying and Guiding First Contributions for Beginners 🚀</h3>
 
-## Contributing
+Welcome to Starter Hive! This project is designed to make it easier for beginners to get started with their first contribution. Whether you're new to programming or looking to contribute to open-source projects, this repository provides the resources and guidance you need.
+
+## 📖 Table of Contents
+
+- [Contributing](#🤝-contributing)
+- [Contributors](#✨-contributors)
+- [Frontend Development](#🎨-frontend-development)
+- [Guidelines](#📝-guidelines)
+- [License](#📄-license)
+
+## 🤝 Contributing
 
 Following are the steps to guide you:
 
@@ -27,7 +38,7 @@ Following are the steps to guide you:
 
 Open a terminal and run the following git command:
 
-```
+```bash
 git clone "url you just copied"
 ```
 
@@ -37,7 +48,7 @@ where "url you just copied" (without the quotation marks) is the url to this rep
 
 The code will look something like this :
 
-```
+```bash
 git clone https://github.com/{your user name}/StarterHive.git
 ```
 
@@ -45,7 +56,7 @@ git clone https://github.com/{your user name}/StarterHive.git
 
 - Navigate to StarterHive on your device
 
-```
+```bash
 cd StaterHive/
 ```
 
@@ -53,118 +64,86 @@ cd StaterHive/
 
 - Add an upstream link to the main branch in your cloned repo
 
-  ```
-  git remote add upstream https://github.com/ArslanYM/StarterHive
-  ```
+```bash
+git remote add upstream https://github.com/ArslanYM/StarterHive
+```
 
 - Keep your cloned repo up to date by pulling from upstream (this will also avoid any merge conflicts while committing new changes)
-  ```
-  git pull upstream main
-  ```
+
+```bash
+git pull upstream main
+```
 
 ### Step 5:
 
 - Create your feature branch (This is a necessary step, so don't skip it)
-  ```
-  git checkout -b <feature-name>
-  ```
+
+```bash
+git checkout -b <feature-name>
+```
 
 ### Step 6: Make necessary changes and commit those changes
 
 - Add your commits to the staging
-  ```
-  git add .
-  ```
+
+```
+git add .
+```
 
 ### Step 7: Commit the changes
 
 - Now commit those changes using the `git commit` command:
-  ```
-  git commit -m "Write a meaningful but small commit message"
-  ```
+
+```bash
+git commit -m "Write a meaningful but small commit message"
+```
+
 - Follow this [Guide](https://gist.github.com/tonibardina/9290fbc7d605b4f86919426e614fe692) for commit messages.
 
 ### Step 8: Push your code.
 
 - Push your changes using the command `git push` :
-  ```
-  git push -u origin your-branch-name
-  ```
+
+```bash
+git push -u origin your-branch-name
+```
 
 ### Step 9:
 
 - Create a PR on Github. (Don't just hit the create a pull request button, you must write a PR message to clarify why and what are you contributing)
 
-<details> 
- 
+<details>
+
 <summary> New to open-source?
- </summary>
+</summary>
 
 You can also contribute to this project if you are new to open source:
 
 - [Check out the `CONTRIBUTORS.md` file to get started](CONTRIBUTORS.md)
 
- </details>
- 
-<h1 align=center> Project Admin </h1>
-<table align=center >
-  <tr>
-    <td align="center">
-      <a href="https://github.com/ArslanYM">
-        <img alt="Arsalan" src="https://github.com/ArslanYM.png" width="100px;">
-        <br>
-        <sub>
-          <b>
-            Arslan Malik
-          </b>
-        </sub>
-      </a>
-      <br>
-    </td> 
-  </tr>
-</table>
+</details>
 
-<h1 align=center> Project Mentors </h1>
-<table align=center>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/nadeem099">
-        <img alt="Nadeem" src="https://github.com/nadeem099.png" width="100px;">
-        <br>
-        <sub>
-          <b>
-              Nadeem 
-          </b>
-        </sub>
-      </a>
-      <br>
-    </td>
-    <td align="center">
-      <a href="https://github.com/rahilansari261">
-        <img alt="Rahil" src="https://github.com/rahilansari261.png" width="100px;">
-        <br>
-        <sub>
-          <b>
-              Rahil Ansari  
-          </b>
-        </sub>
-      </a>
-      <br>
-    </td>
-  </tr>
-</table>
+## 🧑‍💼 Project Admin
 
-## Contributors
+| <a href="https://github.com/ArslanYM"><img src="https://github.com/ArslanYM.png" width="100px;" alt="Arsalan Malik"/><br /><sub><b>Arsalan Malik</b></sub></a> |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 
-Thank you for your dedication and hard work. Your contributions are invaluable to our team, and we are so grateful for all that you do. Your hard work and dedication is truly admirable. Thank you for your unwavering commitment and for all that you do for our team.
+## 👥 Project Mentors
+
+| <a href="https://github.com/nadeem099"><img src="https://github.com/nadeem099.png" width="100px;" alt="Nadeem"/><br /><sub><b>Nadeem</b></sub></a> | <a href="https://github.com/rahilansari261"><img src="https://github.com/rahilansari261.png" width="100px;" alt="Rahil Ansari"/><br /><sub><b>Rahil Ansari</b></sub></a> |
+| :------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+
+## ✨ Contributors
+
+Thank you for your dedication and hard work. Your contributions are invaluable to our team, and we are so grateful for all that you do. Your hard work and dedication are truly admirable. Thank you for your unwavering commitment and for all that you do for our team.
 
 Please visit [Contributors](/CONTRIBUTORS.md) to check the list of contributors and add your name to the list to become a contributor.
 
 <a href="https://github.com/ArslanYM/StarterHive/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ArslanYM/StarterHive" />
+<img src="https://contrib.rocks/image?repo=ArslanYM/StarterHive" alt="Contributors"/>
 </a>
 
-## Frontend Development
+## 🎨 Frontend Development
 
 Calling all frontend developers! We invite you to contribute to the `web/` directory of this project. The `web/` directory contains all the frontend code and assets. Whether you're experienced or just starting with frontend development, your contributions are highly appreciated.
 
@@ -178,10 +157,16 @@ To contribute to the frontend development:
 
 Let's work together to create an amazing frontend experience for our users!
 
-## Guidelines
+## 📝 Guidelines
 
-Make sure you are following the Guidelines of this project while contributing. Take a look at [Guidelines](GUIDELINES.md).
+Please ensure that you adhere to the project's guidelines while making contributions. You can find detailed guidelines in the [Guidelines](GUIDELINES.md) document.
 
-## License
+## 📄 License
 
-Starter Hive is licensed under the MIT License. See the [LICENSE](https://github.com/ArslanYM/StarterHive/blob/main/LICENSE) file for more information.
+Starter Hive is licensed under the MIT License. For more information, please see the [LICENSE](https://github.com/ArslanYM/StarterHive/blob/main/LICENSE) file.
+
+---
+
+<p align="center">
+<i>Thank you for choosing Starter Hive! We hope this repository helps you in your journey as an open-source contributor. Let's create amazing things together! ✨</i>
+</p>
