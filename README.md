@@ -27,30 +27,35 @@ Follow these steps to contribute to the project:
 - ### Step 1
 
   Fork this repository
-
-  ![fork](https://github.com/ArslanYM/StarterHive/assets/104521101/b2863384-753d-448b-9c8f-cc2122121c2b)
+  <div style="text-align: center;">
+    <img src="https://github.com/ArslanYM/StarterHive/assets/104521101/b2863384-753d-448b-9c8f-cc2122121c2b" alt="fork" style="display: block; margin: 0 auto;">
+  </div>
 
 - ### Step 2:
 
   Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click the copy to clipboard icon.
 
-  ![clone](https://github.com/ArslanYM/StarterHive/assets/104521101/ffe2cb3b-d7e9-41fb-a7e6-8f5ca9d50dd0)
+<p align="center">
+  <img src="https://github.com/ArslanYM/StarterHive/assets/104521101/ffe2cb3b-d7e9-41fb-a7e6-8f5ca9d50dd0" alt="clone">
+</p>
 
-  Open a terminal and run the following git command:
+Open a terminal and run the following git command:
 
-  ```bash
-  git clone "url you just copied"
-  ```
+```bash
+git clone "url you just copied"
+```
 
-  where "url you just copied" (without the quotation marks) is the url to this repository (your fork of this project). See the previous steps to obtain the url.
+where "url you just copied" (without the quotation marks) is the url to this repository (your fork of this project). See the previous steps to obtain the url.
 
-  ![opy](https://github.com/ArslanYM/StarterHive/assets/104521101/5947298f-dd52-478c-9cd9-f22791eea4a5)
+<p align="center">
+  <img src="https://github.com/ArslanYM/StarterHive/assets/104521101/5947298f-dd52-478c-9cd9-f22791eea4a5" alt="opy">
+</p>
 
-  The code will look something like this :
+The code will look something like this :
 
-  ```bash
-  git clone https://github.com/{your user name}/StarterHive.git
-  ```
+```bash
+git clone https://github.com/{your user name}/StarterHive.git
+```
 
 - ### Step 3:
 
