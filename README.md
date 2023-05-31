@@ -125,14 +125,53 @@ You can also contribute to this project if you are new to open source:
 
 ## 🧑‍💼 Project Admin
 
-| <a href="https://github.com/ArslanYM"><img src="https://github.com/ArslanYM.png" width="100px;" alt="Arsalan Malik"/><br /><sub><b>Arsalan Malik</b></sub></a> |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+<table align=center >
+  <tr>
+    <td align="center">
+      <a href="https://github.com/ArslanYM">
+        <img alt="Arsalan" src="https://github.com/ArslanYM.png" width="100px;">
+        <br>
+        <sub>
+          <b>
+            Arslan Malik
+          </b>
+        </sub>
+      </a>
+      <br>
+    </td> 
+  </tr>
+</table>
 
 ## 👥 Project Mentors
 
-| <a href="https://github.com/nadeem099"><img src="https://github.com/nadeem099.png" width="100px;" alt="Nadeem"/><br /><sub><b>Nadeem</b></sub></a> | <a href="https://github.com/rahilansari261"><img src="https://github.com/rahilansari261.png" width="100px;" alt="Rahil Ansari"/><br /><sub><b>Rahil Ansari</b></sub></a> |
-| :------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-
+<table align=center>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/nadeem099">
+        <img alt="Nadeem" src="https://github.com/nadeem099.png" width="100px;">
+        <br>
+        <sub>
+          <b>
+              Nadeem 
+          </b>
+        </sub>
+      </a>
+      <br>
+    </td>
+    <td align="center">
+      <a href="https://github.com/rahilansari261">
+        <img alt="Rahil" src="https://github.com/rahilansari261.png" width="100px;">
+        <br>
+        <sub>
+          <b>
+              Rahil Ansari  
+          </b>
+        </sub>
+      </a>
+      <br>
+    </td>
+  </tr>
+</table>
 ## ✨ Contributors
 
 Thank you for your <strong>dedication and hard work</strong>. Your contributions are <strong>invaluable</strong> to our team, and we are so <strong>grateful</strong> for all that you do. Your hard work and dedication are truly <strong>admirable</strong>. Thank you for your <strong>unwavering commitment</strong> and for all that you do for our team.
