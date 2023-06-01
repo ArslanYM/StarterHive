@@ -63,7 +63,7 @@ const Home = () => {
               />
               <HeroImg
                 imgSrc={
-                  "https://user-images.githubusercontent.com/104521101/241361625-7d32570f-c1f1-4620-84a0-f763e1dde741.png"
+                  "https://user-images.githubusercontent.com/104521101/241567642-725e0f22-9d33-4908-a37b-63b0a7ae2f89.png"
                 }
                 className={"w-full  object-cover object-center"}
                 altText={"logo"}
@@ -72,14 +72,14 @@ const Home = () => {
             <div className="flex flex-col gap-3 animate-floating">
               <HeroImg
                 imgSrc={
-                  "https://user-images.githubusercontent.com/104521101/241361625-7d32570f-c1f1-4620-84a0-f763e1dde741.png"
+                  "https://user-images.githubusercontent.com/104521101/241567644-8a196297-e534-408a-83d6-e8813fe355c4.png"
                 }
                 className={"w-full  object-cover object-center"}
                 altText={"logo"}
               />
               <HeroImg
                 imgSrc={
-                  "https://user-images.githubusercontent.com/104521101/241361625-7d32570f-c1f1-4620-84a0-f763e1dde741.png"
+                  "https://user-images.githubusercontent.com/104521101/241567630-4ef028d9-2a9e-4cba-a021-2b8e2393e21c.png"
                 }
                 className={"w-full  object-cover object-center"}
                 altText={"logo"}
