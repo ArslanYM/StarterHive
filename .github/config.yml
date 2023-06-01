@@ -17,5 +17,16 @@ newPRWelcomeComment: >
 # Comment to be posted to on pull requests merged by a first time user
 firstPRMergeComment: >
   Congrats on merging your first pull request! We here at StarterHive are proud of you!🎉🎉🎉
+   ![alt text](https://media.tenor.com/u97JCT-bu8sAAAAC/proud-cool.gif)
 
 # It is recommended to include as many gifs and emojis as possible!
+
+# Configuration for sentiment-bot - https://github.com/behaviorbot/sentiment-bot
+
+# *Required* toxicity threshold between 0 and .99 with the higher numbers being the most toxic
+# Anything higher than this threshold will be marked as toxic and commented on
+sentimentBotToxicityThreshold: .7
+
+# *Required* Comment to reply with
+sentimentBotReplyComment: >
+  Please be sure to review the code of conduct and be respectful of other users.
