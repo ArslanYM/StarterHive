@@ -16,7 +16,7 @@ const Home = () => {
                 Open Source
               </span>
             </h1>
-            <div className="mb-8 font-base md:font-bold leading-relaxed md:max-w-md	">
+            <div className="mb-8 font-base md:font-bold leading-relaxed md:max-w-lg	">
             <p className=" inline ">
               Starter Hive is a platform that helps beginners to contribute to </p>
               <p className=" inline ">open source projects of remotely hiring organizations.</p>            
