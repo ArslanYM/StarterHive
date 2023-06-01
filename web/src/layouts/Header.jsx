@@ -2,6 +2,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
+import logo from "../assets/hive.svg";
 
 const Header = () => {
   const location = useLocation();
@@ -25,7 +26,8 @@ const Header = () => {
           </Link>
         </nav>
         <Link to="/" className="flex order-first  title-font font-medium items-center text-white  mb-4 md:mb-0">
-          <span className=" text-xl  md:font-bold cursor-pointer">Starter Hive ✨</span>
+          <span className=" text-xl  md:font-bold cursor-pointer">Starter Hive</span>
+          <img className="object-contain h-6 w-6 ml-3" src={logo} />
         </Link>
         <div className=" inline-flex ">
           <button className="inline-flex bg-gray-800 py-2 px-3 focus:outline-none duration-300 hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
