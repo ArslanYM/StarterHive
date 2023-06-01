@@ -16,10 +16,11 @@ const Home = () => {
                 Open Source
               </span>
             </h1>
-            <p className="mb-8 font-bold leading-relaxed">
-              Starter Hive is a platform that helps beginners to contribute to
-              <p>open source projects of remotely hiring organizations.</p>
-            </p>
+            <div className="mb-8 font-base md:font-bold leading-relaxed md:max-w-lg	">
+            <p className=" inline ">
+              Starter Hive is a platform that helps beginners to contribute to </p>
+              <p className=" inline ">open source projects of remotely hiring organizations.</p>            
+            </div>
             <div className="flex justify-center">
               <Link to="/issues">
                 <button className="inline-flex text-white bg-purple-500 border-0 py-3 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg font-bold hover:translate-y-[-5px] transition-transform duration-300">
