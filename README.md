@@ -14,7 +14,7 @@
 
 ## 📖 Table of Contents
 
-- [Contributing](#🤝 Contributing)
+- [Contributing](#🤝Contributing)
 - [Contributors](#✨-contributors)
 - [Frontend Development](#🎨-frontend-development)
 - [Guidelines](#📝-guidelines)
