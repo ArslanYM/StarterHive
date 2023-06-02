@@ -14,13 +14,13 @@
 
 ## 📖 Table of Contents
 
-- [Contributing](#🤝Contributing)
+- [Contributing](#contributing)
 - [Contributors](#contributors)
-- [Frontend Development](#🎨-frontend-development)
-- [Guidelines](#📝-guidelines)
-- [License](#📄-license)
+- [Frontend Development](#frontend-development)
+- [Guidelines](#guidelines)
+- [License](#license)
 
-## 🤝 Contributing
+## <span id="contributing">🤝 Contributing</span>
 
 Follow these steps to contribute to the project:
 
@@ -178,7 +178,7 @@ You can also contribute to this project if you are new to open source:
   </tr>
 </table>
 
-## <span id="contributors">✨Contributors</span>
+## <span id="contributors">✨ Contributors</span>
 
 Thank you for your <strong>dedication and hard work</strong>. Your contributions are <strong>invaluable</strong> to our team, and we are so <strong>grateful</strong> for all that you do. Your hard work and dedication are truly <strong>admirable</strong>. Thank you for your <strong>unwavering commitment</strong> and for all that you do for our team.
 
@@ -190,7 +190,7 @@ Please visit [Contributors](/CONTRIBUTORS.md) to check the list of contributors 
   </a>
 </p>
 
-## 🎨 Frontend Development
+## <span id="frontend-development">🎨 Frontend Development</span>
 
 Calling all <strong>frontend developers</strong>! We invite you to contribute to the `web/` directory of this project. The `web/` directory contains all the frontend code and assets. Whether you're experienced or just starting with frontend development, your contributions are highly appreciated.
 
@@ -204,11 +204,11 @@ To contribute to the frontend development:
 
 Let's work together to create an amazing frontend experience for our users!
 
-## 📝 Guidelines
+## <span id="guidelines">📝 Guidelines</span>
 
 Please ensure that you adhere to the project's guidelines while making contributions. You can find <strong>detailed guidelines</strong> in the [Guidelines](GUIDELINES.md) document.
 
-## 📄 License
+## <span id="license">📄 License</span>
 
 Starter Hive is licensed under the <strong>MIT License</strong>. For more information, please see the [LICENSE](https://github.com/ArslanYM/StarterHive/blob/main/LICENSE) file.
 
