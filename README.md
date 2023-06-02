@@ -15,7 +15,7 @@
 ## 📖 Table of Contents
 
 - [Contributing](#🤝Contributing)
-- [Contributors](#✨-contributors)
+- [Contributors](#✨contributors)
 - [Frontend Development](#🎨-frontend-development)
 - [Guidelines](#📝-guidelines)
 - [License](#📄-license)
@@ -178,7 +178,7 @@ You can also contribute to this project if you are new to open source:
   </tr>
 </table>
 
-## ✨ Contributors
+## ✨Contributors
 
 Thank you for your <strong>dedication and hard work</strong>. Your contributions are <strong>invaluable</strong> to our team, and we are so <strong>grateful</strong> for all that you do. Your hard work and dedication are truly <strong>admirable</strong>. Thank you for your <strong>unwavering commitment</strong> and for all that you do for our team.
 
