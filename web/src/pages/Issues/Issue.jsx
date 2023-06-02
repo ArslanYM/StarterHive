@@ -26,16 +26,16 @@ const Issue = ({
 
   return (
     <div className='h-full border-2 bg-purple-950 bg-opacity-10 border-gray-800 rounded-lg hover:shadow-sm  hover:border-slate-700 transition-all '>
-      <div className='p-2  shadow-lg '>
+      <div className='p-2  shadow-lg'>
         <div className='flex justify-between lg:h-16'>
-          <h1 className='text-lg font-bold text-gray-100'>{issue_title} </h1>
+          <h1 className='text-lg font-bold text-gray-100 capitalize pr-2'>{issue_title} </h1>
           <div
-            className={`h-10 p-2 text-sm font-semibold rounded-full border ${statusClassName}`}
+            className={`h-8 px-4 py-1  text-sm font-semibold rounded-full uppercase border ${statusClassName}`}
           >
             {status}
           </div>
         </div>
-        <div className='flex justify-between mt-4'>
+        <div className='flex justify-between items-center mt-4'>
           <h3 className='text-gray-300 font-mono font-semibold'>
             Repo: <span className='italic font-normal'>{repo_name}</span>
           </h3>
@@ -95,12 +95,12 @@ const Issue = ({
           </div>
         </div>
       </div>
-      <div className='px-2 mt-2 border-t border-gray-700'>
+      <div className='p-2 mt-4 border-t border-gray-700'>
         <div className='flex flex-wrap gap-2 mt-2 justify-center'>
           {issue_labels.map((item) => {
             return (
               <span
-                className='text-gray-100 text-sm borde rounded-full p-2 bg-yellow-600'
+                className='text-gray-100 text-sm borde rounded-2xl px-4 py-2 bg-yellow-600'
                 key={item}
               >
                 {item}
@@ -109,7 +109,7 @@ const Issue = ({
           })}
         </div>
       </div>
-      <div className='flex justify-between px-4 py-4'>
+      <div className='flex justify-between items-center px-4 py-4'>
         <h3 className='text-sm text-gray-300 font-mono'>
           Created by: {createdBy}
         </h3>
