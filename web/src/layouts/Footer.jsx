@@ -20,7 +20,7 @@ const Footer = () => {
                     <a href="https://github.com/ArslanYM/StarterHive" target="_blank" className="ml-5 text-gray-400" rel="noreferrer">
                         <FaGithub className="text-2xl duration-300 hover:fill-gray-600" />
                     </a>
-                    <a href="https://discord.gg/QBwU8KaJ"target="_blank" className="ml-5 text-gray-400" rel="noreferrer">
+                    <a href="https://discord.gg/VkBTKUeVnG" target="_blank" className="ml-5 text-gray-400" rel="noreferrer">
                         <FaDiscord className="text-2xl duration-300 hover:fill-violet-500" /> 
                     </a>
                 </span>
