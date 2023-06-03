@@ -30,7 +30,7 @@ const Header = () => {
         <Link to="/" className="flex order-first  title-font font-medium items-center text-white  mb-4 md:mb-0">
 
           <span className="ml-3 text-xl  font-bold cursor-pointer">Starter Hive </span> 
-          <img src={logo} alt="Logo" className="ml-3 w-6" />
+          <img src={logo} alt="Logo" className="ml w-6" />
 
         </Link>
         <div className=" inline-flex ">
