@@ -13,7 +13,8 @@
 	cursor: pointer;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	margin-right: 1rem;
+	margin: 5px 1rem;
 }
 
 .fa-moon {
@@ -37,4 +38,10 @@
 
 .checkbox:checked+.checkbox-label .ball {
 	transform: translateX(24px);
+}
+
+@media only screen and (max-width: 768px) {
+	.checkbox-label {
+		margin: 20px;
+	}
 }
