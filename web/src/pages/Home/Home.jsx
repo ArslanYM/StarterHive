@@ -16,10 +16,11 @@ const Home = () => {
                 Open Source
               </span>
             </h1>
-            <p className="mb-8 font-bold leading-relaxed">
-              Starter Hive is a platform that helps beginners to contribute to
-              <p>open source projects of remotely hiring organizations.</p>
-            </p>
+            <div className="mb-8 font-base md:font-bold leading-relaxed md:max-w-lg	">
+            <p className=" inline ">
+              Starter Hive is a platform that helps beginners to contribute to </p>
+              <p className=" inline ">open source projects of remotely hiring organizations.</p>            
+            </div>
             <div className="flex justify-center">
               <Link to="/issues">
                 <button className="inline-flex text-white bg-purple-500 border-0 py-3 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg font-bold hover:translate-y-[-5px] transition-transform duration-300">
@@ -62,7 +63,7 @@ const Home = () => {
               />
               <HeroImg
                 imgSrc={
-                  "https://user-images.githubusercontent.com/104521101/241361625-7d32570f-c1f1-4620-84a0-f763e1dde741.png"
+                  "https://user-images.githubusercontent.com/104521101/241567642-725e0f22-9d33-4908-a37b-63b0a7ae2f89.png"
                 }
                 className={"w-full  object-cover object-center"}
                 altText={"logo"}
@@ -71,14 +72,14 @@ const Home = () => {
             <div className="flex flex-col gap-3 animate-floating">
               <HeroImg
                 imgSrc={
-                  "https://user-images.githubusercontent.com/104521101/241361625-7d32570f-c1f1-4620-84a0-f763e1dde741.png"
+                  "https://user-images.githubusercontent.com/104521101/241567644-8a196297-e534-408a-83d6-e8813fe355c4.png"
                 }
                 className={"w-full  object-cover object-center"}
                 altText={"logo"}
               />
               <HeroImg
                 imgSrc={
-                  "https://user-images.githubusercontent.com/104521101/241361625-7d32570f-c1f1-4620-84a0-f763e1dde741.png"
+                  "https://user-images.githubusercontent.com/104521101/241567630-4ef028d9-2a9e-4cba-a021-2b8e2393e21c.png"
                 }
                 className={"w-full  object-cover object-center"}
                 altText={"logo"}

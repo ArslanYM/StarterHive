@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-    background-color: #111827;
+@layer utilities {
+  .width-unset {
+    width: unset;
+  }
+}
+
+html,
+body {
+  @apply bg-gradient-to-r from-gray-700 via-gray-900 to-black;
 }
