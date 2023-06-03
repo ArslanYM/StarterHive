@@ -29,7 +29,7 @@ const Header = () => {
         </nav>
         <Link to="/" className="flex order-first  title-font font-medium items-center text-white  mb-4 md:mb-0">
 
-          <span className="ml-3 text-xl  font-bold cursor-pointer">Starter Hive </span> 
+          <span className="ml-3 text-xl  font-bold cursor-pointer">StarterHive </span> 
           <img src={logo} alt="Logo" className="ml-3 w-6" />
 
         </Link>
