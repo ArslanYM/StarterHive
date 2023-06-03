@@ -4,6 +4,7 @@
 }
 
 .checkbox-label {
+	border: 1px solid;
 	background-color: #111;
 	width: 50px;
 	height: 26px;
