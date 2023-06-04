@@ -9,12 +9,12 @@ import { ThemeContext } from "../Context/ThemeContext";
 
 
 const Header = () => {
-  const { handleTheme, boxThemeChecked } = useContext(ThemeContext)
+  const { handleTheme, boxThemeChecked, theme } = useContext(ThemeContext)
   const location = useLocation();
   const path = location.pathname;
   //const active = true;
   return (
-    <header className="text-gray-400 bg-gradient-to-r from-gray-700 via-gray-900 to-black  body-font flex-nowrap">
+    <header className={`text-gray-400 ${theme}  body-font flex-nowrap`}>
       <div className="container mx-auto flex flex-wrap p-5  flex-col w-full md:flex-row items-center justify-between">
         <nav className="flex  flex-wrap items-center text-base w-full justify-between md:width-unset md:justify-normal  ">
           <Link to="/" className={` px-1 py-1 md:px-3  rounded hover:text-white cursor-pointer md:font-bold ${path == "/" && "bg-gray-800  "}`}>

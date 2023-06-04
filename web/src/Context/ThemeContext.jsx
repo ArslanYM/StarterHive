@@ -3,7 +3,7 @@ import { useState, createContext } from "react"
 const ThemeContext = createContext()
 
 const SCREEN_THEME = {
-	Light_Theme: "bg_Light_Theme",
+	Light_Theme: "bg-gradient-to-r from-gray-700 via-gray-900 to-black",
 	Dark_Theme: "bg_Dark_Theme",
 }
 
