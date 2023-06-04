@@ -17,16 +17,16 @@ const Header = () => {
     <header className={`text-gray-400 ${theme.bg_Selected}  body-font flex-nowrap`}>
       <div className="container mx-auto flex flex-wrap p-5  flex-col w-full md:flex-row items-center justify-between">
         <nav className="flex  flex-wrap items-center text-base w-full justify-between md:width-unset md:justify-normal  ">
-          <Link to="/" className={` px-1 py-1 md:px-3  rounded hover:text-white cursor-pointer md:font-bold ${path == "/" && "bg-gray-800  "}`}>
+          <Link to="/" className={` px-1 py-1 md:px-3  rounded hover:${theme.text_Color} cursor-pointer md:font-bold ${path == "/" && `${theme.navBar_LinkColor}  `}`}>
             Home
           </Link>
-          <Link to="/contributors" className={` px-1 py-1 md:px-3  rounded hover:text-white md:font-bold cursor-pointer ${path == "/contributors" && "bg-gray-800  "}`}>
+          <Link to="/contributors" className={` px-1 py-1 md:px-3  rounded hover:${theme.text_Color} md:font-bold cursor-pointer ${path == "/contributors" && `${theme.navBar_LinkColor}  `}`}>
             Contributors
           </Link>
-          <Link to="/docs" className={` px-1 py-1 md:px-3  rounded hover:text-white md:font-bold cursor-pointer ${path == "/docs" && "bg-gray-800  "}`}>
+          <Link to="/docs" className={` px-1 py-1 md:px-3  rounded hover:${theme.text_Color} md:font-bold cursor-pointer ${path == "/docs" && `${theme.navBar_LinkColor}  `}`}>
             Docs
           </Link>
-          <Link to="/issues" className={`hover:text-white cursor-pointer md:font-bold px-1 py-1 md:px-3 rounded ${path == "/issues" && "bg-gray-800  "}`}>
+          <Link to="/issues" className={`hover:${theme.text_Color} cursor-pointer md:font-bold px-1 py-1 md:px-3 rounded ${path == "/issues" && `${theme.navBar_LinkColor}  `}`}>
             Find Issues
           </Link>
         </nav>

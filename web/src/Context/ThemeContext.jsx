@@ -6,11 +6,13 @@ const SCREEN_THEME = {
 	Light_Theme: {
 		bg_Selected: "bg-gradient-to-r from-white-700 via-gray-900 to-black",
 		text_Color: "text-gray-700",
+		navBar_LinkColor: "bg-yellow-400",
 		checked: false
 	},
 	Dark_Theme: {
 		bg_Selected: "bg-gradient-to-r from-gray-700 via-gray-900 to-black",
 		text_Color: "text-white",
+		navBar_LinkColor: "bg-gray-800",
 		checked: true
 	}
 }
