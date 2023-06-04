@@ -1,13 +1,15 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React, { useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 
 import logo from "../assets/hive.svg"
 import Switch from "../components/Switch/Switch";
+import { ThemeContext } from "../Context/ThemeContext";
 
 
 const Header = () => {
+  const { handleTheme, boxThemeChecked } = useContext(ThemeContext)
   const location = useLocation();
   const path = location.pathname;
   //const active = true;
@@ -35,7 +37,7 @@ const Header = () => {
 
         </Link>
         <div className=" inline-flex ">
-          <Switch />
+          <Switch handleTheme={handleTheme} boxThemeChecked={boxThemeChecked} />
           <button className="inline-flex bg-gray-800 py-2 px-3 focus:outline-none duration-300 hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
             <a href="https://github.com/ArslanYM/StarterHive" aria-label="github-link" target="_blank" rel="noreferrer" className="space-x-2 flex items-center">
               <span>GitHub</span>
