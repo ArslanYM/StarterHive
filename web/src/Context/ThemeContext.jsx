@@ -9,33 +9,25 @@ const SCREEN_THEME = {
 
 // eslint-disable-next-line react/prop-types
 const ThemeProvider = ({ children }) => {
-	const [boxThemeChecked, setBoxThemeChecked] = useState(false)
 	const [theme, setTheme] = useState(() => {
 		if (localStorage.getItem("Theme")) {
 			const theme_Selected = JSON.parse(localStorage.getItem("Theme"))
-			if (theme_Selected === SCREEN_THEME.Light_Theme) {
-				setBoxThemeChecked(true)
-				return SCREEN_THEME.Dark_Theme
-			}
-			setBoxThemeChecked(false)
-			return SCREEN_THEME.Light_Theme
+			return theme_Selected.bg_Theme === SCREEN_THEME.Light_Theme
+				? { bg_Theme: SCREEN_THEME.Dark_Theme, checked: true }
+				: { bg_Theme: SCREEN_THEME.Light_Theme, checked: false }
 		}
-		return SCREEN_THEME.Light_Theme
+		return { bg_Theme: SCREEN_THEME.Light_Theme, checked: false }
 	})
 
 	const handleTheme = (changeTheme) => {
-		if (changeTheme) {
-			setTheme(SCREEN_THEME.Dark_Theme)
-			setBoxThemeChecked(true)
-		} else {
-			setTheme(SCREEN_THEME.Light_Theme)
-			setBoxThemeChecked(false)
-		}
+		changeTheme
+			? setTheme({ ...theme, bg_Theme: SCREEN_THEME.Dark_Theme, checked: true })
+			: setTheme({ ...theme, bg_Theme: SCREEN_THEME.Light_Theme, checked: false })
 		localStorage.setItem("Theme", JSON.stringify(theme))
 	}
 
 	return (
-		<ThemeContext.Provider value={{ handleTheme, theme, boxThemeChecked }}>
+		<ThemeContext.Provider value={{ handleTheme, theme }}>
 			{children}
 		</ThemeContext.Provider>
 	)
