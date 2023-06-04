@@ -18,7 +18,7 @@ const ContributorItem = ({ image, name, url }) => {
             target="_blank"
             rel="noreferrer"
             href={url}
-            className="text-gray-600 hover:text-white  text-base"
+            className={`text-gray-600 hover:${theme.text_Color}  text-base`}
           >
             More Details
           </a>
