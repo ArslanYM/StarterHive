@@ -7,7 +7,7 @@ import HeroImg from "../../components/HeroImage";
 const Home = () => {
   return (
     <>
-      <section className="text-gray-400 bg-gradient-to-r from-gray-700 via-gray-900 to-black body-font">
+      <section className="text-gray-400  body-font">
         <div className="container flex flex-col items-center min-h-screen px-5 py-6 md:py-10 mx-auto md:flex-row">
           <div className="flex flex-col items-center md:self-start md:pt-40 mb-16 text-center lg:flex-grow md:w-1/2 lg:pr-20 md:pr-16 md:items-start md:text-left md:mb-0">
             <h1 className="block mb-4 text-4xl font-extrabold text-white title-font sm:text-5xl">
@@ -17,9 +17,9 @@ const Home = () => {
               </span>
             </h1>
             <div className="mb-8 font-base md:font-bold leading-relaxed md:max-w-lg	">
-            <p className=" inline ">
-              Starter Hive is a platform that helps beginners to contribute to </p>
-              <p className=" inline ">open source projects of remotely hiring organizations.</p>            
+              <p className=" inline ">
+                Starter Hive is a platform that helps beginners to contribute to </p>
+              <p className=" inline ">open source projects of remotely hiring organizations.</p>
             </div>
             <div className="flex justify-center">
               <Link to="/issues">

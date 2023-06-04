@@ -7,7 +7,7 @@ const Contributors = () => {
     <>
       <section
         className="text-gray-400 
-      bg-gradient-to-r from-gray-700 via-gray-900 to-black body-font min-h-screen"
+       body-font min-h-screen"
       >
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
