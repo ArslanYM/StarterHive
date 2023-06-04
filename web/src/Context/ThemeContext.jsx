@@ -3,26 +3,35 @@ import { useState, createContext } from "react"
 const ThemeContext = createContext()
 
 const SCREEN_THEME = {
-	Light_Theme: "bg-gradient-to-r from-gray-700 via-gray-900 to-black",
-	Dark_Theme: "bg_Dark_Theme",
+	Light_Theme: {
+		bg_Selected: "bg-gradient-to-r from-white-700 via-gray-900 to-black",
+		text_Color: "text-gray-700",
+		checked: false
+	},
+	Dark_Theme: {
+		bg_Selected: "bg-gradient-to-r from-gray-700 via-gray-900 to-black",
+		text_Color: "text-white",
+		checked: true
+	}
 }
 
 // eslint-disable-next-line react/prop-types
 const ThemeProvider = ({ children }) => {
 	const [theme, setTheme] = useState(() => {
 		if (localStorage.getItem("Theme")) {
-			const theme_Selected = JSON.parse(localStorage.getItem("Theme"))
-			return theme_Selected.bg_Theme === SCREEN_THEME.Light_Theme
-				? { bg_Theme: SCREEN_THEME.Dark_Theme, checked: true }
-				: { bg_Theme: SCREEN_THEME.Light_Theme, checked: false }
+			const localStorageTheme = JSON.parse(localStorage.getItem("Theme"))
+			return JSON.stringify(localStorageTheme) === JSON.stringify(SCREEN_THEME.Light_Theme)
+				? SCREEN_THEME.Dark_Theme
+				: SCREEN_THEME.Light_Theme
 		}
-		return { bg_Theme: SCREEN_THEME.Light_Theme, checked: false }
+		return SCREEN_THEME.Light_Theme
 	})
 
-	const handleTheme = (changeTheme) => {
-		changeTheme
-			? setTheme({ ...theme, bg_Theme: SCREEN_THEME.Dark_Theme, checked: true })
-			: setTheme({ ...theme, bg_Theme: SCREEN_THEME.Light_Theme, checked: false })
+	const handleTheme = () => {
+		const theme_Selected = JSON.stringify(theme)
+		theme_Selected === JSON.stringify(SCREEN_THEME.Light_Theme)
+			? setTheme(SCREEN_THEME.Dark_Theme)
+			: setTheme(SCREEN_THEME.Light_Theme)
 		localStorage.setItem("Theme", JSON.stringify(theme))
 	}
 

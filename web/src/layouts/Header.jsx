@@ -14,7 +14,7 @@ const Header = () => {
   const path = location.pathname;
   //const active = true;
   return (
-    <header className={`text-gray-400 ${theme.bg_Theme}  body-font flex-nowrap`}>
+    <header className={`text-gray-400 ${theme.bg_Selected}  body-font flex-nowrap`}>
       <div className="container mx-auto flex flex-wrap p-5  flex-col w-full md:flex-row items-center justify-between">
         <nav className="flex  flex-wrap items-center text-base w-full justify-between md:width-unset md:justify-normal  ">
           <Link to="/" className={` px-1 py-1 md:px-3  rounded hover:text-white cursor-pointer md:font-bold ${path == "/" && "bg-gray-800  "}`}>
@@ -32,7 +32,7 @@ const Header = () => {
         </nav>
         <Link to="/" className="flex order-first  title-font font-medium items-center text-white  mb-4 md:mb-0">
 
-          <span className="ml-3 text-xl  font-bold cursor-pointer">Starter Hive </span>
+          <span className={`${theme.text_Color} ml-3 text-xl  font-bold cursor-pointer`}>Starter Hive </span>
           <img src={logo} alt="Logo" className="ml-3 w-6" />
 
         </Link>

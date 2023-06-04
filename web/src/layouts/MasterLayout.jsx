@@ -12,7 +12,7 @@ const MasterLayout = ({ children }) => {
   return (
     <>
       <Header />
-      <main className={theme.bg_Theme}>
+      <main className={theme.bg_Selected}>
         <Hero>{children}</Hero>
       </main>
       <Footer />
