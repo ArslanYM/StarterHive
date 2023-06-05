@@ -10,5 +10,9 @@
 
 html,
 body {
-  @apply bg-gradient-to-r from-gray-700 via-gray-900 to-black;
+  /*  @apply bg-gradient-to-r from-gray-700 via-gray-900 to-black; */
+}
+
+.bg_Dark_Theme {
+  background: #000000;
 }

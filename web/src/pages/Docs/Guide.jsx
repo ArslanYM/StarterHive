@@ -1,19 +1,22 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React, { useContext } from "react";
 import Code from "./CodeBlock";
+import { ThemeContext } from "../../Context/ThemeContext";
 
 const Guide = () => {
+  const { theme } = useContext(ThemeContext)
+
   return (
     <main className="py-16">
       <div className="container max-w-5xl px-8 mx-auto space-y-16 ">
-        <h1 className="text-5xl font-bold text-white">Getting started 🗺️</h1>
+        <h1 className={`text-5xl font-bold ${theme.text_Color}`}>Getting started 🗺️</h1>
 
         <p className="max-w-md text-gray-200">
           This guide will help you to make your first contribution{" "}
         </p>
         {/* Step 1 */}
         <div className="space-y-4">
-          <h2 className="text-3xl font-semibold text-white">
+          <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
             Step 1: Fork this repository
           </h2>
 
@@ -27,7 +30,7 @@ const Guide = () => {
         {/*  Step 2 */}
         <div className="grid items-center grid-cols-1 gap-8 md:grid-cols-2">
           <div className="space-y-4">
-            <h2 className="text-3xl font-semibold text-white">
+            <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
               Step 2: Clone the forked repository
             </h2>
 
@@ -59,7 +62,7 @@ const Guide = () => {
         {/* Step 3 */}
 
         <div className="space-y-4">
-          <h2 className="text-3xl font-semibold text-white">
+          <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
             Step 3: Move to the project directory
           </h2>
 
@@ -69,7 +72,7 @@ const Guide = () => {
         {/* Step 4 */}
 
         <div className="space-y-4">
-          <h2 className="max-w-xl text-3xl font-semibold text-white">
+          <h2 className={`max-w-xl text-3xl font-semibold ${theme.text_Color}`}>
             Step 4: Add an upstream link to the main branch in your cloned repo
           </h2>
 
@@ -87,7 +90,7 @@ const Guide = () => {
 
         {/* Step 5 */}
         <div className="space-y-4">
-          <h2 className="text-3xl font-semibold text-white">
+          <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
             Step 5: Create your feature branch (Required)
           </h2>
 
@@ -97,7 +100,7 @@ const Guide = () => {
         {/* Step 6 */}
 
         <div className="space-y-4">
-          <h2 className="text-3xl font-semibold text-white">
+          <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
             Step 6: Make necessary changes
           </h2>
 
@@ -111,7 +114,7 @@ const Guide = () => {
         {/* Step 7 */}
 
         <div className="space-y-4">
-          <h2 className="text-3xl font-semibold text-white">
+          <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
             Step 7: Commit the changes
           </h2>
 
@@ -127,7 +130,7 @@ const Guide = () => {
         {/* step 8 */}
 
         <div className="space-y-4">
-          <h2 className="text-3xl font-semibold text-white">
+          <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
             Step 8: Push your code
           </h2>
 
@@ -137,7 +140,7 @@ const Guide = () => {
         {/* Step 9 */}
 
         <div className="space-y-4">
-          <h2 className="text-3xl font-semibold text-white">
+          <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
             Step 9: Create a PR on Github
           </h2>
 
