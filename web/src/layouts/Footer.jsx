@@ -3,11 +3,10 @@ import React, { useContext } from 'react'
 import { FaDiscord, FaGithub, FaTwitter } from 'react-icons/fa'
 import footer_icon from '../assets/hive.svg'
 import { ThemeContext } from '../Context/ThemeContext'
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     const { theme } = useContext(ThemeContext)
-    const location = useLocation();
 
     return (
         <footer className={`text-gray-400 ${theme.bg_Selected} body-font`}>
