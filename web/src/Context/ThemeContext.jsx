@@ -3,22 +3,26 @@ import { useState, createContext } from "react"
 const ThemeContext = createContext()
 
 const SCREEN_THEME = {
-	Light_Theme: {
-		bg_Selected: "bg-gradient-to-r from-white-700 via-gray-900 to-black",
-		text_Color: "text-gray-700",
-		navBar_LinkColor: "bg-yellow-400",
-		navBar_GitBtnColor: "bg-white-400",
-		navBar_GitBtnIconColor: "text-black",
-		checked: false
-	},
-	Dark_Theme: {
-		bg_Selected: "bg-gradient-to-r from-gray-700 via-gray-900 to-black",
-		text_Color: "text-white",
-		navBar_LinkColor: "bg-gray-800",
-		navBar_BtnColor: "bg-gray-800",
-		navBar_GitBtnIconColor: "text-white",
-		checked: true
-	}
+  Light_Theme: {
+    bg_Selected: "bg-gradient-to-r from-white-700 via-gray-900 to-black",
+    text_Color: "text-gray-700",
+    navBar_LinkColor: "bg-yellow-400",
+    navBar_GitBtnColor: "bg-white-400",
+    navBar_GitBtnIconColor: "text-black",
+    bg_DefaultBtn: "bg-yellow-400",
+    bgHover_DefaultBtn: "hover:bg-yellow-500",
+    checked: false,
+  },
+  Dark_Theme: {
+    bg_Selected: "bg-gradient-to-r from-gray-700 via-gray-900 to-black",
+    text_Color: "text-white",
+    navBar_LinkColor: "bg-gray-800",
+    navBar_BtnColor: "bg-gray-800",
+    navBar_GitBtnIconColor: "text-white",
+    bg_DefaultBtn: "bg-purple-500",
+    bgHover_DefaultBtn: "hover:bg-purple-600",
+    checked: true,
+  },
 }
 
 // eslint-disable-next-line react/prop-types
