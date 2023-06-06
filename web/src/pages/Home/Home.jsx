@@ -29,7 +29,7 @@ const Home = () => {
             <div className="flex justify-center">
               <Link to="/issues">
                 <button
-                  className={`inline-flex text-white ${theme.bg_DefaultBtn} border-0 py-3 px-8 focus:outline-none ${theme.bgHover_DefaultBtn} rounded text-lg font-bold hover:translate-y-[-5px] transition-transform duration-300`}
+                  className={`inline-flex text-white ${theme.bg_DefaultBtn} border-0 py-3 px-8 focus:outline-none rounded text-lg font-bold hover:translate-y-[-5px] transition-transform duration-300`}
                 >
                   Find Issues
                 </button>
