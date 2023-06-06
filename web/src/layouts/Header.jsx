@@ -14,7 +14,7 @@ const Header = () => {
   const path = location.pathname;
   //const active = true;
   return (
-    <header className={`text-gray-400 ${theme.bg_Selected}  body-font flex-nowrap`}>
+    <header className={`text-gray-900 ${theme.bg_Selected}  body-font flex-nowrap`}>
       <div className="container mx-auto flex flex-wrap p-5  flex-col w-full md:flex-row items-center justify-between">
         <nav className="flex  flex-wrap items-center text-base w-full justify-between md:width-unset md:justify-normal  ">
           <Link to="/" className={` px-1 py-1 md:px-3  rounded hover:${theme.text_Color} cursor-pointer md:font-bold ${path == "/" && `${theme.navBar_LinkColor}  `}`}>
