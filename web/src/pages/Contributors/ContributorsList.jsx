@@ -1,12 +1,15 @@
 import ContributorItem from './ContributorItem'
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import ScaleLoader from 'react-spinners/ScaleLoader'
+import { ThemeContext } from '../../Context/ThemeContext';
 
 import axios from 'axios';
 
 const ContributorsList = () => {
     const [contributors, setContributors] = useState([]);
     const [loading, setLoading] = useState(true);
+
+    const { current_theme } = useContext(ThemeContext).theme
 
     useEffect(() => {
         const fetchContributors = async () => {
@@ -34,7 +37,7 @@ const ContributorsList = () => {
         <div className="flex flex-wrap -m-2 justify-center items-center">
             <ScaleLoader 
                 loading={loading}
-                color='white'
+                color={current_theme === 'dark' ? 'white' : 'black'}
             />
 
             {contributors.map((contributor, index) => {
