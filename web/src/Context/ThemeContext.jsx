@@ -10,6 +10,7 @@ const SCREEN_THEME = {
 		navBar_LinkColor: "bg-yellow-400",
 		navBar_GitBtnColor: "bg-white-400",
 		navBar_GitBtnIconColor: "text-black",
+    bg_DefaultBtn: "bg-yellow-400 hover:bg-yellow-500",
 		checked: false
 	},
 	Dark_Theme: {
@@ -19,6 +20,7 @@ const SCREEN_THEME = {
 		navBar_LinkColor: "bg-gray-800",
 		navBar_BtnColor: "bg-gray-800",
 		navBar_GitBtnIconColor: "text-white",
+    bg_DefaultBtn: "bg-purple-500 hover:bg-purple-600",
 		checked: true
 	}
 }

@@ -13,7 +13,9 @@ const Home = () => {
       <section className="text-gray-400  body-font">
         <div className="container flex flex-col items-center min-h-screen px-5 py-6 md:py-10 mx-auto md:flex-row">
           <div className="flex flex-col items-center md:self-start md:pt-40 mb-16 text-center lg:flex-grow md:w-1/2 lg:pr-20 md:pr-16 md:items-start md:text-left md:mb-0">
-            <h1 className={`block mb-4 text-4xl font-extrabold ${theme.text_Color} title-font sm:text-5xl`}>
+            <h1
+              className={`block mb-4 text-4xl font-extrabold ${theme.text_Color} title-font sm:text-5xl`}
+            >
               Contribute to the world of{" "}
               <span className="text-yellow-400 transition-transform sm:inline-block sm:ml-4 md:ml-0 hover:scale-110">
                 Open Source
@@ -26,7 +28,9 @@ const Home = () => {
             </div>
             <div className="flex justify-center">
               <Link to="/issues">
-                <button className="inline-flex text-white bg-purple-500 border-0 py-3 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg font-bold hover:translate-y-[-5px] transition-transform duration-300">
+                <button
+                  className={`inline-flex text-white ${theme.bg_DefaultBtn} border-0 py-3 px-8 focus:outline-none rounded text-lg font-bold hover:translate-y-[-5px] transition-transform duration-300`}
+                >
                   Find Issues
                 </button>
               </Link>
