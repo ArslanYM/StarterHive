@@ -9,7 +9,7 @@ const IssuesList = () => {
   console.log(issues);
   return (
     // <div className='grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-4 2xl:gap-7.5'>
-    <div className='mx-auto max-w-screen-2xl p-4 md:p-8 2xl:p-10'>
+    <div className='mx-auto min-h-screen max-w-screen-2xl p-4 md:p-8 2xl:p-10'>
       <div className={`grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-4 xl:grid-cols-3 2xl:gap-7.5 ${theme.bg_Selected} items-center`}>
         {issues.map((issue) => (
           <Issue
