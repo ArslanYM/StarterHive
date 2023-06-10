@@ -63,7 +63,7 @@ const Issue = ({
       </div>
       <div className='flex justify-between px-2 mt-2'>
         <div>
-          <h2 className='text-md text-gray-300 font-semibold'>Languages</h2>
+          <h2 className={`text-md  ${theme.text_Color} font-semibold`}>Languages</h2>
           <br />
           <div className='flex flex-wrap gap-2'>
             {languages.map((item) => {
@@ -79,7 +79,7 @@ const Issue = ({
           </div>
         </div>
         <div className='pr-4'>
-          <h2 className='text-sm text-gray-400 font-semibold'>
+          <h2 className={`text-sm ${theme.text_Color} font-semibold`}>
             Framework/Libraries
           </h2>
           <br />
