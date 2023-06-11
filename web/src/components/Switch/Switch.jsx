@@ -1,18 +1,25 @@
-import { FaSun, FaMoon } from 'react-icons//fa'
-import './style.css'
+import { FaSun, FaMoon } from "react-icons//fa";
+import "./style.css";
 
 // eslint-disable-next-line react/prop-types
 const Switch = ({ handleTheme, checked }) => {
-	return (
-		<div className='switch__Theme'>
-			<input type="checkbox" className="checkbox" id="checkbox" checked={checked} onChange={(e) => handleTheme(e.target.checked)} />
-			<label htmlFor="checkbox" className="checkbox-label">
-				<FaSun className='fa-sun' />
-				<FaMoon className='fa-moon' />
-				<span className="ball"></span>
-			</label>
-		</div>
-	)
-}
+  return (
+    <label className="toggle-wrapper" htmlFor="toggle">
+      <div className={`toggle bg-gray-800 ${checked ? "enabled" : "disabled"}`}>
+        <div className="icons">
+          <FaSun />
+          <FaMoon />
+        </div>
+        <input
+          id="toggle"
+          name="toggle"
+          type="checkbox"
+          checked={checked}
+          onChange={(e) => handleTheme(e.target.checked)}
+        />
+      </div>
+    </label>
+  );
+};
 
-export default Switch
+export default Switch;

@@ -1,47 +1,69 @@
-.switch__Theme {
-	display: flex;
-	align-items: flex-end;
+.toggle-wrapper {
+  width: 60px;
+  display: block;
+  margin: 5px 1rem;
 }
 
-.checkbox {
-	opacity: 0;
-	position: absolute;
+.toggle {
+  height: 30px;
+  width: 60px;
+  border-radius: 40px;
+  padding: 5px;
+  position: relative;
+  margin: auto;
+  cursor: pointer;
 }
 
-.checkbox-label {
-	border: 1px solid;
-	background-color: #111;
-	width: 50px;
-	height: 26px;
-	border-radius: 50px;
-	position: relative;
-	padding: 5px;
-	cursor: pointer;
-	display: flex;
-	justify-content: space-between;
-	margin-right: 1rem;
-	margin: 5px 1rem;
+.toggle::before {
+  content: "";
+  display: block;
+  height: 20px;
+  width: 20px;
+  border-radius: 30px;
+  background: #f5f5f5;
+  position: absolute;
+  z-index: 2;
+  transform: translate(0);
+  transition: transform 0.5s ease;
 }
 
-.fa-moon {
-	color: #f1c40f;
+.toggle.enabled::before {
+  transform: translateX(30px);
 }
 
-.fa-sun {
-	color: #f39c12;
+.toggle input {
+  position: absolute;
+  top: 0;
+  opacity: 0;
 }
 
-.checkbox-label .ball {
-	background-color: #fff;
-	width: 22px;
-	height: 22px;
-	position: absolute;
-	left: 2px;
-	top: 2px;
-	border-radius: 50%;
-	transition: transform 0.2s linear;
+.toggle .icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: 0 5px;
 }
 
-.checkbox:checked+.checkbox-label .ball {
-	transform: translateX(24px);
+.toggle .icons svg {
+  color: #f3ce48;
+  height: 15px;
+  width: 15px;
+  z-index: 0;
+}
+
+.bg-animate {
+  background-size: 100%;
+  -webkit-animation: BGAnimation 0.5s ease;
+  -moz-animation: BGAnimation 0.5s ease;
+  animation: BGAnimation 0.5s ease;
+}
+
+@keyframes BGAnimation {
+  0% {
+    background-size: 1000%;
+  }
+  100% {
+    background-size: 100%;
+  }
 }
