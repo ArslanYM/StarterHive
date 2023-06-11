@@ -14,7 +14,7 @@ const SCREEN_THEME = {
   },
   Dark_Theme: {
     current_theme: "dark",
-    bg_Selected: "bg-gradient-to-r from-gray-700 via-gray-900 to-black",
+    bg_Selected: "bg-gradient-to-r from-gray-700 via-gray-900 to-black bg-animate",
     text_Color: "text-white",
     navBar_LinkColor: "bg-gray-800",
     navBar_BtnColor: "bg-gray-800",
@@ -38,6 +38,7 @@ const ThemeProvider = ({ children }) => {
   });
 
   const handleTheme = () => {
+    console.log(theme)
     const theme_Selected = JSON.stringify(theme);
     theme_Selected === JSON.stringify(SCREEN_THEME.Light_Theme)
       ? setTheme(SCREEN_THEME.Dark_Theme)
