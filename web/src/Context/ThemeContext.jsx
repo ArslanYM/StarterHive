@@ -38,7 +38,6 @@ const ThemeProvider = ({ children }) => {
   });
 
   const handleTheme = () => {
-    console.log(theme)
     const theme_Selected = JSON.stringify(theme);
     theme_Selected === JSON.stringify(SCREEN_THEME.Light_Theme)
       ? setTheme(SCREEN_THEME.Dark_Theme)
