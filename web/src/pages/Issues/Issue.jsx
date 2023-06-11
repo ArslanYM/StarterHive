@@ -105,7 +105,12 @@ const Issue = ({
                 className='text-gray-100 text-sm borde rounded-full p-2 bg-yellow-600'
                 key={item}
               >
-                {item}
+                <a
+                  target="_blank" 
+                  href={`https://github.com/ArslanYM/StarterHive/labels/${item.replace(/-/g," ")}`}
+                >
+                  {item}
+                </a>
               </span>
             );
           })}
