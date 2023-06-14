@@ -22,7 +22,7 @@ const Header = () => {
             to="/"
             className={` px-1 py-1 md:px-3  rounded hover:${
               theme.text_Color
-            } cursor-pointer md:font-bold ${
+            } cursor-pointer font-bold ${
               path == "/" && `${theme.navBar_LinkColor}  `
             }`}
           >
@@ -32,7 +32,7 @@ const Header = () => {
             to="/contributors"
             className={` px-1 py-1 md:px-3  rounded hover:${
               theme.text_Color
-            } md:font-bold cursor-pointer ${
+            } font-bold cursor-pointer ${
               path == "/contributors" && `${theme.navBar_LinkColor}  `
             }`}
           >
@@ -42,7 +42,7 @@ const Header = () => {
             to="/docs"
             className={` px-1 py-1 md:px-3  rounded hover:${
               theme.text_Color
-            } md:font-bold cursor-pointer ${
+            } font-bold cursor-pointer ${
               path == "/docs" && `${theme.navBar_LinkColor}  `
             }`}
           >
@@ -52,7 +52,7 @@ const Header = () => {
             to="/issues"
             className={`hover:${
               theme.text_Color
-            } cursor-pointer md:font-bold px-1 py-1 md:px-3 rounded ${
+            } cursor-pointer font-bold px-1 py-1 md:px-3 rounded ${
               path == "/issues" && `${theme.navBar_LinkColor}  `
             }`}
           >
