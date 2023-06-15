@@ -1,6 +1,6 @@
-import { useState, createContext } from "react";
+import {useState, createContext} from "react"
 
-const ThemeContext = createContext();
+const ThemeContext = createContext()
 
 const SCREEN_THEME = {
   Light_Theme: {
@@ -9,7 +9,7 @@ const SCREEN_THEME = {
     text_Color: "text-gray-700",
     navBar_LinkColor: "bg-yellow-400",
     navBar_GitBtnIconColor: "text-black",
-    bg_DefaultBtn: "bg-yellow-400 hover:bg-yellow-500",
+    bg_DefaultBtn: "bg-yellow-400 hover:bg-yellow-400",
     checked: false,
   },
   Dark_Theme: {
@@ -19,37 +19,32 @@ const SCREEN_THEME = {
     navBar_LinkColor: "bg-gray-800",
     navBar_BtnColor: "bg-gray-800",
     navBar_GitBtnIconColor: "text-white",
-    bg_DefaultBtn: "bg-purple-500 hover:bg-purple-600",
+    bg_DefaultBtn: "bg-purple-500 hover:bg-gray-800",
     checked: true,
   },
-};
+}
 
 // eslint-disable-next-line react/prop-types
-const ThemeProvider = ({ children }) => {
+const ThemeProvider = ({children}) => {
   const [theme, setTheme] = useState(() => {
     if (localStorage.getItem("Theme")) {
-      const localStorageTheme = JSON.parse(localStorage.getItem("Theme"));
-      return JSON.stringify(localStorageTheme) ===
-        JSON.stringify(SCREEN_THEME.Light_Theme)
+      const localStorageTheme = JSON.parse(localStorage.getItem("Theme"))
+      return JSON.stringify(localStorageTheme) === JSON.stringify(SCREEN_THEME.Light_Theme)
         ? SCREEN_THEME.Dark_Theme
-        : SCREEN_THEME.Light_Theme;
+        : SCREEN_THEME.Light_Theme
     }
-    return SCREEN_THEME.Light_Theme;
-  });
+    return SCREEN_THEME.Light_Theme
+  })
 
   const handleTheme = () => {
-    const theme_Selected = JSON.stringify(theme);
+    const theme_Selected = JSON.stringify(theme)
     theme_Selected === JSON.stringify(SCREEN_THEME.Light_Theme)
       ? setTheme(SCREEN_THEME.Dark_Theme)
-      : setTheme(SCREEN_THEME.Light_Theme);
-    localStorage.setItem("Theme", JSON.stringify(theme));
-  };
+      : setTheme(SCREEN_THEME.Light_Theme)
+    localStorage.setItem("Theme", JSON.stringify(theme))
+  }
 
-  return (
-    <ThemeContext.Provider value={{ handleTheme, theme }}>
-      {children}
-    </ThemeContext.Provider>
-  );
-};
+  return <ThemeContext.Provider value={{handleTheme, theme}}>{children}</ThemeContext.Provider>
+}
 
-export { ThemeProvider, ThemeContext };
+export {ThemeProvider, ThemeContext}
