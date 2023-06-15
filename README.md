@@ -192,11 +192,11 @@ Please visit [Contributors](/CONTRIBUTORS.md) to check the list of contributors 
 
 ## <span id="frontend-development">🎨 Frontend Development</span>
 
-Calling all <strong>frontend developers</strong>! We invite you to contribute to the `web/` directory of this project. The `web/` directory contains all the frontend code and assets. Whether you're experienced or just starting with frontend development, your contributions are highly appreciated.
+Calling all <strong>Frontend developers</strong>! We invite you to contribute to the `web/` directory of this project. The `web/` directory contains all the frontend code and assets. Whether you're experienced or just starting with frontend development, your contributions are highly appreciated.
 
 Feel free to explore the `web/` directory, make improvements, fix bugs, or add new features. Don't hesitate to share your ideas and suggestions to enhance the user experience.
 
-To contribute to the frontend development:
+To contribute to the Frontend development:
 
 1. <strong>Fork</strong> this repository.
 2. Make your changes in the `web/` directory.
