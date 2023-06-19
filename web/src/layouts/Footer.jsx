@@ -9,7 +9,7 @@ const Footer = () => {
     const { theme } = useContext(ThemeContext)
 
     return (
-        <footer className={`text-gray-400 ${theme.bg_Selected} body-font`}>
+        <footer className={`text-gray-400 ${theme.bg_Selected} body-font `}>
             <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
             <Link to="/" className="flex order-first  title-font font-medium items-center text-white  mb-4 md:mb-0">
   
