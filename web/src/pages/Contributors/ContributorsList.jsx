@@ -52,7 +52,8 @@ const ContributorsList = () => {
                 filtered.map((contributor, index) => {
                 return <ContributorItem image={contributor.avatar_url} name={contributor.login} url={contributor.html_url} key={index} />
             })
-                :`No result for ${search}`
+                :
+                loading?"":`No result for ${search}`
             }
         </div>
     );
