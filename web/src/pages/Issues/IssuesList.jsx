@@ -5,18 +5,22 @@ import Issue from './Issue';
 import { ThemeContext } from "../../Context/ThemeContext";
 
 const IssuesList = () => {
-  const [status, setStatus] = useState("")
-  const { theme } = useContext(ThemeContext)
+  const [status, setStatus] = useState("");
+  const { theme } = useContext(ThemeContext);
   console.log(issues);
   return (
     // <div className='grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-4 2xl:gap-7.5'>
     <div className='mx-auto min-h-screen max-w-screen-2xl p-4 md:p-8 2xl:p-10'>
       <span className={`text-gray-300 ${theme.text_Color} font-mono font-semibold`}>Filter </span>
-      <select onChange={(e)=>setStatus(e.target.value)} style={{marginBottom: 20}}>
-        <option value="">ALL</option>
-        <option value="open">OPEN</option>
-        <option value="assigned">ASSIGNED</option>
-        <option value="closed">CLOSED</option>
+      <select
+        className={`border border-gray-300 rounded-md px-4 py-2 text-sm font-medium text-gray-700 ${theme.text_Color}`}
+        onChange={(e) => setStatus(e.target.value)}
+        style={{ marginBottom: 20 }}
+      >
+        <option value="" className="text-black-400">ALL</option>
+        <option value="open" className="text-black-400">OPEN</option>
+        <option value="assigned" className="text-black-400">ASSIGNED</option>
+        <option value="closed" className="text-black-400">CLOSED</option>
       </select>
       <div className={`grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-4 xl:grid-cols-3 2xl:gap-7.5 ${theme.bg_Selected} items-center`}>
         {
