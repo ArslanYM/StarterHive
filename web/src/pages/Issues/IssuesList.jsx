@@ -20,6 +20,7 @@ const IssuesList = () => {
         className={`border border-gray-300 rounded-md px-4 py-2 text-sm font-medium text-gray-700 ${theme.text_Color}`}
         onChange={(e) => setStatus(e.target.value)}
         style={{ marginBottom: 20 }}
+        ref={observerRef}
       >
         <option value="" className="text-black-400">ALL</option>
         <option value="open" className="text-black-400">OPEN</option>
