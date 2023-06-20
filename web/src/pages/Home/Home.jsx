@@ -1,12 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useContext } from "react";
-import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import HeroImg from "../../components/HeroImage";
 import { ThemeContext } from "../../Context/ThemeContext";
 
 const Home = () => {
-  const { theme } = useContext(ThemeContext)
+  const { theme } = useContext(ThemeContext);
 
   return (
     <>
@@ -23,8 +22,11 @@ const Home = () => {
             </h1>
             <div className="mb-8 font-base md:font-bold leading-relaxed md:max-w-lg	">
               <p className=" inline ">
-                Starter Hive is a platform that helps beginners to contribute to </p>
-              <p className=" inline ">open source projects of remotely hiring organizations.</p>
+                Starter Hive is a platform that helps beginners to contribute to{" "}
+              </p>
+              <p className=" inline ">
+                open source projects of remotely hiring organizations.
+              </p>
             </div>
             <div className="flex justify-center">
               <Link to="/issues">
@@ -101,6 +103,6 @@ const Home = () => {
 
 export default Home;
 
-Home.propTypes = {
-  children: PropTypes.element.isRequired,
-};
+// Home.propTypes = {
+//   children: PropTypes.element.isRequired,
+// };

@@ -10,16 +10,19 @@ const SCREEN_THEME = {
     navBar_LinkColor: "bg-yellow-400",
     navBar_GitBtnIconColor: "text-black",
     bg_DefaultBtn: "bg-yellow-400 hover:bg-yellow-500",
+    fab_Background: "bg-yellow-500",
     checked: false,
   },
   Dark_Theme: {
     current_theme: "dark",
-    bg_Selected: "bg-gradient-to-r from-gray-700 via-gray-900 to-black bg-animate",
+    bg_Selected:
+      "bg-gradient-to-r from-gray-700 via-gray-900 to-black bg-animate",
     text_Color: "text-white",
     navBar_LinkColor: "bg-gray-800",
     navBar_BtnColor: "bg-gray-800",
     navBar_GitBtnIconColor: "text-white",
     bg_DefaultBtn: "bg-purple-500 hover:bg-purple-600",
+    fab_Background: "bg-purple-600",
     checked: true,
   },
 };
