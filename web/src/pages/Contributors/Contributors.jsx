@@ -1,11 +1,12 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React, { useState } from "react";
 import ContributorsList from "./ContributorsList";
 import { useContext } from "react";
 import { ThemeContext } from "../../Context/ThemeContext";
 
 const Contributors = () => {
   const { theme } = useContext(ThemeContext)
+  const [searchContributor, setSearchContributor] = useState('')
 
   return (
     <>
@@ -32,7 +33,15 @@ const Contributors = () => {
               community.
             </p>
           </div>
-          <ContributorsList />
+          <div className="flex justify-center mb-10">
+            <input
+              className="px-4 py-3 border border-gray-300 rounded-md w-full sm:w-1/2"
+              placeholder="Search"
+              value={searchContributor}
+              onChange={(e) => setSearchContributor(e.target.value)}
+            />
+          </div>
+          <ContributorsList searchContributor={searchContributor}/>
         </div>
       </section>
     </>

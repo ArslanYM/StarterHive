@@ -2,10 +2,11 @@ import ContributorItem from './ContributorItem'
 import { useState, useEffect, useContext } from 'react';
 import ScaleLoader from 'react-spinners/ScaleLoader'
 import { ThemeContext } from '../../Context/ThemeContext';
+import PropTypes from "prop-types";
 
 import axios from 'axios';
 
-const ContributorsList = () => {
+const ContributorsList = ({ searchContributor }) => {
     const [contributors, setContributors] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -33,6 +34,10 @@ const ContributorsList = () => {
             fetchContributors();
     }, []);
 
+    const filteredContributors = contributors.filter((contributor) => {
+        return contributor.login.toLowerCase().includes(searchContributor.toLowerCase());
+      });
+
     return (
         <div className="flex flex-wrap -m-2 justify-center items-center">
             <ScaleLoader 
@@ -40,7 +45,7 @@ const ContributorsList = () => {
                 color={current_theme === 'dark' ? 'white' : 'black'}
             />
 
-            {contributors.map((contributor, index) => {
+            { filteredContributors.map((contributor, index) => {
                 return <ContributorItem image={contributor.avatar_url} name={contributor.login} url={contributor.html_url} key={index} />
             })
             }
@@ -49,3 +54,6 @@ const ContributorsList = () => {
 };
 
 export default ContributorsList;
+ContributorsList.propTypes = {
+    searchContributor: PropTypes.string,
+  };
