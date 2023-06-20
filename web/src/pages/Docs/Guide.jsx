@@ -2,16 +2,22 @@
 import React, { useContext } from "react";
 import Code from "./CodeBlock";
 import { ThemeContext } from "../../Context/ThemeContext";
+import { Fab } from "../../components/Fab/Fab";
+import { useInterectionObserver } from "../../hooks/useInterectionObserver";
 
 const Guide = () => {
-  const { theme } = useContext(ThemeContext)
+  const { theme } = useContext(ThemeContext);
+
+  const { isIntersecting, observerRef } = useInterectionObserver("200px");
 
   return (
     <main className="py-16">
       <div className="container max-w-5xl px-8 mx-auto space-y-16 ">
-        <h1 className={`text-5xl font-bold ${theme.text_Color}`}>Getting started 🗺️</h1>
+        <h1 className={`text-5xl font-bold ${theme.text_Color}`}>
+          Getting started 🗺️
+        </h1>
 
-        <p className="max-w-md text-gray-200">
+        <p className="max-w-md text-gray-200" ref={observerRef}>
           This guide will help you to make your first contribution{" "}
         </p>
         {/* Step 1 */}
@@ -162,6 +168,7 @@ const Guide = () => {
           </a>
         </p>
       </div>
+      <Fab isVisible={isIntersecting} />
     </main>
   );
 };
