@@ -16,7 +16,7 @@ export const useInterectionObserver = (margin = "0px") => {
     observer.observe(observerRef.current);
 
     return () => observer.disconnect();
-  }, []);
+  }, [margin]);
 
   return { isIntersecting, observerRef };
 };
