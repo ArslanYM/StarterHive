@@ -27,12 +27,10 @@ const Header = () => {
   };
 
   return (
-    <header
-      className={`text-gray-400 ${theme.bg_Selected}  body-font flex-nowrap`}
-    >
-      <nav className="container w-full z-20 top-0 left-0 ">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <div>
+    <header className={`text-gray-400 ${theme.bg_Selected}  body-font flex-nowrap `}>
+      <nav className="md:mx-auto container ">
+        <div className=" flex flex-wrap items-center justify-between  p-4 ">
+          <div className=" md:hidden ">
             <button
               data-collapse-toggle="navbar-sticky"
               type="button"
@@ -42,13 +40,7 @@ const Header = () => {
               onClick={() => handleClick()}
             >
               <span className="sr-only">Open main menu</span>
-              <svg
-                className="w-6 h-6"
-                aria-hidden="true"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+              <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path
                   fillRule="evenodd"
                   d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
@@ -58,83 +50,37 @@ const Header = () => {
             </button>
           </div>
           <div>
-            <Link
-              to="/"
-              className="flex order-first  title-font font-medium items-center text-white  mb-4 md:mb-0"
-            >
-              <span
-                className={`${theme.text_Color} ml-3 text-xl  font-bold cursor-pointer`}
-              >
-                Starter Hive{" "}
-              </span>
+            <Link to="/" className="flex order-first  title-font font-medium items-center text-white ">
+              <span className={`${theme.text_Color}  text-xl  font-bold cursor-pointer`}>Starter Hive </span>
               <img src={logo} alt="Logo" className="ml-3 w-6" />
             </Link>
           </div>
 
           <div className="flex md:order-2">
             <Switch handleTheme={handleTheme} checked={theme.checked} />
-            <a
-              href="https://github.com/ArslanYM/StarterHive"
-              aria-label="github-link"
-              target="_blank"
-              rel="noreferrer"
-              className="space-x-2 flex items-center"
-            >
-              <VscGithubAlt
-                className={`p-0.5 hover:text-4xl text-3xl flex rounded-md duration-300 ${theme.navBar_GitBtnIconColor} ${theme.navBar_GitHover}`}
-              />
+            <a href="https://github.com/ArslanYM/StarterHive" aria-label="github-link" target="_blank" rel="noreferrer" className="space-x-2 flex items-center">
+              <VscGithubAlt className={`p-0.5 hover:text-4xl text-3xl flex rounded-md duration-300 ${theme.navBar_GitBtnIconColor} ${theme.navBar_GitHover}`} />
             </a>
           </div>
-          <div
-            className={`items-center justify-between ${hamburgerView.view} w-full md:flex md:w-auto md:order-1`}
-            id="navbar-sticky"
-          >
+          <div className={`  ${hamburgerView.view} w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium  rounded-lg md:flex-row  md:mt-0 md:border-0  dark:border-gray-700">
               <li>
-                <Link
-                  to="/"
-                  className={`block px-1 py-1 md:px-3  rounded hover:${
-                    theme.text_Color
-                  } cursor-pointer font-bold ${
-                    path == "/" && `${theme.navBar_LinkColor}  `
-                  }`}
-                >
+                <Link to="/" className={`block px-1 py-1 md:px-3  rounded hover:${theme.text_Color} cursor-pointer font-bold ${path == "/" && `${theme.navBar_LinkColor}  `}`}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/contributors"
-                  className={`block px-1 py-1 md:px-3  rounded hover:${
-                    theme.text_Color
-                  } font-bold cursor-pointer ${
-                    path == "/contributors" && `${theme.navBar_LinkColor}  `
-                  }`}
-                >
+                <Link to="/contributors" className={`block px-1 py-1 md:px-3  rounded hover:${theme.text_Color} font-bold cursor-pointer ${path == "/contributors" && `${theme.navBar_LinkColor}  `}`}>
                   Contributors
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/docs"
-                  className={`block px-1 py-1 md:px-3  rounded hover:${
-                    theme.text_Color
-                  } font-bold cursor-pointer ${
-                    path == "/docs" && `${theme.navBar_LinkColor}  `
-                  }`}
-                >
+                <Link to="/docs" className={`block px-1 py-1 md:px-3  rounded hover:${theme.text_Color} font-bold cursor-pointer ${path == "/docs" && `${theme.navBar_LinkColor}  `}`}>
                   Docs
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/issues"
-                  className={`block hover:${
-                    theme.text_Color
-                  } cursor-pointer font-bold px-1 py-1 md:px-3 rounded ${
-                    path == "/issues" && `${theme.navBar_LinkColor}  `
-                  }`}
-                >
+                <Link to="/issues" className={`block hover:${theme.text_Color} cursor-pointer font-bold px-1 py-1 md:px-3 rounded ${path == "/issues" && `${theme.navBar_LinkColor}  `}`}>
                   Find Issues
                 </Link>
               </li>
