@@ -17,7 +17,7 @@ const IssuesList = () => {
     <div className="mx-auto min-h-screen max-w-screen-2xl p-4 md:p-8 2xl:p-10">
       <span className={`text-gray-300 ${theme.text_Color} font-mono font-semibold`}>Filter </span>
       <select
-        className={`border border-gray-300 rounded-md px-4 py-2 text-sm font-medium text-gray-700 ${theme.text_Color}`}
+        className={`border border-gray-300 rounded-md px-4 py-2 text-sm font-medium text-black-700`}
         onChange={(e) => setStatus(e.target.value)}
         style={{ marginBottom: 20 }}
         ref={observerRef}
