@@ -1,4 +1,5 @@
 <h1 align="center">Starter Hive ✨</h1>
+<h2> Juan Pitencel </h2>
 
 <p align="center">
   <img src="https://img.shields.io/github/license/ArslanYM/StarterHive" alt="License">
