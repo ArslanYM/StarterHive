@@ -193,7 +193,7 @@ A GitHub conflict is when people make changes to the same area or line in a file
 - ### **I**
 | [`Back To Top`](#contents) |
 - ### **J**
-    
+    - [Juan Pitencel](https://github.com/JuanPitencel)
     - [Jaisal Srivastava](https://github.com/Jais99)
     
 | [`Back To Top`](#contents) |
