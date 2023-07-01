@@ -26,6 +26,25 @@ const Header = () => {
     });
   };
 
+  const MENU_ITEMS = [
+    {
+      title: "Home",
+      path: '/'
+    },
+    {
+      title: 'Contributors',
+      path: '/contributors'
+    },
+    {
+      title: 'Docs',
+      path: '/docs'
+    },
+    {
+      title: 'Find Issues',
+      path: '/issues'
+    }
+  ]
+
   return (
     <header className={`text-gray-400 ${theme.bg_Selected}  body-font flex-nowrap `}>
       <nav className="md:mx-auto container ">
@@ -64,26 +83,11 @@ const Header = () => {
           </div>
           <div className={`  ${hamburgerView.view} w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium  rounded-lg md:flex-row  md:mt-0 md:border-0  dark:border-gray-700">
-              <li>
-                <Link to="/" className={`block px-1 py-1 md:px-3  rounded hover:${theme.text_Color} cursor-pointer font-bold ${path == "/" && `${theme.navBar_LinkColor}  `}`}>
-                  Home
+              {MENU_ITEMS.map((el) => (
+                <Link key={el.path} to={el.path} className={`block px-1 py-1 md:px-3  rounded hover:${theme.text_Color} cursor-pointer font-bold ${path == `${el.path}` && `${theme.navBar_LinkColor}  `}`}>
+                  {el.title}
                 </Link>
-              </li>
-              <li>
-                <Link to="/contributors" className={`block px-1 py-1 md:px-3  rounded hover:${theme.text_Color} font-bold cursor-pointer ${path == "/contributors" && `${theme.navBar_LinkColor}  `}`}>
-                  Contributors
-                </Link>
-              </li>
-              <li>
-                <Link to="/docs" className={`block px-1 py-1 md:px-3  rounded hover:${theme.text_Color} font-bold cursor-pointer ${path == "/docs" && `${theme.navBar_LinkColor}  `}`}>
-                  Docs
-                </Link>
-              </li>
-              <li>
-                <Link to="/issues" className={`block hover:${theme.text_Color} cursor-pointer font-bold px-1 py-1 md:px-3 rounded ${path == "/issues" && `${theme.navBar_LinkColor}  `}`}>
-                  Find Issues
-                </Link>
-              </li>
+              ))}
             </ul>
           </div>
         </div>
