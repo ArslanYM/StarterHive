@@ -78,7 +78,7 @@ const Header = () => {
           <div className="flex md:order-2">
             <Switch handleTheme={handleTheme} checked={theme.checked} />
             <a href="https://github.com/ArslanYM/StarterHive" aria-label="github-link" target="_blank" rel="noreferrer" className="space-x-2 flex items-center">
-              <VscGithubAlt className={`p-0.5 hover:text-4xl text-3xl flex rounded-md duration-300 ${theme.navBar_GitBtnIconColor} ${theme.navBar_GitHover}`} />
+              <VscGithubAlt className={`p-0.5 hover:text-3xl text-2xl flex rounded-md duration-300 ${theme.navBar_GitBtnIconColor} ${theme.navBar_GitHover}`} />
             </a>
           </div>
           <div className={`  ${hamburgerView.view} w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
