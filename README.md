@@ -12,6 +12,12 @@
 
 <p align="center"><em>Welcome to Starter Hive!</em> This project aims to make it easier for beginners to make their first contributions. Whether you're new to programming or looking to contribute to open-source projects, this repository provides the necessary resources and guidance.</p>
 
+## 💻 Tech Stack
+
+**Client:**  [React](https://react.dev/) , [TailwindCSS](https://tailwindui.com/)
+
+**Server:**  [Node](https://nodejs.org/en), [Express](https://expressjs.com/)
+
 ## 📖 Table of Contents
 
 - [Contributing](#contributing)
