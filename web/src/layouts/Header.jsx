@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useContext, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { VscGithubAlt } from "react-icons/vsc";
+import { VscGithubAlt, VscChromeClose } from "react-icons/vsc"; 
 
 import logo from "../assets/hive.svg";
 import Switch from "../components/Switch/Switch";
@@ -9,21 +9,17 @@ import { ThemeContext } from "../Context/ThemeContext";
 
 const Header = () => {
   const { handleTheme, theme } = useContext(ThemeContext);
-  const [hamburgerView, sethamburgerView] = useState({
-    view: "hidden",
-    state: true,
-  });
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
   const location = useLocation();
   const path = location.pathname;
 
-  const handleClick = () => {
-    const hamburguerViewState = hamburgerView.state ? "" : "hidden";
-    sethamburgerView({
-      ...Header,
-      hamburgerView,
-      view: hamburguerViewState,
-      state: !hamburgerView.state,
-    });
+  const toggleDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen); 
+  };
+
+  const closeDrawer = () => {
+    setIsDrawerOpen(false); 
   };
 
   const MENU_ITEMS = [
@@ -56,16 +52,26 @@ const Header = () => {
               className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none dark:text-gray-400  dark:focus:ring-gray-600"
               aria-controls="navbar-sticky"
               aria-expanded="false"
-              onClick={() => handleClick()}
+              onClick={() => toggleDrawer()} 
             >
-              <span className="sr-only">Open main menu</span>
-              <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clipRule="evenodd"
-                />
-              </svg>
+              <span className="sr-only">Toggle menu</span>
+              {isDrawerOpen ? (
+                <VscChromeClose className="w-6 h-6" />
+              ) : (
+                <svg
+                  className="w-6 h-6"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              )}
             </button>
           </div>
           <div>
@@ -81,10 +87,15 @@ const Header = () => {
               <VscGithubAlt className={`p-0.5 hover:text-3xl text-2xl flex rounded-md duration-300 ${theme.navBar_GitBtnIconColor} ${theme.navBar_GitHover}`} />
             </a>
           </div>
-          <div className={`  ${hamburgerView.view} w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
+          <div className={`  ${isDrawerOpen ? '' : 'hidden'} w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium  rounded-lg md:flex-row  md:mt-0 md:border-0  dark:border-gray-700">
               {MENU_ITEMS.map((el) => (
-                <Link key={el.path} to={el.path} className={`block px-1 py-1 md:px-3  rounded hover:${theme.text_Color} cursor-pointer font-bold ${path == `${el.path}` && `${theme.navBar_LinkColor}  `}`}>
+                <Link
+                  key={el.path}
+                  to={el.path}
+                  onClick={() => closeDrawer()} 
+                  className={`block px-1 py-1 md:px-3  rounded hover:${theme.text_Color} cursor-pointer font-bold ${path === el.path && `${theme.navBar_LinkColor}  `}`}
+                >
                   {el.title}
                 </Link>
               ))}
