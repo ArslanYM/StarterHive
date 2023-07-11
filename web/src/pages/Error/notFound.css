@@ -1,0 +1,12 @@
+.errorPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.img-404{
+   padding-top: 10rem;
+    max-width: 40rem;
+    min-width: 30rem;
+}
+
