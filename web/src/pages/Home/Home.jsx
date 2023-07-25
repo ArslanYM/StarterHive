@@ -16,7 +16,7 @@ const Home = () => {
               className={`block mb-4 text-4xl font-extrabold ${theme.text_Color} title-font sm:text-5xl`}
             >
               Contribute to the world of{" "}
-              <span className="text-yellow-400 transition-transform sm:inline-block sm:ml-4 md:ml-0 hover:scale-110">
+              <span className="text-yellow-400 transition-transform sm:inline-block sm:ml-4 md:ml-0 hover:scale-110 xl:px-3">
                 Open Source
               </span>
             </h1>
