@@ -44,9 +44,11 @@ const ContributorsList = () => {
                 loading={loading}
                 color={current_theme === 'dark' ? 'white' : 'black'}
             />
+            
             {
                 !loading?<SearchTerm setTerm={setSearch}/>:""
             }
+            
             {
                 filtered.length?
                 filtered.map((contributor, index) => {
@@ -55,6 +57,8 @@ const ContributorsList = () => {
                 :
                 loading?"":`No result for ${search}`
             }
+            
+            
         </div>
     );
 };
