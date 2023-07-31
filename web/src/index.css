@@ -16,3 +16,13 @@ body {
 .bg_Dark_Theme {
   background: #000000;
 }
+
+/* Fix the Home text appearance */
+.home-page-text {
+  margin: auto
+}
+
+/* add some gap betwen the text and the image on the home page */
+.home-page-container {
+  gap: 64px
+}
