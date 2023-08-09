@@ -17,7 +17,7 @@ const Guide = () => {
           Getting started 🗺️
         </h1>
 
-        <p className="max-w-md text-gray-200" ref={observerRef}>
+        <p className={`max-w-md ${theme.text_Color}`} ref={observerRef}>
           This guide will help you to make your first contribution{" "}
         </p>
         {/* Step 1 */}
@@ -40,16 +40,16 @@ const Guide = () => {
               Step 2: Clone the forked repository
             </h2>
 
-            <p className="max-w-md text-neutral-300">
+            <p className={`max-w-md ${theme.text_Color}`}>
               Go to your GitHub account, open the forked repository, click on
               the code button and then click the copy to clipboard icon.
             </p>
-            <p className="max-w-md text-neutral-300">
+            <p className={`max-w-md ${theme.text_Color}`}>
               Open a terminal and run the following git command:
             </p>
 
             <Code lang="bash">git clone &lt;URL you just copied&gt;</Code>
-            <p className="text-neutral-300">
+            <p className={`max-w-md ${theme.text_Color}`}>
               The code will look something like this :
             </p>
 
@@ -76,17 +76,42 @@ const Guide = () => {
         </div>
 
         {/* Step 4 */}
+        <div className="space-y-4">
+          <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
+            Step 4: Install Dependices
+          </h2>
+          <p className={`max-w-md ${theme.text_Color}`}>
+              Move to source directory by typing the comment below.
+            </p>
+
+          <Code>cd web/src</Code>
+          <p className={`max-w-md ${theme.text_Color}`}>
+              You need to install dependices used for this project. It will download all the necessary dependices automatically.
+            </p>
+            <Code>npm install</Code>
+        </div>
+        {/* Step 5 */}
+
+        <div className="space-y-4">
+          <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
+            Step 3: To run app
+          </h2>
+
+          <Code>npm run dev --host</Code>
+        </div>
+
+        {/* Step 6 */}
 
         <div className="space-y-4">
           <h2 className={`max-w-xl text-3xl font-semibold ${theme.text_Color}`}>
-            Step 4: Add an upstream link to the main branch in your cloned repo
+            Step 6: Add an upstream link to the main branch in your cloned repo
           </h2>
 
           <Code>
             git remote add upstream https://github.com/ArslanYM/StarterHive
           </Code>
 
-          <p className="max-w-md text-neutral-300">
+          <p className={`max-w-md ${theme.text_Color}`}>
             Keep your cloned repo up to date by pulling from upstream (this will
             also avoid any merge conflicts while committing new changes)
           </p>
@@ -94,37 +119,37 @@ const Guide = () => {
           <Code> git pull upstream main </Code>
         </div>
 
-        {/* Step 5 */}
+        {/* Step 7 */}
         <div className="space-y-4">
           <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
-            Step 5: Create your feature branch (Required)
+            Step 7: Create your feature branch (Required)
           </h2>
 
           <Code> git checkout -b &lt;feature-name&gt; </Code>
         </div>
 
-        {/* Step 6 */}
+        {/* Step 8 */}
 
         <div className="space-y-4">
           <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
-            Step 6: Make necessary changes
+            Step 8: Make necessary changes
           </h2>
 
-          <p className="max-w-md text-neutral-300">
+          <p className={`max-w-md ${theme.text_Color}`}>
             Add your commits to the staging
           </p>
 
           <Code>git add .</Code>
         </div>
 
-        {/* Step 7 */}
+        {/* Step 9 */}
 
         <div className="space-y-4">
           <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
-            Step 7: Commit the changes
+            Step 9: Commit the changes
           </h2>
 
-          <p className="max-w-md text-neutral-300">
+          <p className={`max-w-md ${theme.text_Color}`}>
             commit those changes using the `git commit` command:
           </p>
 
@@ -133,7 +158,7 @@ const Guide = () => {
           </Code>
         </div>
 
-        {/* step 8 */}
+        {/* step 10 */}
 
         <div className="space-y-4">
           <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
@@ -143,21 +168,21 @@ const Guide = () => {
           <Code>git push -u origin your-branch-name</Code>
         </div>
 
-        {/* Step 9 */}
+        {/* Step 11 */}
 
         <div className="space-y-4">
           <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
             Step 9: Create a PR on Github
           </h2>
 
-          <p className="max-w-md text-neutral-300">
+          <p className={`max-w-md ${theme.text_Color}`}>
             Create a PR on Github. (Don't just hit the create a pull request
             button, you must write a PR message to clarify why and what are you
             contributing)
           </p>
         </div>
 
-        <p className="max-w-md text-white">
+        <p className={`max-w-md ${theme.text_Color}`}>
           Make sure you are following the Guidelines of this project while
           contributing. Take a look at{" "}
           <a
