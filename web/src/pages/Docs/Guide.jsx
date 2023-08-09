@@ -94,7 +94,7 @@ const Guide = () => {
 
         <div className="space-y-4">
           <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
-            Step 3: To run app
+            Step 5: To run app
           </h2>
 
           <Code>npm run dev --host</Code>
@@ -162,7 +162,7 @@ const Guide = () => {
 
         <div className="space-y-4">
           <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
-            Step 8: Push your code
+            Step 10: Push your code
           </h2>
 
           <Code>git push -u origin your-branch-name</Code>
