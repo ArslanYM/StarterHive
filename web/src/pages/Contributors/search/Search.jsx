@@ -7,7 +7,7 @@ export default function SearchTerm({ setTerm }) {
         <input
           type="text"
           onChange={(e) => setTerm(e.target.value)}
-          className="block w-1/3 rounded-3xl outline-none bg-transparent border-none py-1.5 pl-1 pr-20 text-gray-900  placeholder:text-yellow-500 sm:text-sm sm:leading-6"
+          className="search block w-1/3 rounded-3xl outline-none bg-transparent border-none py-1.5 pl-1 pr-20 text-yellow-500 font-medium  placeholder:text-yellow-500 sm:text-sm sm:leading-6"
           placeholder="Search"
           style={{ width: "380px", maxWidth: "100%" }}
         />
