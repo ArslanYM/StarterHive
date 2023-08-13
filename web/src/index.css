@@ -16,3 +16,8 @@ body {
 .bg_Dark_Theme {
   background: #000000;
 }
+
+/* add some gap betwen the text and the image on the home page */
+.home-page-container {
+  gap: 64px
+}

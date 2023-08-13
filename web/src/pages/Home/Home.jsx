@@ -10,8 +10,12 @@ const Home = () => {
   return (
     <>
       <section className="text-gray-400  body-font">
-        <div className="container flex flex-col items-center min-h-screen px-5 py-6 md:py-10 mx-auto md:flex-row">
-          <div className="flex flex-col items-center md:self-start md:pt-40 mb-16 text-center lg:flex-grow md:w-1/2 lg:pr-20 md:pr-16 md:items-start md:text-left md:mb-0">
+        <div className="container flex flex-col items-center min-h-screen px-5 py-6 md:py-10 mx-auto md:flex-row home-page-container">
+          <div
+            className="flex flex-col items-center md:self-start md:pt-40 mb-16 text-center lg:flex-grow md:w-1/2 lg:pr-20 md:pr-16 md:items-start md:text-left md:mb-0"
+            /* Fix the Home text appearance */
+            style={{ margin: "auto" }}
+          >
             <h1
               className={`block mb-4 text-4xl font-extrabold ${theme.text_Color} title-font sm:text-5xl`}
             >
