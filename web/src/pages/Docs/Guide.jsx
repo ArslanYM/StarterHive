@@ -78,7 +78,7 @@ const Guide = () => {
         {/* Step 4 */}
         <div className="space-y-4">
           <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
-            Step 4: Install Dependices
+            Step 4: Install dependencies
           </h2>
           <p className={`max-w-md ${theme.text_Color}`}>
               Move to source directory by typing the comment below.
@@ -86,7 +86,7 @@ const Guide = () => {
 
           <Code>cd web/src</Code>
           <p className={`max-w-md ${theme.text_Color}`}>
-              You need to install dependices used for this project. It will download all the necessary dependices automatically.
+              You need to install dependencies used for this project. It will download all the necessary dependices automatically.
             </p>
             <Code>npm install</Code>
         </div>
