@@ -1,14 +1,18 @@
-export default function SearchTerm({setTerm}){
-    return (
-        <div style={{width: "100%"}} >
-            <input
-                type="text"
-                    onChange={(e)=>setTerm(e.target.value)}
-                    className="block w-1/3 mx-auto rounded-xl border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    placeholder="Search"
-                    style={{width: "380px", maxWidth: "100%"}}
-                />
-            <br/>
-        </div>
-    )
+import search from "../../../assets/search.png";
+export default function SearchTerm({ setTerm }) {
+  return (
+    <div className="w-[100%] flex justify-center mb-[12%] lg:mb-[5%]">
+      <div className="border-yellow-400 border-2 w-fit h-10 rounded-3xl flex">
+        <img src={search} alt="search" className="w-12 h-10 p-2 pl-4" />
+        <input
+          type="text"
+          onChange={(e) => setTerm(e.target.value)}
+          className="block w-1/3 rounded-3xl outline-none bg-transparent border-none py-1.5 pl-1 pr-20 text-gray-900  placeholder:text-yellow-500 sm:text-sm sm:leading-6"
+          placeholder="Search"
+          style={{ width: "380px", maxWidth: "100%" }}
+        />
+      </div>
+      <br />
+    </div>
+  );
 }
