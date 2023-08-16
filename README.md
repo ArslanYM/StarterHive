@@ -169,18 +169,6 @@ You can also contribute to this project if you are new to open source:
       </a>
       <br>
     </td>
-    <td align="center">
-      <a href="https://github.com/rahilansari261">
-        <img alt="Rahil" src="https://github.com/rahilansari261.png" width="100px;">
-        <br>
-        <sub>
-          <b>
-              Rahil Ansari  
-          </b>
-        </sub>
-      </a>
-      <br>
-    </td>
   </tr>
 </table>
 
