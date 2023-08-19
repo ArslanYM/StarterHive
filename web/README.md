@@ -1,6 +1,6 @@
 # Contributing to a React Project Built with Vite
 
-- This guide will walk you through the steps to contribute to a React project built with Vite. Vite is a fast and         lightweight development server and build tool that is designed to optimize the development experience for modern web applications. By following these steps, you will be able to make changes and submit your contributions to the project.
+- This guide will walk you through the steps to contribute to a React project built with Vite. Vite is a fast and lightweight development server and build tool that is designed to optimize the development experience for modern web applications. By following these steps, you will be able to make changes and submit your contributions to the project.
 
 ## Prerequisites
 Before you begin, make sure you have the following software installed on your system:
@@ -20,15 +20,15 @@ Following are the steps to guide you:
 
 
 ### Step 2:
-- Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click the copy to clipboard icon.
+- Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click the code button, and click the copy to clipboard icon.
 
 ![clone](https://github.com/ArslanYM/StarterHive/assets/104521101/ffe2cb3b-d7e9-41fb-a7e6-8f5ca9d50dd0)
 
 Open a terminal and run the following git command:
    ```
-   git clone "url you just copied"
+   git clone "URL you just copied"
    ```
-where "url you just copied" (without the quotation marks) is the url to this repository (your fork of this project). See the previous steps to obtain the url.
+where "URL you just copied" (without quotation marks) is the URL to this repository (your fork of this project). See the previous steps to obtain the URL.
 
 ![opy](https://github.com/ArslanYM/StarterHive/assets/104521101/5947298f-dd52-478c-9cd9-f22791eea4a5)
 
@@ -55,7 +55,7 @@ In the web directory, install the required dependencies by running the following
 ```
 npm install
 ```
-This will download and install all the necessary packages specified in the project's package.json file.
+This will download and install all the packages specified in the project's package.json file.
 
 ### Step 5: Create a New Branch
 Create a new branch to work on your changes. It is recommended to create a branch with a descriptive name that reflects the purpose of your changes. Use the following command to create a new branch:
@@ -110,4 +110,4 @@ Review your changes and provide a descriptive title and comment for your pull re
 
 Click on the "Create pull request" button to submit your contribution.
 
-Congratulations! You have successfully contributed to the React project built with Vite. The project maintainers will review your
+Congratulations! You have successfully contributed to the React project built with Vite. The project maintainers will review your PR.
