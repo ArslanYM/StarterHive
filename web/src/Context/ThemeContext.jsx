@@ -21,7 +21,7 @@ const SCREEN_THEME = {
     navBar_LinkColor: 'bg-gray-800',
     navBar_BtnColor: 'bg-gray-800',
     navBar_GitBtnIconColor: 'text-white',
-    bg_DefaultBtn: 'bg-purple-500 hover:bg-purple-600',
+    bg_DefaultBtn: 'bg-purple-500 hover:bg-gray-800',
     fab_Background: 'bg-purple-600',
     checked: true,
   },
