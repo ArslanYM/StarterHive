@@ -99,6 +99,9 @@ git push origin my-feature
 ### Step 8: Create a Pull Request(PR) 🚀
 Head over to the main repository on GitHub. You should see a message indicating that you've recently pushed a branch. Click on the "Compare & pull request" button. 🔄
 
+![image](https://github.com/ayush-chandil/StarterHive/assets/74442358/5b4e4724-0d55-492c-9fb9-c52d690d730d)
+
+
 Review your changes and provide a meaningful title and comment for your pull request. 💬
 
 Finally, click "Create pull request" to submit your contribution. 📤
