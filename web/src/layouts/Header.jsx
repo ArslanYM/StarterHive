@@ -1,11 +1,11 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useContext, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { VscGithubAlt, VscChromeClose } from "react-icons/vsc"; 
+import React, { useContext, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { VscGithubAlt, VscChromeClose } from 'react-icons/vsc';
 
-import logo from "../assets/hive.svg";
-import Switch from "../components/Switch/Switch";
-import { ThemeContext } from "../Context/ThemeContext";
+import logo from '../assets/hive.svg';
+import Switch from '../components/Switch/Switch';
+import { ThemeContext } from '../Context/ThemeContext';
 
 const Header = () => {
   const { handleTheme, theme } = useContext(ThemeContext);
@@ -15,34 +15,36 @@ const Header = () => {
   const path = location.pathname;
 
   const toggleDrawer = () => {
-    setIsDrawerOpen(!isDrawerOpen); 
+    setIsDrawerOpen(!isDrawerOpen);
   };
 
   const closeDrawer = () => {
-    setIsDrawerOpen(false); 
+    setIsDrawerOpen(false);
   };
 
   const MENU_ITEMS = [
     {
-      title: "Home",
-      path: '/'
+      title: 'Home',
+      path: '/',
     },
     {
       title: 'Contributors',
-      path: '/contributors'
+      path: '/contributors',
     },
     {
       title: 'Docs',
-      path: '/docs'
+      path: '/docs',
     },
     {
       title: 'Find Issues',
-      path: '/issues'
-    }
-  ]
+      path: '/issues',
+    },
+  ];
 
   return (
-    <header className={`text-gray-400 ${theme.bg_Selected}  body-font flex-nowrap `}>
+    <header
+      className={`text-gray-400 ${theme.bg_Selected}  body-font flex-nowrap `}
+    >
       <nav className="md:mx-auto container ">
         <div className=" flex flex-wrap items-center justify-between  p-4 ">
           <div className=" md:hidden ">
@@ -52,7 +54,7 @@ const Header = () => {
               className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none dark:text-gray-400  dark:focus:ring-gray-600"
               aria-controls="navbar-sticky"
               aria-expanded="false"
-              onClick={() => toggleDrawer()} 
+              onClick={() => toggleDrawer()}
             >
               <span className="sr-only">Toggle menu</span>
               {isDrawerOpen ? (
@@ -75,26 +77,52 @@ const Header = () => {
             </button>
           </div>
           <div>
-            <Link to="/" className="flex order-first  title-font font-medium items-center text-white ">
-              <span className={`${theme.text_Color}  text-xl  font-bold cursor-pointer`}>Starter Hive </span>
+            <Link
+              to="/"
+              className="flex order-first  title-font font-medium items-center text-white "
+            >
+              <span
+                className={`${theme.text_Color}  text-xl  font-bold cursor-pointer`}
+              >
+                Starter Hive{' '}
+              </span>
               <img src={logo} alt="Logo" className="ml-3 w-6" />
             </Link>
           </div>
 
           <div className="flex md:order-2">
             <Switch handleTheme={handleTheme} checked={theme.checked} />
-            <a href="https://github.com/ArslanYM/StarterHive" aria-label="github-link" target="_blank" rel="noreferrer" className="space-x-2 flex items-center">
-              <VscGithubAlt className={`p-0.5 hover:text-3xl text-2xl flex rounded-md duration-300 ${theme.navBar_GitBtnIconColor} ${theme.navBar_GitHover}`} />
+            <a
+              href="https://github.com/ArslanYM/StarterHive"
+              aria-label="github-link"
+              target="_blank"
+              rel="noreferrer"
+              className="space-x-2 flex items-center"
+            >
+              <VscGithubAlt
+                className={`p-0.5 hover:text-3xl text-2xl flex rounded-md duration-300 ${theme.navBar_GitBtnIconColor} ${theme.navBar_GitHover}`}
+              />
             </a>
           </div>
-          <div className={`  ${isDrawerOpen ? '' : 'hidden'} w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
+          <div
+            className={`  ${
+              isDrawerOpen ? '' : 'hidden'
+            } w-full md:flex md:w-auto md:order-1`}
+            id="navbar-sticky"
+          >
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium  rounded-lg md:flex-row  md:mt-0 md:border-0  dark:border-gray-700">
               {MENU_ITEMS.map((el) => (
                 <Link
                   key={el.path}
                   to={el.path}
-                  onClick={() => closeDrawer()} 
-                  className={`block px-1 py-1 md:px-3  rounded hover:${theme.text_Color} cursor-pointer font-bold ${path === el.path && `${theme.navBar_LinkColor}  `}`}
+                  onClick={() => closeDrawer()}
+                  className={`block px-1 py-1 md:px-3  rounded hover:${
+                    theme.text_Color
+                  } cursor-pointer font-bold ${
+                    path === el.path && `${theme.navBar_LinkColor}  `
+                  }
+                  hover:${theme.bg_DefaultBtn} 
+                  `}
                 >
                   {el.title}
                 </Link>
