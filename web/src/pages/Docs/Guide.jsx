@@ -29,7 +29,7 @@ const Guide = () => {
           <img
             src="https://user-images.githubusercontent.com/104521101/240342742-b2863384-753d-448b-9c8f-cc2122121c2b.png"
             alt="Fork"
-            className="max-w-3xl"
+            className="max-w-[80%]"
           />
         </div>
 
