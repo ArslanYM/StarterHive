@@ -116,7 +116,7 @@ const Header = () => {
                   key={el.path}
                   to={el.path}
                   onClick={() => closeDrawer()}
-                  className={`block px-1 py-1 md:px-3  rounded hover:${
+                  className={`block px-1 mx-1 py-1 md:px-3  rounded hover:${
                     theme.text_Color
                   } cursor-pointer font-bold ${
                     path === el.path && `${theme.navBar_LinkColor}  `
