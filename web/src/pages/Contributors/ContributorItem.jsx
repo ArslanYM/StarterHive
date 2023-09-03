@@ -3,27 +3,18 @@ import { useContext } from "react";
 import { ThemeContext } from "../../Context/ThemeContext";
 
 const ContributorItem = ({ image, name, url }) => {
-  const { theme } = useContext(ThemeContext)
+  const { theme } = useContext(ThemeContext);
   return (
-    <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-      <div className="h-full flex items-center border-gray-800 border p-4 rounded-lg hover:shadow-sm hover:shadow-purple-900 hover:border-gray-700 transition-all transform hover:scale-105">
+    <div className="relative overflow-hidden">
+      <a href={url} target="_blank" rel="noopener noreferrer">
+        {/* Wrap the img element in an anchor tag */}
         <img
           alt="team"
-          className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 transition duration-300 transform hover:scale-125"
+          className="w-40 h-40 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full m-4 transition duration-300 transform hover:scale-125 hover:transform duration-300"
           src={image}
         />
-        <div className="flex-grow">
-          <h2 className={`${theme.text_Color} title-font text-lg font-medium`}>{name}</h2>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href={url}
-            className={`text-gray-600 hover:${theme.text_Color}  text-base`}
-          >
-            More Details
-          </a>
-        </div>
-      </div>
+        <div className="absolute inset-0 bg-black opacity-50 rounded-full hover:opacity-0 transition duration-300 transform hover:scale-125 w-full h-full"></div>
+      </a>
     </div>
   );
 };
