@@ -29,11 +29,11 @@ const Home = () => {
               </p>
             </div>
             <div className="flex justify-center">
-              <Link to="/issues">
+              <Link to="/projects">
                 <button
                   className={`inline-flex text-white ${theme.bg_DefaultBtn} border-0 py-3 px-8 focus:outline-none rounded text-lg font-bold hover:translate-y-[-5px] transition-transform duration-300`}
                 >
-                  Find Issues
+                 See Projects
                 </button>
               </Link>
             </div>
