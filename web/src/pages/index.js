@@ -3,5 +3,4 @@
 export { default as Home } from "./Home/Home";
 export { default as Contributors } from "./Contributors/Contributors";
 export { default as Guide } from "./Docs/Guide";
-export { default as IssuesList } from "./Issues/IssuesList";
-export { default as Issue } from "./Issues/Issue";
+export { default as ProjectList } from "./Issues/ProjectList";
