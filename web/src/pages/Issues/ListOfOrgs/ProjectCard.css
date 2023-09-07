@@ -1,0 +1,24 @@
+.card-img {
+          height: 120px;
+          overflow: hidden;
+          object-fit:scale-down;
+          margin-inline: auto;
+          width: 100%;
+}
+
+.card {
+          display: flex;
+          align-self: normal;
+          flex-direction: column;
+          height: 100%;
+}
+
+.card-content {
+          display: grid;
+          grid-template-columns: 1fr;
+          height: 100%;
+}
+
+.alt {
+          background-color: white;
+}
