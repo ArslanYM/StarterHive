@@ -8,6 +8,7 @@ const ProjectCard = ({
   name,
   description,
   tags: propsTags,
+  
 }) => {
   const tags = propsTags.map((tag, key) => (
     <span
