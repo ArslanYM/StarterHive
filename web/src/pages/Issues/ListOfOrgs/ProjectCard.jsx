@@ -13,7 +13,7 @@ const ProjectCard = ({
   const tags = propsTags.map((tag, key) => (
     <span
       key={key}
-      className="inline-block px-2 py-1 mb-2 mr-2 text-xs font-medium text-white bg-blue-500 rounded-full"
+      className="inline-block px-2 py-1 mb-2 mr-2 text-xs font-medium text-white bg-gray-600 rounded-full"
     >
       {tag}
     </span>
