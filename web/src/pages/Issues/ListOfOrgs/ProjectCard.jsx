@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import "./ProjectCard.css"
 import Placeholder from "../../../assets/img-placeholder.jpg"
 
 const ProjectCard = ({
@@ -22,21 +21,21 @@ const ProjectCard = ({
 
   return (
     
-<div className="card max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+<div className="flex self-auto flex-col h-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a href={projectLink}>
         <img 
           rel="preload" 
           loading="lazy"  
-          className="card-img rounded-t-lg" 
+          className="h-28 overflow-hidden object-scale-down mx-auto w-full rounded-t-lg" 
           src= {logoLink}
           alt=""
           onError={(e) => {
-            e.target.className = "alt card-img rounded-t-lg"
+            e.target.className = "bg-white h-28 overflow-hidden object-scale-down mx-auto w-full rounded-t-lg"
             e.target.src = Placeholder
           }}
           />
     </a>
-    <div className="card-content p-5">
+    <div className="grid grid-cols-1 h-full p-5">
         <a href={projectLink}>
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{name}</h5>
         </a>
