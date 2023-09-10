@@ -76,10 +76,35 @@ const Guide = () => {
         </div>
 
         {/* Step 4 */}
+        <div className="space-y-4">
+          <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
+            Step 4: Install dependencies
+          </h2>
+          <p className={`max-w-md ${theme.text_Color}`}>
+              Move to source directory by typing the comment below.
+            </p>
+
+          <Code>cd web/src</Code>
+          <p className={`max-w-md ${theme.text_Color}`}>
+              You need to install dependencies used for this project. It will download all the necessary dependices automatically.
+            </p>
+            <Code>npm install</Code>
+        </div>
+        {/* Step 5 */}
+
+        <div className="space-y-4">
+          <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
+            Step 5: To run app
+          </h2>
+
+          <Code>npm run dev --host</Code>
+        </div>
+
+        {/* Step 6 */}
 
         <div className="space-y-4">
           <h2 className={`max-w-xl text-3xl font-semibold ${theme.text_Color}`}>
-            Step 4: Add an upstream link to the main branch in your cloned repo
+            Step 6: Add an upstream link to the main branch in your cloned repo
           </h2>
 
           <Code>
@@ -94,20 +119,20 @@ const Guide = () => {
           <Code> git pull upstream main </Code>
         </div>
 
-        {/* Step 5 */}
+        {/* Step 7 */}
         <div className="space-y-4">
           <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
-            Step 5: Create your feature branch (Required)
+            Step 7: Create your feature branch (Required)
           </h2>
 
           <Code> git checkout -b &lt;feature-name&gt; </Code>
         </div>
 
-        {/* Step 6 */}
+        {/* Step 8 */}
 
         <div className="space-y-4">
           <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
-            Step 6: Make necessary changes
+            Step 8: Make necessary changes
           </h2>
 
           <p className={`max-w-md ${theme.text_Color}`}>
@@ -117,11 +142,11 @@ const Guide = () => {
           <Code>git add .</Code>
         </div>
 
-        {/* Step 7 */}
+        {/* Step 9 */}
 
         <div className="space-y-4">
           <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
-            Step 7: Commit the changes
+            Step 9: Commit the changes
           </h2>
 
           <p className={`max-w-md ${theme.text_Color}`}>
@@ -133,17 +158,17 @@ const Guide = () => {
           </Code>
         </div>
 
-        {/* step 8 */}
+        {/* step 10 */}
 
         <div className="space-y-4">
           <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
-            Step 8: Push your code
+            Step 10: Push your code
           </h2>
 
           <Code>git push -u origin your-branch-name</Code>
         </div>
 
-        {/* Step 9 */}
+        {/* Step 11 */}
 
         <div className="space-y-4">
           <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
