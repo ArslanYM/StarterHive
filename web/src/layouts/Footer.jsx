@@ -3,6 +3,10 @@ import React from 'react';
 import { FaDiscord, FaGithub, FaTwitter } from 'react-icons/fa';
 import footer_icon from '../assets/hive.svg';
 import { Link } from 'react-router-dom';
+import React from 'react';
+import { FaDiscord, FaGithub, FaTwitter } from 'react-icons/fa';
+import footer_icon from '../assets/hive.svg';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
