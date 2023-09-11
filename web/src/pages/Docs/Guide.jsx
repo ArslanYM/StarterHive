@@ -1,28 +1,23 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useContext } from "react";
-import Code from "./CodeBlock";
-import { ThemeContext } from "../../Context/ThemeContext";
-import { Fab } from "../../components/Fab/Fab";
-import { useInterectionObserver } from "../../hooks/useInterectionObserver";
+import React from 'react';
+import Code from './CodeBlock';
+import { Fab } from '../../components/Fab/Fab';
+import { useInterectionObserver } from '../../hooks/useInterectionObserver';
 
 const Guide = () => {
-  const { theme } = useContext(ThemeContext);
-
-  const { isIntersecting, observerRef } = useInterectionObserver("200px");
+  const { isIntersecting, observerRef } = useInterectionObserver('200px');
 
   return (
     <main className="py-16">
       <div className="container max-w-5xl px-8 mx-auto space-y-16 ">
-        <h1 className={`text-5xl font-bold ${theme.text_Color}`}>
-          Getting started 🗺️
-        </h1>
+        <h1 className="text-5xl font-bold text-white">Getting started 🗺️</h1>
 
-        <p className={`max-w-md ${theme.text_Color}`} ref={observerRef}>
-          This guide will help you to make your first contribution{" "}
+        <p className="max-w-md text-white" ref={observerRef}>
+          This guide will help you to make your first contribution{' '}
         </p>
         {/* Step 1 */}
         <div className="space-y-4">
-          <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
+          <h2 className="text-3xl font-semibold text-white">
             Step 1: Fork this repository
           </h2>
 
@@ -36,20 +31,20 @@ const Guide = () => {
         {/*  Step 2 */}
         <div className="grid items-center grid-cols-1 gap-8 md:grid-cols-2">
           <div className="space-y-4">
-            <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
+            <h2 className="text-3xl font-semibold text-white">
               Step 2: Clone the forked repository
             </h2>
 
-            <p className={`max-w-md ${theme.text_Color}`}>
+            <p className="max-w-md text-white">
               Go to your GitHub account, open the forked repository, click on
               the code button and then click the copy to clipboard icon.
             </p>
-            <p className={`max-w-md ${theme.text_Color}`}>
+            <p className="max-w-md text-white">
               Open a terminal and run the following git command:
             </p>
 
             <Code lang="bash">git clone &lt;URL you just copied&gt;</Code>
-            <p className={`max-w-md ${theme.text_Color}`}>
+            <p className="max-w-md text-white">
               The code will look something like this :
             </p>
 
@@ -68,7 +63,7 @@ const Guide = () => {
         {/* Step 3 */}
 
         <div className="space-y-4">
-          <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
+          <h2 className="text-3xl font-semibold text-white">
             Step 3: Move to the project directory
           </h2>
 
@@ -78,7 +73,7 @@ const Guide = () => {
         {/* Step 4 */}
 
         <div className="space-y-4">
-          <h2 className={`max-w-xl text-3xl font-semibold ${theme.text_Color}`}>
+          <h2 className="max-w-xl text-3xl font-semibold text-white">
             Step 4: Add an upstream link to the main branch in your cloned repo
           </h2>
 
@@ -86,7 +81,7 @@ const Guide = () => {
             git remote add upstream https://github.com/ArslanYM/StarterHive
           </Code>
 
-          <p className={`max-w-md ${theme.text_Color}`}>
+          <p className="max-w-md text-white">
             Keep your cloned repo up to date by pulling from upstream (this will
             also avoid any merge conflicts while committing new changes)
           </p>
@@ -96,7 +91,7 @@ const Guide = () => {
 
         {/* Step 5 */}
         <div className="space-y-4">
-          <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
+          <h2 className="text-3xl font-semibold text-white">
             Step 5: Create your feature branch (Required)
           </h2>
 
@@ -106,13 +101,11 @@ const Guide = () => {
         {/* Step 6 */}
 
         <div className="space-y-4">
-          <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
+          <h2 className="text-3xl font-semibold text-white">
             Step 6: Make necessary changes
           </h2>
 
-          <p className={`max-w-md ${theme.text_Color}`}>
-            Add your commits to the staging
-          </p>
+          <p className="max-w-md text-white">Add your commits to the staging</p>
 
           <Code>git add .</Code>
         </div>
@@ -120,23 +113,24 @@ const Guide = () => {
         {/* Step 7 */}
 
         <div className="space-y-4">
-          <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
+          <h2 className="text-3xl font-semibold text-white">
             Step 7: Commit the changes
           </h2>
 
-          <p className={`max-w-md ${theme.text_Color}`}>
+          <p className="max-w-md text-white">
             commit those changes using the `git commit` command:
           </p>
 
           <Code>
-            git commit -m "Write a meaningful but small commit message"
+            git commit -m &quot;Write a meaningful but small commit
+            message&quot;
           </Code>
         </div>
 
         {/* step 8 */}
 
         <div className="space-y-4">
-          <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
+          <h2 className="text-3xl font-semibold text-white">
             Step 8: Push your code
           </h2>
 
@@ -146,20 +140,20 @@ const Guide = () => {
         {/* Step 9 */}
 
         <div className="space-y-4">
-          <h2 className={`text-3xl font-semibold ${theme.text_Color}`}>
+          <h2 className="text-3xl font-semibold text-white">
             Step 9: Create a PR on Github
           </h2>
 
-          <p className={`max-w-md ${theme.text_Color}`}>
-            Create a PR on Github. (Don't just hit the create a pull request
-            button, you must write a PR message to clarify why and what are you
-            contributing)
+          <p className="max-w-md text-white">
+            Create a PR on Github. (Don&apos;t just hit the create a pull
+            request button, you must write a PR message to clarify why and what
+            are you contributing)
           </p>
         </div>
 
-        <p className={`max-w-md ${theme.text_Color}`}>
+        <p className="max-w-md text-white">
           Make sure you are following the Guidelines of this project while
-          contributing. Take a look at{" "}
+          contributing. Take a look at{' '}
           <a
             href="https://github.com/ArslanYM/StarterHive/blob/main/GUIDELINES.md"
             className="text-purple-400 underline"
