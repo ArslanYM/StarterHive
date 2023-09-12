@@ -1,12 +1,9 @@
 // import React from "react";
 
-import { useContext, useEffect, useState } from "react";
-import { ThemeContext } from "../../Context/ThemeContext";
+import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
 export const Fab = ({ isVisible }) => {
-  const { theme } = useContext(ThemeContext);
-
   const [isMounted, setIsMounted] = useState(false);
 
   const DELAY = 500;
@@ -36,9 +33,7 @@ export const Fab = ({ isVisible }) => {
     <>
       {(isVisible || isMounted) && (
         <div
-          className={`transition duration-500 fixed bottom-0 right-4 ${
-            theme.fab_Background
-          } p-2 rounded-md cursor-pointer ${
+          className={`transition duration-500 fixed bottom-0 right-4 bg-purple-600 p-2 rounded-md cursor-pointer ${
             isVisible ? hideAnimation : showUpAnimation
           }`}
           onClick={scrollUp}

@@ -1,25 +1,18 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import ContributorsList from "./ContributorsList";
-import { useContext } from "react";
-import { ThemeContext } from "../../Context/ThemeContext";
 import { Fab } from "../../components/Fab/Fab";
 import { useInterectionObserver } from "../../hooks/useInterectionObserver";
 
 const Contributors = () => {
-  const { theme } = useContext(ThemeContext);
-
-  const { observerRef, isIntersecting } = useInterectionObserver("200px");
+  const { observerRef, isIntersecting } = useInterectionObserver('200px');
 
   return (
-    <section
-      className="text-gray-400 
-       body-font min-h-screen"
-    >
+    <section className="text-gray-400 body-font min-h-screen">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <h1
-            className={`sm:text-3xl text-2xl font-bold title-font mb-4 ${theme.text_Color} `}
+            className="sm:text-3xl text-2xl font-bold title-font mb-4 text-white"
             ref={observerRef}
           >
             {" "}
