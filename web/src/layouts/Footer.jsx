@@ -12,9 +12,7 @@ const Footer = () => {
           to="/"
           className="flex order-first  title-font font-medium items-center text-white  mb-4 md:mb-0"
         >
-          <a
-            className={`flex title-font font-medium items-center md:justify-start justify-center text-white`}
-          >
+          <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
             <span className="text-xl">Starter Hive</span>
             <img className="object-contain h-6 w-6 ml-3 " src={footer_icon} />
           </a>

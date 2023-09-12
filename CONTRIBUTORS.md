@@ -42,6 +42,7 @@ You can ask questions by raising an [issue](https://github.com/ArslanYM/StarterH
 
 ### Option 2. Complete this process on your computer (locally)
 
+
 1. Fork the project:
 
 - Click the gray Fork button at the top right of this page. This creates your copy of the project and saves it as a new repository in your GitHub account
@@ -50,6 +51,7 @@ You can ask questions by raising an [issue](https://github.com/ArslanYM/StarterH
 
 - Go to your profile. You will find forked repo named **_StarterHive_**. go to the repo by clicking on it.
 - Click on the green Code button, then either the HTTPS or SSH option, and, click the icon to copy the URL. Now you have a copy of the project. Thus, you can play around with it locally on your computer.
+
 
 - Run the following commands into a terminal window (Command Prompt, Powershell, Terminal, Bash, ZSH). Do this to download the forked copy of this repository to your computer.
 
@@ -171,95 +173,89 @@ A GitHub conflict is when people make changes to the same area or line in a file
   - [Ashwanthram K L](https://github.com/AshwanthramKL)
   - [Anurag Roy](https://github.com/NextThread)
 
-| [`Back To Top`](#contents) |
+ | [`Back To Top`](#contents) |
+
 
 - ### **B**
   - [Byomkesh Mahato](https://github.com/byomkesh03)
   - [Benedict Kpaduwa](https://github.com/Benedict-Kpaduwa)
 
 | [`Back To Top`](#contents) |
-
 - ### **C**
-  | [`Back To Top`](#contents) |
-- ### **D**
-  | [`Back To Top`](#contents) |
-- ### **E**
-  | [`Back To Top`](#contents) |
-- ### **F**
-  | [`Back To Top`](#contents) |
-- ### **G**
-  | [`Back To Top`](#contents) |
-- ### **H**
-  | [`Back To Top`](#contents) |
-- ### **I**
-  | [`Back To Top`](#contents) |
-- ### **J**
-  - [Juan Pitencel](https://github.com/JuanPitencel)
-  - [Jaisal Srivastava](https://github.com/Jais99)
-
 | [`Back To Top`](#contents) |
-
+- ### **D**
+| [`Back To Top`](#contents) |
+- ### **E**
+| [`Back To Top`](#contents) |
+- ### **F**
+| [`Back To Top`](#contents) |
+- ### **G**
+| [`Back To Top`](#contents) |
+- ### **H**
+| [`Back To Top`](#contents) |
+- ### **I**
+| [`Back To Top`](#contents) |
+- ### **J**
+    - [Juan Pitencel](https://github.com/JuanPitencel)
+    - [Jaisal Srivastava](https://github.com/Jais99)
+    
+| [`Back To Top`](#contents) |
 - ### **K**
-  | [`Back To Top`](#contents) |
+| [`Back To Top`](#contents) |
 - ### **L**
 
-  - [Lokesh Kadem](https://github.com/lokeshkadem)
+     - [Lokesh Kadem](https://github.com/lokeshkadem)
 
 | [`Back To Top`](#contents) |
-
 - ### **M**
   - [Marcos Agüero](https://github.com/AgMarcos5)
   - [Mayur Gosavi](https://github.com/imaxmayur)
   - [Mriganka](https://github.com/turtlebeasts)
-
+    
 | [`Back To Top`](#contents) |
-
 - ### **N**
   - [Nura Mohamed](https://github.com/Nura-mohamed)
-    | [`Back To Top`](#contents) |
-- ### **O**
-  | [`Back To Top`](#contents) |
-- ### **P**
-  - [Poorvi J Nayak](https://github.com/poorvijn)
-
 | [`Back To Top`](#contents) |
-
+- ### **O**
+| [`Back To Top`](#contents) |
+- ### **P**
+    - [Poorvi J Nayak](https://github.com/poorvijn)
+    
+| [`Back To Top`](#contents) |
 - ### **Q**
-  | [`Back To Top`](#contents) |
+| [`Back To Top`](#contents) |
 - ### **R**
-
-  - [Ramya](https://github.com/ramya202000/StarterHive.git)
-    | [`Back To Top`](#contents) |
+      
+  - [Ramya](https://github.com/ramya202000/StarterHive.git) 
+| [`Back To Top`](#contents) |
 
 - ### **S**
-  - [Shobhit Gupta](https://github.com/shobhitexe)
-  - [Samuel Kalu](https://github.com/eskayML)
-  - [Stephen Cahillane](https://github.com/StephenCahillane)
+
+    - [Shobhit Gupta](https://github.com/shobhitexe)
+    - [Samuel Kalu](https://github.com/eskayML)
+    - [Stephen Cahillane](https://github.com/StephenCahillane)
 
 | [`Back To Top`](#contents) |
-
 - ### **T**
 
   - [Tanbir Ali](https://github.com/tanbirali)
 
-| [`Back To Top`](#contents) |
-
+ | [`Back To Top`](#contents) |
 - ### **U**
-  | [`Back To Top`](#contents) |
+| [`Back To Top`](#contents) |
 - ### **V**
-  - [Vijay Pardhu](https://github.com/vijaynaidu16)
-  - [Vyom Vartak](https://github.com/Vyom-V)
+
+    - [Vijay Pardhu](https://github.com/vijaynaidu16)
+    - [Vyom Vartak](https://github.com/Vyom-V)
 
 | [`Back To Top`](#contents) |
-
 - ### **W**
-  | [`Back To Top`](#contents) |
+| [`Back To Top`](#contents) |
 - ### **X**
-  | [`Back To Top`](#contents) |
+| [`Back To Top`](#contents) |
 - ### **Y**
-  - [Yash Samar](https://github.com/yashhhh04)
+    - [Yash Samar](https://github.com/yashhhh04)
 
 | [`Back To Top`](#contents) |
-
 - ### **Z**
-  | [`Back To Top`](#contents) |
+| [`Back To Top`](#contents) |
