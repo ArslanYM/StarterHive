@@ -17,16 +17,16 @@ body {
   background: #000000;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+::-webkit-scrollbar{
+  width:10px;
+  height:10px;
 }
 
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track{
   background-color: #000000f0;
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb{
   background-color: #facc17;
   border-radius: 5px;
-}
+} 

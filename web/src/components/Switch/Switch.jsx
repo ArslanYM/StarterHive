@@ -1,11 +1,11 @@
-import { FaSun, FaMoon } from 'react-icons//fa';
-import './style.css';
+import { FaSun, FaMoon } from "react-icons//fa";
+import ""./style.css";
 
 // eslint-disable-next-line react/prop-types
 const Switch = ({ handleTheme, checked }) => {
   return (
     <label className="toggle-wrapper" htmlFor="toggle">
-      <div className={`toggle bg-gray-800 ${checked ? 'enabled' : 'disabled'}`}>
+      <div className={`toggle bg-gray-800 ${checked ? "enabled" : "disabled"}`}>
         <div className="icons">
           <FaSun />
           <FaMoon />

@@ -14,8 +14,8 @@
 13. Pull requests will be merged after being **reviewed** by the maintainer.
 14. It might take some time to review your pull request. Please have patience and be nice.
 15. Always create a pull request from a **branch** other than `main`.
-16. Participants/contributors have to complete issues before the decided Deadline. If you fail to make a PR within the deadline, then the issue will be assigned to
-    another person in the queue.
+16. Participants/contributors have to complete issues before the decided Deadline. If you fail to make a PR within the deadline, then the issue will be assigned to 
+another person in the queue.
 17. While making PRs, don't forget to **add a description** of your work.
 18. Include issue number (Fixes: issue number) in your commit message while creating a pull request.
 19. Make sure your solution to any issue is better in terms of performance and other parameters in comparison to the previous work.
@@ -62,3 +62,4 @@ You can refer to the following articles on the basics of Git and Github and also
 - [Learn GitHub from Scratch](https://lab.github.com/githubtraining/introduction-to-github)
 
  </details>
+
