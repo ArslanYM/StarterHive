@@ -1,8 +1,8 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
-import Code from './CodeBlock';
-import { Fab } from '../../components/Fab/Fab';
-import { useInterectionObserver } from '../../hooks/useInterectionObserver';
+import React from "react";
+import Code from "./CodeBlock";
+import { Fab } from "../../components/Fab/Fab";
+import { useInterectionObserver } from "../../hooks/useInterectionObserver";
 
 const Guide = () => {
   const { isIntersecting, observerRef } = useInterectionObserver('200px');
@@ -153,7 +153,7 @@ const Guide = () => {
 
         <p className="max-w-md text-white">
           Make sure you are following the Guidelines of this project while
-          contributing. Take a look at{' '}
+          contributing. Take a look at{" "}
           <a
             href="https://github.com/ArslanYM/StarterHive/blob/main/GUIDELINES.md"
             className="text-purple-400 underline"

@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
-import projectList from './ListOfOrgs/listOfOrgs';
-import ProjectCard from './ListOfOrgs/ProjectCard';
+import React from "react";
+import projectList from "./ListOfOrgs/listOfOrgs";
+import ProjectCard from "./ListOfOrgs/ProjectCard";
 
 const ProjectList = () => {
   return (

@@ -4,22 +4,23 @@
 2. Participants/contributors have to **comment** on issues they would like to work on, and mentors or the PA will assign you.
 3. Issues will be assigned on a **first-come, first-serve basis.**
 4. Participants/contributors can also **open their issues**, but it needs to be verified and labelled by the maintainer. We respect all your contributions, whether it is an Issue or a Pull Request.
-5. When you raise an issue, make sure you get it assigned to you before you start working on that project.
-6. Each participant/contributor will be **assigned 1 issue (max)** at a time to work.
-7. Participants are expected to follow **project guidelines** and [**coding style**](https://github.com/airbnb/javascript/). **Structured code** is one of our top priorities.
-8. Try to **explain your approach** to solve any issue in the comments. This will increase the chances of you being assigned.
-9. Don't create issues that are **already listed**.
-10. Please don't pick up an issue already assigned to someone else. Work on the issues after it gets **assigned to you**.
-11. Make sure you **discuss issues** before working on the issue.
-12. Pull requests will be merged after being **reviewed** by the maintainer.
-13. It might take some time to review your pull request. Please have patience and be nice.
-14. Always create a pull request from a **branch** other than `main`.
-15. Participants/contributors have to complete issues before the decided Deadline. If you fail to make a PR within the deadline, then the issue will be assigned to
-    another person in the queue.
-16. While making PRs, don't forget to **add a description** of your work.
-17. Include issue number (Fixes: issue number) in your commit message while creating a pull request.
-18. Make sure your solution to any issue is better in terms of performance and other parameters in comparison to the previous work.
-19. We all are here to learn. You are allowed to make mistakes. That's how you learn, right!.
+6. When you raise an issue, make sure you get it assigned to you before you start working on that project.
+7. Each participant/contributor will be **assigned 1 issue (max)** at a time to work.
+8. Participants are expected to follow **project guidelines** and [**coding style**](https://github.com/airbnb/javascript/). **Structured code** is one of our top priorities.
+9. Try to **explain your approach** to solve any issue in the comments. This will increase the chances of you being assigned.
+10. Don't create issues that are **already listed**.
+11. Please don't pick up an issue already assigned to someone else. Work on the issues after it gets **assigned to you**.
+12. Make sure you **discuss issues** before working on the issue.
+13. Pull requests will be merged after being **reviewed** by the maintainer.
+14. It might take some time to review your pull request. Please have patience and be nice.
+15. Always create a pull request from a **branch** other than `main`.
+16. Participants/contributors have to complete issues before the decided Deadline. If you fail to make a PR within the deadline, then the issue will be assigned to 
+another person in the queue.
+17. While making PRs, don't forget to **add a description** of your work.
+18. Include issue number (Fixes: issue number) in your commit message while creating a pull request.
+19. Make sure your solution to any issue is better in terms of performance and other parameters in comparison to the previous work.
+20. We all are here to learn. You are allowed to make mistakes. That's how you learn, right!.
+
 
 ### 🧲Pull Requests Review Criteria
 
@@ -29,6 +30,7 @@
 4. You must comment on your code or script where necessary.
 5. Follow the proper [style guides](https://google.github.io/styleguide/) for your work.
 6. For any queries or discussions, please feel free to drop a message.
+
 
 ## 📍Other points to remember while submitting your work:
 
@@ -51,8 +53,8 @@ We want your work to be readable by others; therefore, we encourage you to note 
 <summary> 🤔Need more help?
  </summary>
 
-You can refer to the following articles on the basics of Git and Github and also contact me, in case you are stuck:
 
+You can refer to the following articles on the basics of Git and Github and also contact me, in case you are stuck:
 - [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
 - [Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-an-issue-or-pull-request)
 - [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
@@ -60,3 +62,4 @@ You can refer to the following articles on the basics of Git and Github and also
 - [Learn GitHub from Scratch](https://lab.github.com/githubtraining/introduction-to-github)
 
  </details>
+ 

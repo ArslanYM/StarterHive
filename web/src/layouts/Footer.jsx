@@ -1,12 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import { FaDiscord, FaGithub, FaTwitter } from 'react-icons/fa';
-import footer_icon from '../assets/hive.svg';
-import { Link } from 'react-router-dom';
-import React from 'react';
-import { FaDiscord, FaGithub, FaTwitter } from 'react-icons/fa';
-import footer_icon from '../assets/hive.svg';
-import { Link } from 'react-router-dom';
+import { FaDiscord, FaGithub, FaTwitter } from 'react-icons/fa'
+import footer_icon from '../assets/hive.svg'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -60,7 +56,7 @@ const Footer = () => {
         </span>
       </div>
     </footer>
-  );
-};
+  )
+}
 
 export default Footer;

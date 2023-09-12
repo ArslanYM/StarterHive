@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import PropTypes from 'prop-types';
-import Placeholder from '../../../assets/img-placeholder.jpg';
+import Placeholder from "../../../assets/img-placeholder.jpg"
 
 const ProjectCard = ({
   projectLink,
@@ -25,20 +25,17 @@ const ProjectCard = ({
           rel="preload"
           loading="lazy"
           className="h-28 overflow-hidden object-scale-down mx-auto w-full rounded-t-lg"
-          src={logoLink}
+          src= {logoLink}
           alt=""
           onError={(e) => {
-            e.target.className =
-              'bg-white h-28 overflow-hidden object-scale-down mx-auto w-full rounded-t-lg';
-            e.target.src = Placeholder;
+            e.target.className = "bg-white h-28 overflow-hidden object-scale-down mx-auto w-full rounded-t-lg"
+            e.target.src = Placeholder
           }}
         />
       </a>
       <div className="grid grid-cols-1 h-full p-5">
         <a href={projectLink}>
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
-            {name}
-          </h5>
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{name}</h5>
         </a>
         <p className="mb-3 font-normal text-gray-400">{description}</p>
         <div className="mb-3">{tags}</div>
