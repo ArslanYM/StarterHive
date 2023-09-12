@@ -230,7 +230,8 @@ A GitHub conflict is when people make changes to the same area or line in a file
 | [`Back To Top`](#contents) |
 
 - ### **S**
-    
+    - [Simardeep Singh](https://github.com/SimardeepSingh-zsh)
+
     - [Shobhit Gupta](https://github.com/shobhitexe)
     - [Samuel Kalu](https://github.com/eskayML)
     - [Stephen Cahillane](https://github.com/StephenCahillane)
