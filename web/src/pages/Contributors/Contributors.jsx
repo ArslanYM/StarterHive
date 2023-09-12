@@ -15,11 +15,11 @@ const Contributors = () => {
             className="sm:text-3xl text-2xl font-bold title-font mb-4 text-white"
             ref={observerRef}
           >
-            {' '}
-            A{' '}
+            {" "}
+            A{" "}
             <span className="text-4xl text-yellow-400 font-extrabold animate-pulse">
               Big Thanks
-            </span>{' '}
+            </span>{" "}
             to all our Contributors.
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed italic md:text-base lg:text-xl">
