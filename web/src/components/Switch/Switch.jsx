@@ -1,5 +1,5 @@
 import { FaSun, FaMoon } from "react-icons//fa";
-import ""./style.css";
+import "./style.css";
 
 // eslint-disable-next-line react/prop-types
 const Switch = ({ handleTheme, checked }) => {
