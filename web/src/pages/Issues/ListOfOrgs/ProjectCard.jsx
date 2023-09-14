@@ -24,7 +24,8 @@ const ProjectCard = ({
     setIssues(response.data.issues);
   }
 
-  console.log(issues);//at this point if you click on find issues for any project, it will log its good first issues ( need to fix the ./listoforgs to specify link exactly to a project.)
+  //console.log(issues);
+  //at this point if you click on find issues for any project, it will log its good first issues ( need to fix the ./listoforgs to specify link exactly to a project.)
 
 
 
