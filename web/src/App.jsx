@@ -3,6 +3,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home, Contributors, Guide, ProjectList } from "./pages";
 import MasterLayout from "./layouts";
+import { IssueList } from "./pages/Issues/IssueList";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/contributors" element={<Contributors />} />
           <Route path="/Docs" element={<Guide />} />
           <Route path="/projects" element={<ProjectList />} />
+          <Route path="/issues" element={<IssueList />} />
         </Routes>
       </MasterLayout>
     </BrowserRouter>
