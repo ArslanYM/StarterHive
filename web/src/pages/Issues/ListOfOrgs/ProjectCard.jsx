@@ -39,7 +39,7 @@ const ProjectCard = ({
   ));
 
   return (
-    <div className="flex self-auto flex-col h-full max-w-sm border rounded-lg shadow bg-gray-800 border-gray-700">
+    <div className="flex self-auto flex-col h-full w-96 border rounded-lg shadow bg-gray-800 border-gray-700">
       <a href={projectLink}>
         <img
           rel="preload"
