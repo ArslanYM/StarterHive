@@ -14,8 +14,10 @@ const ProjectCard = ({
 }) => {
   
   const [issues, setIssues] = useState(null);
+  const [findIssue,setFindIssue] = useState(false)
 
   async function getIssues() {
+    setFindIssue(true)
     const getLastTwoHeaders = (link) => link.split('/').slice(-2);
     const lastTwoHeaders = getLastTwoHeaders(projectLink);
     var orgName = lastTwoHeaders[0];
@@ -23,14 +25,18 @@ const ProjectCard = ({
     try {
         const response = await axios.get(`https://issuefinder.onrender.com/api/goodfirstissues/${orgName}/${projectName}`);
     setIssues(response.data.issues);
-    window.open(issues[0]?.url,'_blank') // this is for navigate to issue with _blank property in useNavigate we cannot use _Blank that's why i use this approach
+        window.open(issues[0]?.url,'_blank') // this is for navigate to issue with _blank property in useNavigate we cannot use _Blank that's why i use this approach
    } catch (error) {
       toast.error("Somthing Error Please Try in Some Time")
     }
     if(issues && issues.length <= 0){
       toast.error("No issues found")
     }
+    setFindIssue(false)
   }
+
+
+  
   // console.log(issues);
   //at this point if you click on find issues for any project, it will log its good first issues ( need to fix the ./listoforgs to specify link exactly to a project.)
 
@@ -67,14 +73,16 @@ const ProjectCard = ({
         <p className="mb-3 font-normal text-gray-400">{description}</p>
         <div className="mb-3">{tags}</div>
         <div>
-          <button onClick={getIssues}>
+          <button onClick={getIssues} disabled={findIssue ? true:false}>
             <Link
               to={issues && issues[0]?.url}
               target={issues && issues[0]?.url ? "_blank" : ""}
               rel="noreferrer"
               className="issue-btn inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-900 rounded-lg hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 "
             >
-              Find Issues
+              {findIssue ? "Searching...":
+              "Find Issues"
+            }
               <svg
                 className="w-3.5 h-3.5 ml-2"
                 aria-hidden="true"
