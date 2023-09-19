@@ -4,9 +4,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home, Contributors, Guide, ProjectList } from "./pages";
 import MasterLayout from "./layouts";
 import { IssueList } from "./pages/Issues/IssueList";
+import {Toaster} from "react-hot-toast"
 
 function App() {
   return (
+    <>
+    <Toaster />
     <BrowserRouter>
       <MasterLayout>
         <Routes>
@@ -18,6 +21,7 @@ function App() {
         </Routes>
       </MasterLayout>
     </BrowserRouter>
+    </>
   );
 }
 

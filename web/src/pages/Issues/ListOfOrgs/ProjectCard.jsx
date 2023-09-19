@@ -2,7 +2,8 @@ import PropTypes from 'prop-types';
 import Placeholder from "../../../assets/img-placeholder.jpg"
 import axios from 'axios';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link} from 'react-router-dom';
+import toast from 'react-hot-toast';
 
 const ProjectCard = ({
   projectLink,
@@ -11,8 +12,7 @@ const ProjectCard = ({
   description,
   tags: propsTags,
 }) => {
-
-
+  
   const [issues, setIssues] = useState(null);
 
   async function getIssues() {
@@ -20,11 +20,18 @@ const ProjectCard = ({
     const lastTwoHeaders = getLastTwoHeaders(projectLink);
     var orgName = lastTwoHeaders[0];
     var projectName = lastTwoHeaders[1];
-    const response = await axios.get(`https://issuefinder.onrender.com/api/goodfirstissues/${orgName}/${projectName}`);
+    try {
+        const response = await axios.get(`https://issuefinder.onrender.com/api/goodfirstissues/${orgName}/${projectName}`);
     setIssues(response.data.issues);
+    window.open(issues[0]?.url,'_blank') // this is for navigate to issue with _blank property in useNavigate we cannot use _Blank that's why i use this approach
+   } catch (error) {
+      toast.error("Somthing Error Please Try in Some Time")
+    }
+    if(issues && issues.length <= 0){
+      toast.error("No issues found")
+    }
   }
-
-  //console.log(issues);
+  // console.log(issues);
   //at this point if you click on find issues for any project, it will log its good first issues ( need to fix the ./listoforgs to specify link exactly to a project.)
 
 
@@ -61,8 +68,9 @@ const ProjectCard = ({
         <div className="mb-3">{tags}</div>
         <div>
           <button onClick={getIssues}>
-            <a
-              target="_blank"
+            <Link
+              to={issues && issues[0]?.url}
+              target={issues && issues[0]?.url ? "_blank" : ""}
               rel="noreferrer"
               className="issue-btn inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-900 rounded-lg hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 "
             >
@@ -82,7 +90,7 @@ const ProjectCard = ({
                   d="M1 5h12m0 0L9 1m4 4L9 9"
                 />
               </svg>
-            </a>
+            </Link>
           </button>
 
         </div>
