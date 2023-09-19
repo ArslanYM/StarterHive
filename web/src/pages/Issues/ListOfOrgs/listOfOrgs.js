@@ -38,7 +38,7 @@ const projectList = [
   {
     name: "Reseter.css",
     imageSrc:
-      "https://raw.githubusercontent.com/resetercss/reseter.css/main/logo.png",
+      "https://github.com/krshoss/gardevoir/raw/main/.github/assets/gardevoir.png",
     projectLink: "https://github.com/resetercss/reseter.css",
     description:
       "Reseter.css is an awesome CSS boilerplate for a website. It is a great tool for any web designer. Reseter.css resets all the premade styles by the browser. It normalizes the browser's stylesheet for a better cross-browser experience.",
@@ -47,7 +47,7 @@ const projectList = [
   {
     name: "CircuitVerse",
     imageSrc:
-      "https://github.com/CircuitVerse/CircuitVerse/blob/master/app/assets/images/CircuitVerse.png",
+      "https://raw.githubusercontent.com/CircuitVerse/CircuitVerse/master/app/assets/images/cvlogo.svg",
     projectLink: "https://github.com/CircuitVerse",
     description:
       "CircuitVerse is a free, open-source platform which allows users to construct digital logic circuits online. We also offer the Interactive Book which teaches users on the fundamentals of modern, digital circuits.",
@@ -82,7 +82,7 @@ const projectList = [
   {
     name: "React Native",
     imageSrc:
-      "https://github.com/facebook/react-native/blob/main/Libraries/NewAppScreen/components/logo.png?raw=true",
+      "https://raw.githubusercontent.com/facebook/react/57768ef90bdb0110c7b9266185a8f6446934b331/fixtures/dom/public/react-logo.svg",
     projectLink: "https://github.com/facebook/react-native/contribute",
     description: "A framework for building native apps with React.",
     tags: ["JavaScript", "React", "React Native", "Mobile App"],
@@ -419,7 +419,7 @@ const projectList = [
   {
     name: "Public Lab",
     imageSrc:
-      "https://publiclab.org/system/images/photos/000/023/444/large/Screenshot_20180204-101546_2.png",
+      "https://raw.githubusercontent.com/publiclab/community-toolbox/main/images/Boots-ground-02.png",
     projectLink: "https://publiclab.github.io/community-toolbox/#r=all",
     description:
       "PublicLab.org - a collaborative knowledge-exchange platform in Rails; we welcome first-time contributors! 🎈",
@@ -996,7 +996,7 @@ const projectList = [
   {
     name: "Mattermost",
     imageSrc:
-      "https://raw.githubusercontent.com/mattermost/mattermost-handbook/bc1qre8jdw2azrg6tf49wmp652w00xltddxmpk98xp/.gitbook/assets/branding/logo-downloads/mattermost-logo-vertical-blue.png",
+      "https://user-images.githubusercontent.com/7205829/137170381-fe86eef0-bccc-4fdd-8e92-b258884ebdd7.png",
     projectLink: "https://github.com/mattermost/mattermost-server/contribute",
     description: "Open source Slack-alternative for DevOps teams",
     tags: ["Go", "Javascript", "React", "React Native"],
@@ -1061,7 +1061,7 @@ const projectList = [
   },
   {
     name: "SimplQ",
-    imageSrc: "https://www.simplq.me/images/Simple-Q.png",
+    imageSrc: "https://avatars.githubusercontent.com/u/64396572?s=200&v=4",
     projectLink: "https://github.com/SimplQ/simplQ-frontend#contributing",
     description:
       "Modern and fully web based queue management solution for crowded businesses.",
@@ -1228,7 +1228,7 @@ const projectList = [
   {
     name: "Pytorch",
     imageSrc:
-      "https://github.com/pytorch/pytorch/raw/master/docs/source/_static/img/pytorch-logo-dark.png",
+      "https://raw.githubusercontent.com/pytorch/pytorch/main/docs/source/_static/img/pytorch-logo-dark.png",
     projectLink: "https://github.com/pytorch/pytorch",
     description:
       "PyTorch is an optimized tensor library for deep learning using GPUs and CPUs.",
@@ -1288,7 +1288,7 @@ const projectList = [
   {
     name: "aprenda-go-com-testes",
     imageSrc:
-      "https://github.com/larien/aprenda-go-com-testes/blob/main/.gitbook/assets/red-green-blue-gophers-smaller.png",
+      "https://raw.githubusercontent.com/larien/aprenda-go-com-testes/main/.gitbook/assets/red-green-blue-gophers-smaller.png",
     githubLink: "https://github.com/larien/aprenda-go-com-testes",
     description: "learn easily and quickly",
     tags: ["go"],
@@ -1304,14 +1304,14 @@ const projectList = [
   },
   {
     name: 'Servo',
-    imageSrc: 'https://raw.githubusercontent.com/servo/servo/master/resources/servo.icns',
-    projectLink: 'https://github.com/digital-asset/daml/contribute',
+    imageSrc: 'https://servo.org/img/servo-color-negative-no-container.png',
+    projectLink: 'https://github.com/servo/servo',
     description: 'A browser engine designed for applications including embedded use.',
     tags: ['Rust,Browser,Servo']
   },
   {
     name:'matplotlib',
-    imageSrc:'https://github.com/matplotlib/matplotlib/blob/main/doc/_static/matplotlib-icon.svg',
+    imageSrc:'https://camo.githubusercontent.com/109927a15915074d15313889468aa9aa688de3b9e38cc4359a01f665d351114e/68747470733a2f2f6d6174706c6f746c69622e6f72672f5f7374617469632f6c6f676f322e737667',
     projectLink:'https://github.com/matplotlib/matplotlib',
     description:'Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.',
     tags:['python','gtk','data-science','qt','data-visualization','tk','matplotlib','plotting','hacktoberfest','wx']
