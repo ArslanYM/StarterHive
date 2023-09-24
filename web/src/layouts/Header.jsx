@@ -35,7 +35,7 @@ const Header = () => {
     {
       title: 'Projects',
       path: '/projects',
-    },
+    }
   ];
 
   return (
