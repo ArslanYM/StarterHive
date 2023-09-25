@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
-import Placeholder from "../../../assets/img-placeholder.jpg"
+import Placeholder from '../../../assets/img-placeholder.jpg';
 import axios from 'axios';
 import { useState } from 'react';
+import { BsBookmark, BsFillBookmarkCheckFill } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
 
 const ProjectCard = ({
@@ -10,24 +11,27 @@ const ProjectCard = ({
   name,
   description,
   tags: propsTags,
+  bookMarkProjects,
+  getBookMarkProjects,
 }) => {
-
-
   const [issues, setIssues] = useState(null);
+  const [isBookmarked, setIsBookmarked] = useState(
+    bookMarkProjects.includes(projectLink)
+  );
 
   async function getIssues() {
     const getLastTwoHeaders = (link) => link.split('/').slice(-2);
     const lastTwoHeaders = getLastTwoHeaders(projectLink);
     var orgName = lastTwoHeaders[0];
     var projectName = lastTwoHeaders[1];
-    const response = await axios.get(`https://issuefinder.onrender.com/api/goodfirstissues/${orgName}/${projectName}`);
+    const response = await axios.get(
+      `https://issuefinder.onrender.com/api/goodfirstissues/${orgName}/${projectName}`
+    );
     setIssues(response.data.issues);
   }
 
   //console.log(issues);
   //at this point if you click on find issues for any project, it will log its good first issues ( need to fix the ./listoforgs to specify link exactly to a project.)
-
-
 
   const tags = propsTags.map((tag, key) => (
     <span
@@ -38,8 +42,53 @@ const ProjectCard = ({
     </span>
   ));
 
+  const handleClick = () => {
+    setIsBookmarked(!isBookmarked);
+
+    // If the project is already bookmarked, remove it from the list
+    if (isBookmarked) {
+      let bookMarkProjects = JSON.parse(
+        localStorage.getItem('bookMarkProjects')
+      );
+
+      bookMarkProjects = bookMarkProjects.filter(
+        (project) => project !== projectLink
+      );
+      localStorage.setItem(
+        'bookMarkProjects',
+        JSON.stringify(bookMarkProjects)
+      );
+      getBookMarkProjects(); // Update the bookmark list
+      return;
+    }
+
+    // If the project is not bookmarked, add it to the list
+    if (!isBookmarked) {
+      let bookMarkProjects = JSON.parse(
+        localStorage.getItem('bookMarkProjects')
+      );
+      if (bookMarkProjects === null) {
+        bookMarkProjects = [projectLink];
+      } else {
+        bookMarkProjects.push(projectLink);
+      }
+      localStorage.setItem(
+        'bookMarkProjects',
+        JSON.stringify(bookMarkProjects)
+      );
+      getBookMarkProjects(); // Update the bookmark list
+      return;
+    }
+  };
+
   return (
-    <div className="flex self-auto flex-col h-full w-96 border rounded-lg shadow bg-gray-800 border-gray-700">
+    <div className="flex self-auto flex-col h-full w-96 border rounded-lg shadow bg-gray-800 border-gray-700 relative">
+      <div
+        className="absolute text-2xl right-2 top-2 text-yellow-400 cursor-pointer"
+        onClick={handleClick}
+      >
+        {isBookmarked ? <BsFillBookmarkCheckFill /> : <BsBookmark />}
+      </div>
       <a href={projectLink}>
         <img
           rel="preload"
@@ -84,7 +133,6 @@ const ProjectCard = ({
               </svg>
             </a>
           </button>
-
         </div>
       </div>
     </div>
@@ -99,4 +147,6 @@ ProjectCard.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   tags: PropTypes.arrayOf(PropTypes.string),
+  bookMarkProjects: PropTypes.arrayOf(PropTypes.string),
+  getBookMarkProjects: PropTypes.func,
 };
