@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import Placeholder from "../../../assets/img-placeholder.jpg"
+import Placeholder from '../../../assets/img-placeholder.jpg';
 import axios from 'axios';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -11,8 +11,6 @@ const ProjectCard = ({
   description,
   tags: propsTags,
 }) => {
-
-
   const [issues, setIssues] = useState(null);
 
   async function getIssues() {
@@ -20,14 +18,14 @@ const ProjectCard = ({
     const lastTwoHeaders = getLastTwoHeaders(projectLink);
     var orgName = lastTwoHeaders[0];
     var projectName = lastTwoHeaders[1];
-    const response = await axios.get(`https://issuefinder.onrender.com/api/goodfirstissues/${orgName}/${projectName}`);
+    const response = await axios.get(
+      `https://issuefinder.onrender.com/api/goodfirstissues/${orgName}/${projectName}`
+    );
     setIssues(response.data.issues);
   }
 
   //console.log(issues);
   //at this point if you click on find issues for any project, it will log its good first issues ( need to fix the ./listoforgs to specify link exactly to a project.)
-
-
 
   const tags = propsTags.map((tag, key) => (
     <span
@@ -39,7 +37,7 @@ const ProjectCard = ({
   ));
 
   return (
-    <div className="flex self-auto flex-col h-full w-96 border rounded-lg shadow bg-gray-800 border-gray-700">
+    <div className="flex self-auto flex-col h-full w-80 border rounded-lg shadow bg-gray-800 border-gray-700">
       <a href={projectLink}>
         <img
           rel="preload"
@@ -48,14 +46,17 @@ const ProjectCard = ({
           src={logoLink}
           alt=""
           onError={(e) => {
-            e.target.className = "bg-white h-28 overflow-hidden object-scale-down mx-auto w-full rounded-t-lg"
-            e.target.src = Placeholder
+            e.target.className =
+              'bg-white h-28 overflow-hidden object-scale-down mx-auto w-full rounded-t-lg';
+            e.target.src = Placeholder;
           }}
         />
       </a>
       <div className="grid grid-cols-1 h-full p-5">
         <a href={projectLink}>
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{name}</h5>
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            {name}
+          </h5>
         </a>
         <p className="mb-3 font-normal text-gray-400">{description}</p>
         <div className="mb-3">{tags}</div>
@@ -84,7 +85,6 @@ const ProjectCard = ({
               </svg>
             </a>
           </button>
-
         </div>
       </div>
     </div>
