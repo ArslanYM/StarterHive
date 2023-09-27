@@ -1,5 +1,5 @@
 import ContributorItem from './ContributorItem';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import ScaleLoader from 'react-spinners/ScaleLoader';
 import SearchTerm from './search/Search';
 
@@ -11,7 +11,6 @@ const ContributorsList = () => {
   const [search, setSearch] = useState('');
   const [pageNo, setPageNo] = useState(1); 
   const [isMoreContributors, setIsMoreContributors] = useState(true); // Flag to check if there are more contributors to fetch
-  const isInitialRender = useRef(true); // Initial render flag
 
   useEffect(() => {
     const fetchContributors = async () => {
@@ -33,13 +32,7 @@ const ContributorsList = () => {
       setLoading(false);
     };
 
-    // Check if it's not the initial render before fetching data
-    if (!isInitialRender.current) {
-      fetchContributors();
-    } else {
-      // Set the initial render flag to false
-      isInitialRender.current = false;
-    }
+    fetchContributors();
   }, [pageNo]);
 
   const filtered = contributors.filter((entry) =>
