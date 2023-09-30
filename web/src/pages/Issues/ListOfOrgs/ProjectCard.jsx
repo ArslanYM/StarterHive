@@ -15,7 +15,7 @@ const ProjectCard = ({
   getBookMarkProjects,
 }) => {
 
-
+  const navigate = useNavigate();
   const [issues, setIssues] = useState(null);
   const [isLoading, setIsLoading] = useState(false)
   const [isBookmarked, setIsBookmarked] = useState(
@@ -32,9 +32,8 @@ const ProjectCard = ({
     const response = await axios.get(`https://issuefinder.onrender.com/api/goodfirstissues/${orgName}/${projectName}`);
     const data = response.data;
     setIssues(data.issues);
-    console.log(issues);
     setIsLoading(false);
-    alert("Check the console for good-first-issues for " + projectName)
+     navigate('/issues', { state: { issues: data.issues } });
   }
 
 
