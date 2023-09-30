@@ -17,22 +17,25 @@ const ProjectCard = ({
 
 
   const [issues, setIssues] = useState(null);
+  const [isLoading, setIsLoading] = useState(false)
   const [isBookmarked, setIsBookmarked] = useState(
     bookMarkProjects.includes(projectLink)
   );
 
-  async function getIssues() {
+  const getIssues = async () => {
+    setIsLoading(true)
+    console.log("Finding Issues for link : " + projectLink);
     const getLastTwoHeaders = (link) => link.split('/').slice(-2);
     const lastTwoHeaders = getLastTwoHeaders(projectLink);
     var orgName = lastTwoHeaders[0];
     var projectName = lastTwoHeaders[1];
     const response = await axios.get(`https://issuefinder.onrender.com/api/goodfirstissues/${orgName}/${projectName}`);
-    setIssues(response.data.issues);
+    const data = response.data;
+    setIssues(data.issues);
+    console.log(issues);
+    setIsLoading(false);
+    alert("Check the console for good-first-issues for " + projectName)
   }
-
-  //console.log(issues);
-  //at this point if you click on find issues for any project, it will log its good first issues ( need to fix the ./listoforgs to specify link exactly to a project.)
-
 
 
   const tags = propsTags.map((tag, key) => (
@@ -117,7 +120,11 @@ const ProjectCard = ({
               rel="noreferrer"
               className="issue-btn inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-900 rounded-lg hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 "
             >
-              Find Issues
+              {
+                isLoading ?
+                  "Loading..." :
+                  "Find Issues"
+              }
               <svg
                 className="w-3.5 h-3.5 ml-2"
                 aria-hidden="true"
