@@ -15,24 +15,26 @@ const ProjectCard = ({
   getBookMarkProjects,
 }) => {
 
-
+  const navigate = useNavigate();
   const [issues, setIssues] = useState(null);
+  const [isLoading, setIsLoading] = useState(false)
   const [isBookmarked, setIsBookmarked] = useState(
     bookMarkProjects.includes(projectLink)
   );
 
-  async function getIssues() {
+  const getIssues = async () => {
+    setIsLoading(true)
+    console.log("Finding Issues for link : " + projectLink);
     const getLastTwoHeaders = (link) => link.split('/').slice(-2);
     const lastTwoHeaders = getLastTwoHeaders(projectLink);
     var orgName = lastTwoHeaders[0];
     var projectName = lastTwoHeaders[1];
     const response = await axios.get(`https://issuefinder.onrender.com/api/goodfirstissues/${orgName}/${projectName}`);
-    setIssues(response.data.issues);
+    const data = response.data;
+    setIssues(data.issues);
+    setIsLoading(false);
+     navigate('/issues', { state: { issues: data.issues } });
   }
-
-  //console.log(issues);
-  //at this point if you click on find issues for any project, it will log its good first issues ( need to fix the ./listoforgs to specify link exactly to a project.)
-
 
 
   const tags = propsTags.map((tag, key) => (
@@ -107,9 +109,8 @@ const ProjectCard = ({
       </a>
       <div className="grid grid-cols-1 h-full p-5">
         <a href={projectLink} target="_blank" rel="noopener noreferrer">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            {name}
-          </h5>
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-white capitalize">{name}</h5>
+
         </a>
         <p className="mb-3 font-normal text-gray-400">{description}</p>
         <div className="mb-3">{tags}</div>
@@ -120,7 +121,11 @@ const ProjectCard = ({
               rel="noreferrer"
               className="issue-btn inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-900 rounded-lg hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 "
             >
-              Find Issues
+              {
+                isLoading ?
+                  "Loading..." :
+                  "Find Issues"
+              }
               <svg
                 className="w-3.5 h-3.5 ml-2"
                 aria-hidden="true"
