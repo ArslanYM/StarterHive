@@ -184,6 +184,7 @@ A GitHub conflict is when people make changes to the same area or line in a file
 - ### **C**
 | [`Back To Top`](#contents) |
 - ### **D**
+- [Dhyey Sampat](https://github.com/dhyeysampat)
 | [`Back To Top`](#contents) |
 - ### **E**
 | [`Back To Top`](#contents) |
