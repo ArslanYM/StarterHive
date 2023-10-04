@@ -1,4 +1,4 @@
-export default function NotFound() {
+const NotFound = () => {
   return (
     <div className="w-full h-[90vh] bg-gradient-to-b from-[#343E4E] to-[#010102] flex flex-col justify-center items-center font-OpenSans  text-white  gap-4 md:gap-32">
       <div className="main-content flex flex-col items-center md:flex-row w-full justify-center gap-10 md:gap-20">
@@ -52,4 +52,5 @@ export default function NotFound() {
       </div>
     </div>
   );
-}
+};
+export default NotFound;
