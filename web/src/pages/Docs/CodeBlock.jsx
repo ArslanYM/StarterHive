@@ -9,23 +9,19 @@ import { useState } from 'react';
 const Code = ({ command }) => {
   const [isCopiedToClipBoard, setIsCopiedToClipBoard] = useState(false);
 
-  const resetIsCopiedToClipBoard = () => {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        setIsCopiedToClipBoard(false);
-        resolve();
-      }, 1000);
-    });
-  };
-
   // Function to copy the command to clipboard
   const copyToClipBoard = () => {
+    if (isCopiedToClipBoard) return;
+
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard
         .writeText(command)
         .then(() => {
           setIsCopiedToClipBoard(true);
-          resetIsCopiedToClipBoard();
+
+          setTimeout(() => {
+            setIsCopiedToClipBoard(false);
+          }, 2000);
         })
         .catch((error) => {
           alert('Unable to copy text to clipboard:', error);
@@ -47,13 +43,15 @@ const Code = ({ command }) => {
           className="text-xl cursor-pointer hover:bg-slate-700 hover:bg-opacity-50 p-2 rounded-md duration-300 relative w-9 h-9"
         >
           <MdOutlineContentCopy
-            className={`absolute ${
-              isCopiedToClipBoard ? 'scale-0 duration-500' : 'scale-100'
+            className={`absolute duration-300 ${
+              isCopiedToClipBoard ? 'scale-0' : 'scale-100 delay-300'
             }`}
           />
           <BsCheck2
             className={`absolute ${
-              isCopiedToClipBoard ? 'scale-100 duration-500' : 'scale-0'
+              isCopiedToClipBoard
+                ? 'scale-100 duration-300 delay-200'
+                : 'scale-0'
             }`}
           />
         </div>
