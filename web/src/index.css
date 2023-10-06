@@ -31,3 +31,17 @@ body {
   background-color: #facc17;
   border-radius: 5px;
 }
+
+.thin-scrollbar::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.thin-scrollbar::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #a5a5a5;
+  border-radius: 1px;
+}
