@@ -24,6 +24,7 @@ const LanguageDropDown = ({
   // Sort languages alphabetically
   useEffect(() => {
     languages.sort();
+    console.log('#1:languages: ', languages);
     setDropdownValues(languages);
   }, [languages]);
 
@@ -34,6 +35,8 @@ const LanguageDropDown = ({
   }, [isDropDownVisible]);
 
   useEffect(() => {
+    console.log('#3:searchValue: ', searchValue);
+    console.log('#3:languages: ', languages);
     setDropdownValues(filterItem(searchValue, languages));
   }, [searchValue, languages]);
 
