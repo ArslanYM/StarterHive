@@ -1,10 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react';
-import projectList from "./ListOfOrgs/listOfOrgs";
-import ProjectCard from "./ListOfOrgs/ProjectCard";
-import { ScaleLoader } from 'react-spinners';
 import { BsBookmark, BsFillBookmarkCheckFill } from 'react-icons/bs';
+import { ScaleLoader } from 'react-spinners';
 import LanguageDropDown from './LanguageDropDown';
+import ProjectCard from "./ListOfOrgs/ProjectCard";
+import projectList from "./ListOfOrgs/listOfOrgs";
 
 const ProjectList = () => {
   const [selectedLanguage, setSelectedLanguage] = useState('All');
@@ -38,14 +38,15 @@ const ProjectList = () => {
 
   // Get all the languages/tags from the project list
   const getLanguages = () => {
+    const projectsLanguage = [];
     projectList.map((project) => {
       project.tags.map((tag) => {
-        if (!languages.includes(tag)) {
-          languages.push(tag);
+        if (!projectsLanguage.includes(tag)) {
+          projectsLanguage.push(tag);
         }
       });
     });
-    setLanguages(languages);
+    setLanguages(projectsLanguage);
   };
 
   const getBookMarkProjects = () => {
