@@ -6,8 +6,8 @@ import { Input } from '../../components/Input/Input';
 
 const LanguageDropDown = ({
   languages,
-  selectedLanguage,
-  setSelectedLanguage,
+  selectedLanguages,
+  setSelectedLanguages,
 }) => {
   const [isDropDownVisible, setIsDropDownVisible] = useState(false); // To toggle dropdown
   const [searchValue, setSearchValue] = useState('');
@@ -38,22 +38,25 @@ const LanguageDropDown = ({
   }, [searchValue, languages]);
 
   // When a language is clicked
-  const onLanguageClick = (language) => {
-    setIsDropDownVisible(false);
-
+  const onLanguageClick = (e, language) => {
+    e.stopPropagation();
     // If the same language is clicked again, set selected language to 'All'
-    if (selectedLanguage === language) {
-      setSelectedLanguage('All');
+    if (selectedLanguages.includes(language)) {
+      setSelectedLanguages(selectedLanguages.filter(selected => selected !== language));
       return;
     }
 
     // Else set the selected language to the clicked language
-    setSelectedLanguage(language);
+    setSelectedLanguages([...selectedLanguages, language]);
   };
 
   const handleSearchInputOnClick = (e) => {
     e.stopPropagation();
   };
+
+  const handleClearAllSelected = () => {
+    setSelectedLanguages([]);
+  }
 
   return (
     <div className="max-w-full w-max border-2 border-yellow-400 relative text-white py-1 px-2 rounded-lg">
@@ -65,17 +68,25 @@ const LanguageDropDown = ({
           Language/Topic:{' '}
         </span>
         <span className="dropdown-container flex">
-          {selectedLanguage}
+          <span className="max-w-xs truncate dropdown-container" title={selectedLanguages.length > 0 ? (
+              selectedLanguages.join(', ')
+            ) : 'All'}>
+            {selectedLanguages.length === 0 && 'All'}
+            {selectedLanguages.length > 0 && (
+              selectedLanguages.join(', ')
+            )}
+          </span>
           <MdArrowDropDown className="dropdown-container text-2xl" />
         </span>
       </div>
       {isDropDownVisible && (
         <div
-          className={`max-h-96 overflow-x-auto absolute top-10 flex w-64 flex-col ju bg-gray-800 border border-gray-700 shadow-xl rounded-md z-10`}
+          className={` absolute top-10 flex w-64 flex-col ju bg-gray-800 border border-gray-700 shadow-xl rounded-md z-10`}
         >
-          <div className="px-4 py-2 opacity-60 text-sm">
-            Filter By Language / Topic
-          </div>
+          <div className='max-h-96 overflow-x-auto'>
+            <div className="px-4 py-2 opacity-60 text-sm">
+              Filter By Language / Topic
+            </div>
           <div className="px-4 py-2 border-b border-gray-700 opacity-60 text-sm">
             <Input
               innerRef={searchInputRef}
@@ -86,20 +97,28 @@ const LanguageDropDown = ({
               type={'search'}
             />
           </div>
-          {dropdownValues.map((language, key) => {
-            return (
-              <div
-                key={key}
-                className="flex justify-between items-center border-b border-gray-700 px-4 py-2 cursor-pointer hover:bg-gray-600 duration-500 gap-x-1"
-                onClick={() => onLanguageClick(language)}
-              >
-                <span className="w-4 mt-1">
-                  {selectedLanguage === language && <BsCheck2 />}
-                </span>
-                <span className="flex-1">{language}</span>
-              </div>
-            );
-          })}
+            {dropdownValues.map((language, key) => {
+              return (
+                <div
+                  key={key}
+                  className="flex justify-between items-center border-b border-gray-700 px-4 py-2 cursor-pointer hover:bg-gray-600 duration-500 gap-x-1"
+                  onClick={(e) => onLanguageClick(e, language)}
+                >
+                  <span className="w-4 mt-1">
+                    {selectedLanguages.includes(language) && <BsCheck2 />}
+                  </span>
+                  <span className="flex-1">{language}</span>
+                </div>
+              );
+            })}
+          </div>
+          {selectedLanguages.length > 0 && (
+            <div className='flex justify-center'>
+              <button onClick={handleClearAllSelected} className='dropdown-container text-xs p-2 hover:cursor-pointer text-yellow-600 underline'>
+                Clear all filters
+              </button>
+            </div>
+          )}
         </div>
       )}
     </div>
@@ -117,6 +136,6 @@ export default LanguageDropDown;
 
 LanguageDropDown.propTypes = {
   languages: PropTypes.array.isRequired,
-  selectedLanguage: PropTypes.string.isRequired,
-  setSelectedLanguage: PropTypes.func.isRequired,
+  selectedLanguages: PropTypes.array.isRequired,
+  setSelectedLanguages: PropTypes.func.isRequired,
 };
