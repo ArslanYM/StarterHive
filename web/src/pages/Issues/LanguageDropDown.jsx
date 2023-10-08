@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { BsCheck2 } from 'react-icons/bs';
 import { MdArrowDropDown } from 'react-icons/md';
+import { Input } from '../../components/Input/Input';
 
 const LanguageDropDown = ({
   languages,
@@ -9,6 +10,9 @@ const LanguageDropDown = ({
   setSelectedLanguages,
 }) => {
   const [isDropDownVisible, setIsDropDownVisible] = useState(false); // To toggle dropdown
+  const [searchValue, setSearchValue] = useState('');
+  const [dropdownValues, setDropdownValues] = useState([]);
+  const searchInputRef = useRef(null);
 
   // Close dropdown when clicked outside
   document.addEventListener('click', (e) => {
@@ -16,6 +20,22 @@ const LanguageDropDown = ({
     if (e.target.classList.contains('dropdown-container')) return; // If clicked on dropdown, do nothing
     setIsDropDownVisible(false); // Else close the dropdown
   });
+
+  // Sort languages alphabetically
+  useEffect(() => {
+    languages.sort();
+    setDropdownValues(languages);
+  }, [languages]);
+
+  useEffect(() => {
+    if (isDropDownVisible) {
+      searchInputRef.current.focus();
+    }
+  }, [isDropDownVisible]);
+
+  useEffect(() => {
+    setDropdownValues(filterItem(searchValue, languages));
+  }, [searchValue, languages]);
 
   // When a language is clicked
   const onLanguageClick = (e, language) => {
@@ -28,6 +48,10 @@ const LanguageDropDown = ({
 
     // Else set the selected language to the clicked language
     setSelectedLanguages([...selectedLanguages, language]);
+  };
+
+  const handleSearchInputOnClick = (e) => {
+    e.stopPropagation();
   };
 
   const handleClearAllSelected = () => {
@@ -60,10 +84,20 @@ const LanguageDropDown = ({
           className={` absolute top-10 flex w-64 flex-col ju bg-gray-800 border border-gray-700 shadow-xl rounded-md z-10`}
         >
           <div className='max-h-96 overflow-x-auto'>
-            <div className="px-4 py-2 border-b border-gray-700 opacity-60 text-sm">
+            <div className="px-4 py-2 opacity-60 text-sm">
               Filter By Language / Topic
             </div>
-            {languages.map((language, key) => {
+          <div className="px-4 py-2 border-b border-gray-700 opacity-60 text-sm">
+            <Input
+              innerRef={searchInputRef}
+              placeholder='Search'
+              onClick={handleSearchInputOnClick}
+              value={searchValue}
+              onChange={(e) => setSearchValue(e.target.value)}
+              type={'search'}
+            />
+          </div>
+            {dropdownValues.map((language, key) => {
               return (
                 <div
                   key={key}
@@ -90,6 +124,13 @@ const LanguageDropDown = ({
     </div>
   );
 };
+
+const filterItem = (query, items) => {
+  if (items instanceof Array) {
+    return items.filter(item => item.toLowerCase().includes(query.toLowerCase()));
+  }
+  return items;
+}
 
 export default LanguageDropDown;
 

@@ -40,14 +40,15 @@ const ProjectList = () => {
 
   // Get all the languages/tags from the project list
   const getLanguages = () => {
+    const projectsLanguage = [];
     projectList.map((project) => {
       project.tags.map((tag) => {
-        if (!languages.includes(tag)) {
-          languages.push(tag);
+        if (!projectsLanguage.includes(tag)) {
+          projectsLanguage.push(tag);
         }
       });
     });
-    setLanguages(languages.sort()); // Sort the languages alphabetically
+    setLanguages(projectsLanguage);
   };
 
   const getBookMarkProjects = () => {
