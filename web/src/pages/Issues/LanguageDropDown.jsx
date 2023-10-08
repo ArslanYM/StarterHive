@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { BsCheck2 } from 'react-icons/bs';
 import { MdArrowDropDown } from 'react-icons/md';
 
@@ -16,11 +16,6 @@ const LanguageDropDown = ({
     if (e.target.classList.contains('dropdown-container')) return; // If clicked on dropdown, do nothing
     setIsDropDownVisible(false); // Else close the dropdown
   });
-
-  // Sort languages alphabetically
-  useEffect(() => {
-    languages.sort();
-  }, [languages]);
 
   // When a language is clicked
   const onLanguageClick = (e, language) => {

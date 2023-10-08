@@ -47,7 +47,7 @@ const ProjectList = () => {
         }
       });
     });
-    setLanguages(languages);
+    setLanguages(languages.sort()); // Sort the languages alphabetically
   };
 
   const getBookMarkProjects = () => {
