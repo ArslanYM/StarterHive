@@ -108,7 +108,7 @@ const ProjectCard = ({
       </a>
       <div className="grid grid-cols-1 h-full p-5">
         <a href={projectLink}>
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-white capitalize">{name}</h5>
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{name}</h5>
         </a>
         <p className="mb-3 font-normal text-gray-400">{description}</p>
         <div className="mb-3">{tags}</div>
@@ -119,11 +119,7 @@ const ProjectCard = ({
               rel="noreferrer"
               className="issue-btn inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-900 rounded-lg hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 "
             >
-              {
-                isLoading ?
-                  "Loading..." :
-                  "Find Issues"
-              }
+              Find Issues
               <svg
                 className="w-3.5 h-3.5 ml-2"
                 aria-hidden="true"
@@ -146,6 +142,7 @@ const ProjectCard = ({
       </div>
     </div>
   );
+
 };
 
 export default ProjectCard;
