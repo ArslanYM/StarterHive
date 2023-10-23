@@ -12,7 +12,7 @@ const IssueItem = ({ title, description, url }) => {
             target="_blank"
             rel="noreferrer"
             href={url}
-            className="text-purple-900 hover:text-purple-600 text-base"
+            className="hover:text-purple-900 text-purple-600 text-base font-semibold"
           >
             Go to Issue
           </a>
