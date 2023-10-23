@@ -29,7 +29,7 @@ const ProjectCard = ({
     const lastTwoHeaders = getLastTwoHeaders(projectLink);
     var orgName = lastTwoHeaders[0];
     var projectName = lastTwoHeaders[1];
-    const response = await axios.get(`https://issuefinder.onrender.com/api/goodfirstissues/${orgName}/${projectName}`);
+    const response = await axios.get(`https://issue-finder-api.vercel.app/api/goodfirstissues/${orgName}/${projectName}`);
     const data = response.data;
     setIssues(data.issues);
     setIsLoading(false);
