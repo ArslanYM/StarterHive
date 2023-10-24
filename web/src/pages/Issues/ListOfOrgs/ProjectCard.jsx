@@ -17,6 +17,8 @@ const ProjectCard = ({
 
   const navigate = useNavigate();
   const [issues, setIssues] = useState(null);
+  const [issueType , setIssueType] = useState("goodfirstissues")
+  //TODO: create an option to choose betweeen goodfirstissues, firsttimersonly, help wanted issues
   const [isLoading, setIsLoading] = useState(false)
   const [isBookmarked, setIsBookmarked] = useState(
     bookMarkProjects.includes(projectLink)
@@ -29,7 +31,7 @@ const ProjectCard = ({
     const lastTwoHeaders = getLastTwoHeaders(projectLink);
     var orgName = lastTwoHeaders[0];
     var projectName = lastTwoHeaders[1];
-    const response = await axios.get(`https://issue-finder-api.vercel.app/api/goodfirstissues/${orgName}/${projectName}`);
+    const response = await axios.get(`https://issue-finder-api.vercel.app/api/${issueType}/${orgName}/${projectName}`);
     const data = response.data;
     setIssues(data.issues);
     setIsLoading(false);

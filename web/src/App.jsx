@@ -1,10 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Home, Contributors, Guide, ProjectList, NotFound } from './pages';
-import MasterLayout from './layouts';
-import { IssueList } from './pages/Issues/IssuesPage/IssueList';
 import ScrollTop from './components/ScrollTop';
+import MasterLayout from './layouts';
+import { Home, Contributors, Guide, ProjectList, NotFound } from './pages';
+import { IssueList } from './pages/Issues/IssuesPage/IssueList';
+
 function App() {
   return (
     <BrowserRouter>
