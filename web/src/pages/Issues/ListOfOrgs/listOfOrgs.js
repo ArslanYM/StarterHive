@@ -278,6 +278,20 @@ const projectList = [
     "projectLink": "https://github.com/calcom/cal.com",
     "description": "Scheduling infrastructure for absolutely everyone.",
     "tags": ["open-source", "typescript" ,"nextjs" ,"postgresql" ,"prisma" ,"tailwindcss" ,"trpc", "next-auth" ,"zod" ,"turborepo" ]
+  },
+  {
+    "name": "chakra-ui",
+    "imageSrc": "https://avatars.githubusercontent.com/chakra-ui?s=200&v=4",
+    "projectLink": "https://github.com/chakra-ui/chakra-ui",
+    "description": "A simple, modular and accessible UI component library for React Applications.",
+    "tags": ["open-source", "typescript" ,"javascript" ,"nodejs" ,"UI"]
+  },
+  {
+    "name": "Next.js",
+    "imageSrc": "https://avatars.githubusercontent.com/nextjs?s=200&v=4",
+    "projectLink": "https://github.com/vercel/next.js",
+    "description": "The React Framework made by Vercel.",
+    "tags": ["open-source", "typescript" ,"javascript" ,"nodejs" ,"Framework", "tailwindcss"]
   }
 ]
 
