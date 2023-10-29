@@ -271,6 +271,13 @@ const projectList = [
     "projectLink": "https://github.com/huggingface/transformers",
     "description": "State-of-the-art natural language processing for PyTorch and TensorFlow",
     "tags": ["NLP", "Machine Learning", "AI"]
+  },
+  {
+    "name": "Cal.com",
+    "imageSrc": "https://avatars.githubusercontent.com/u/79145102?s=200&v=4",
+    "projectLink": "https://github.com/calcom/cal.com",
+    "description": "Scheduling infrastructure for absolutely everyone.",
+    "tags": ["open-source", "typescript" ,"nextjs" ,"postgresql" ,"prisma" ,"tailwindcss" ,"trpc", "next-auth" ,"zod" ,"turborepo" ]
   }
 ]
 
