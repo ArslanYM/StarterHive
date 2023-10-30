@@ -11,6 +11,8 @@ const ProjectList = () => {
   const [languages, setLanguages] = useState([]);
   const [bookMarkProjects, setBookMarkProjects] = useState();
   const [showBookMark, setShowBookMark] = useState(false);
+  const [filter, setFilter] = useState("");
+
 
   // Filter projects by language or bookmark
   function filterProject(project) {
@@ -74,6 +76,9 @@ const ProjectList = () => {
           selectedLanguages={selectedLanguages}
           setSelectedLanguages={setSelectedLanguages}
         />
+        <div>
+          <input className='outline-none px-2 py-1 text-white bg-transparent border-2 border-[#4b5563] rounded-md' type='text' placeholder="Search Here" onChange={(e)=>setFilter(e.target.value)}/>
+        </div>
         <div
           onClick={() => setShowBookMark(!showBookMark)}
           className={`${showBookMark ? 'border-yellow-400' : 'border-gray-600'}
@@ -96,6 +101,10 @@ const ProjectList = () => {
           if (!filterProject(project)) {
             return null;
           }
+          if (
+            project.name.toLowerCase().includes(filter.toLowerCase())
+            
+          ) {
           return (
             <ProjectCard
               key={key}
@@ -108,6 +117,7 @@ const ProjectList = () => {
               getBookMarkProjects={getBookMarkProjects}
             />
           );
+          }
         })}
       </div>
     </div>
