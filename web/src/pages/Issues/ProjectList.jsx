@@ -1,15 +1,15 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react';
-import projectList from "./ListOfOrgs/listOfOrgs";
-import ProjectCard from "./ListOfOrgs/ProjectCard";
-import { ScaleLoader } from 'react-spinners';
 import { BsBookmark, BsFillBookmarkCheckFill } from 'react-icons/bs';
+import { ScaleLoader } from 'react-spinners';
 import LanguageDropDown from './LanguageDropDown';
+import ProjectCard from "./ListOfOrgs/ProjectCard";
+import projectList from "./ListOfOrgs/listOfOrgs";
 import { Fab } from "../../components/Fab/Fab";
 import { useInterectionObserver } from "../../hooks/useInterectionObserver";
 
 const ProjectList = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState('All');
+  const [selectedLanguages, setSelectedLanguages] = useState([]);
   const [languages, setLanguages] = useState([]);
   const [bookMarkProjects, setBookMarkProjects] = useState();
   const [showBookMark, setShowBookMark] = useState(false);
@@ -18,37 +18,40 @@ const ProjectList = () => {
   // Filter projects by language or bookmark
   function filterProject(project) {
     // If the user wants to see all projects
-    if (selectedLanguage === 'All' && !showBookMark) {
+    if (selectedLanguages.length === 0 && !showBookMark) {
       return true;
     }
 
     // If the user wants to see only bookmarked projects
-    if (selectedLanguage === 'All' && showBookMark) {
+    if (selectedLanguages.length === 0 && showBookMark) {
       return bookMarkProjects.includes(project.projectLink);
     }
+
+    const isTagsMatch = selectedLanguages.every(language => project.tags.includes(language));
 
     // If the user wants to see only bookmark projects of a specific language
     if (showBookMark) {
       return (
-        project.tags.includes(selectedLanguage) &&
+        isTagsMatch &&
         bookMarkProjects.includes(project.projectLink)
       );
     }
 
     // If the user wants to see only projects of a specific language
-    return project.tags.includes(selectedLanguage);
+    return isTagsMatch;
   }
 
   // Get all the languages/tags from the project list
   const getLanguages = () => {
+    const projectsLanguage = [];
     projectList.map((project) => {
       project.tags.map((tag) => {
-        if (!languages.includes(tag)) {
-          languages.push(tag);
+        if (!projectsLanguage.includes(tag)) {
+          projectsLanguage.push(tag);
         }
       });
     });
-    setLanguages(languages);
+    setLanguages(projectsLanguage);
   };
 
   const getBookMarkProjects = () => {
@@ -71,8 +74,8 @@ const ProjectList = () => {
       <div className="w-full my-4 p-4 flex items-center flex-wrap gap-4">
         <LanguageDropDown
           languages={languages}
-          selectedLanguage={selectedLanguage}
-          setSelectedLanguage={setSelectedLanguage}
+          selectedLanguages={selectedLanguages}
+          setSelectedLanguages={setSelectedLanguages}
         />
         <div
           onClick={() => setShowBookMark(!showBookMark)}
