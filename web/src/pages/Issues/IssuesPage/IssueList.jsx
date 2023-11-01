@@ -1,5 +1,6 @@
 import IssueItem from './IssueItem'
 import { useLocation } from 'react-router-dom';
+import IssueNotFound from './IssueNotFound';
 export const IssueList = () => {
   const location = useLocation();
   const { issues } = location.state;
@@ -21,12 +22,13 @@ export const IssueList = () => {
           </h1>
         </div>
           
-            <div className="flex flex-wrap -m-2 justify-center items-center">{issues.map((issue, index) => {
+            <div className="flex flex-wrap -m-2 justify-center items-center">{
+            issues?.length > 0 ? issues.map((issue, index) => {
               return (<>
                 <IssueItem key={index} title={issue.title} description={issue.description} url={issue.url} />
               </>);
                   
-            })}
+            }) : <IssueNotFound />}
             </div>
             
         
