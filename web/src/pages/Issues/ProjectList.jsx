@@ -5,12 +5,15 @@ import { ScaleLoader } from 'react-spinners';
 import LanguageDropDown from './LanguageDropDown';
 import ProjectCard from "./ListOfOrgs/ProjectCard";
 import projectList from "./ListOfOrgs/listOfOrgs";
+import { Fab } from "../../components/Fab/Fab";
+import { useInterectionObserver } from "../../hooks/useInterectionObserver";
 
 const ProjectList = () => {
   const [selectedLanguages, setSelectedLanguages] = useState([]);
   const [languages, setLanguages] = useState([]);
   const [bookMarkProjects, setBookMarkProjects] = useState();
   const [showBookMark, setShowBookMark] = useState(false);
+  const { observerRef, isIntersecting } = useInterectionObserver('200px');
 
   // Filter projects by language or bookmark
   function filterProject(project) {
@@ -84,7 +87,7 @@ const ProjectList = () => {
           ) : (
             <BsBookmark />
           )}
-          <span className="opacity-60 text-sm">Bookmark: </span>
+          <span  ref={observerRef} className="opacity-60 text-sm">Bookmark: </span>
           <span>{bookMarkProjects?.length}</span>
         </div>
       </div>
@@ -110,6 +113,7 @@ const ProjectList = () => {
           );
         })}
       </div>
+      <Fab isVisible={isIntersecting} />
     </div>
   );
 };
