@@ -277,21 +277,28 @@ const projectList = [
     "imageSrc": "https://avatars.githubusercontent.com/u/79145102?s=200&v=4",
     "projectLink": "https://github.com/calcom/cal.com",
     "description": "Scheduling infrastructure for absolutely everyone.",
-    "tags": ["open-source", "typescript" ,"nextjs" ,"postgresql" ,"prisma" ,"tailwindcss" ,"trpc", "next-auth" ,"zod" ,"turborepo" ]
+    "tags": ["open-source", "typescript", "nextjs", "postgresql", "prisma", "tailwindcss", "trpc", "next-auth", "zod", "turborepo"]
   },
   {
     "name": "chakra-ui",
     "imageSrc": "https://avatars.githubusercontent.com/chakra-ui?s=200&v=4",
     "projectLink": "https://github.com/chakra-ui/chakra-ui",
     "description": "A simple, modular and accessible UI component library for React Applications.",
-    "tags": ["open-source", "typescript" ,"javascript" ,"nodejs" ,"UI"]
+    "tags": ["open-source", "typescript", "javascript", "nodejs", "UI"]
   },
   {
     "name": "Next.js",
     "imageSrc": "https://avatars.githubusercontent.com/nextjs?s=200&v=4",
     "projectLink": "https://github.com/vercel/next.js",
     "description": "The React Framework made by Vercel.",
-    "tags": ["open-source", "typescript" ,"javascript" ,"nodejs" ,"Framework", "tailwindcss"]
+    "tags": ["open-source", "typescript", "javascript", "nodejs", "Framework", "tailwindcss"]
+  },
+  {
+    "name": "monkeytyping",
+    "imageSrc": "https://avatars.githubusercontent.com/u/104658077?s=280&v=4",
+    "projectLink": "https://github.com/monkeytypegame/monkeytype",
+    "description": "The most customizable typing website with a minimalistic design and a ton of features.",
+    "tags": ["open-source", "typescript", "HTML", "SCSS", "CSS", "javascript"]
   }
 ]
 
