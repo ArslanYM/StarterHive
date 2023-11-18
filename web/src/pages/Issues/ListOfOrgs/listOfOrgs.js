@@ -294,7 +294,7 @@ const projectList = [
     "tags": ["open-source", "typescript", "javascript", "nodejs", "Framework", "tailwindcss"]
   },
   {
-    "name": "monkeytyping",
+    "name": "Monkeytype",
     "imageSrc": "https://avatars.githubusercontent.com/u/104658077?s=280&v=4",
     "projectLink": "https://github.com/monkeytypegame/monkeytype",
     "description": "The most customizable typing website with a minimalistic design and a ton of features.",
