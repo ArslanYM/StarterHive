@@ -1,5 +1,12 @@
 const projectList = [
   {
+    "name": "Apple",
+    "imageSrc": "https://avatars.githubusercontent.com/u/10639145?s=200&v=4",
+    "projectLink": "https://github.com/apple/swift",
+    "description": "The Swift Programming Language",
+    "tags": ["C++", "Python", "C", "iOS","Swift"]
+  },
+  {
     "name": "Appsmith",
     "imageSrc": "https://avatars.githubusercontent.com/u/67620218?s=200&v=4",
     "projectLink": "https://github.com/appsmithorg/appsmith",
