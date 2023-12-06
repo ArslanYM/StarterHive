@@ -21,7 +21,9 @@ export const IssueList = () => {
           </h1>
         </div>
           
-            <div className="flex flex-wrap -m-2 justify-center items-center">{issues.map((issue, index) => {
+            <div className="flex flex-wrap -m-2 justify-center items-center">
+              {issues.length<=0 && <p className='sub-heading lg:text-2xl md:mb-12 lg:mb-0 text-center w-[90%] font-bold'>No Issues Found!</p>}
+             { issues.length>0 && issues.map((issue, index) => {
               return (<>
                 <IssueItem key={index} title={issue.title} description={issue.description} url={issue.url} />
               </>);
