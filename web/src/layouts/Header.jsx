@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { VscGithubAlt, VscChromeClose } from 'react-icons/vsc';
-import { AiOutlineCoffee } from 'react-icons/ai'
+import { AiOutlineCoffee } from 'react-icons/ai';
 
 import logo from '../assets/hive.svg';
 
@@ -90,7 +90,7 @@ const Header = () => {
               aria-label="github-link"
               target="_blank"
               rel="noreferrer"
-              className="mr-3 space-x-2 flex items-center"
+              className="mr-3 space-x-2 flex items-center w-10 justify-end"
             >
               <VscGithubAlt className="p-0.5 hover:text-3xl text-2xl flex rounded-md duration-300 text-white" />
             </a>
@@ -99,11 +99,10 @@ const Header = () => {
               aria-label="support-link"
               target="_blank"
               rel="noreferrer"
-              className="space-x-2 flex items-center"
+              className="space-x-2 flex items-center w-10 justify-start"
             >
               <AiOutlineCoffee className="p-0.5 hover:text-3xl text-2xl flex rounded-md duration-300 text-white" />
             </a>
-           
           </div>
           <div
             className={`  ${
