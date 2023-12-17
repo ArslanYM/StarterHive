@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import { FaDiscord, FaGithub, FaTwitter } from 'react-icons/fa'
+import { FaDiscord, FaGithub } from 'react-icons/fa'
+import { FaXTwitter } from "react-icons/fa6";
 import footer_icon from '../assets/hive.svg'
 import { Link } from "react-router-dom";
 
@@ -35,7 +36,7 @@ const Footer = () => {
             className="text-gray-400"
             rel="noreferrer"
           >
-            <FaTwitter className="text-2xl duration-300 hover:fill-sky-500" />
+            <FaXTwitter className="text-2xl duration-300 hover:fill-sky-500" />
           </a>
           <a
             href="https://github.com/ArslanYM/StarterHive"
