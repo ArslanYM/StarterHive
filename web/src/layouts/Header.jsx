@@ -84,13 +84,13 @@ const Header = () => {
             </Link>
           </div>
 
-          <div className="flex md:order-2">
+          <div className="flex md:order-2 gap-1">
             <a
               href="https://github.com/ArslanYM/StarterHive"
               aria-label="github-link"
               target="_blank"
               rel="noreferrer"
-              className="mr-3 space-x-2 flex items-center"
+              className=" space-x-2 flex items-center  w-8 justify-center"
             >
               <VscGithubAlt className="p-0.5 hover:text-3xl text-2xl flex rounded-md duration-300 text-white" />
             </a>
@@ -99,7 +99,7 @@ const Header = () => {
               aria-label="support-link"
               target="_blank"
               rel="noreferrer"
-              className="space-x-2 flex items-center"
+              className="space-x-2 flex items-center w-8 justify-center"
             >
               <AiOutlineCoffee className="p-0.5 hover:text-3xl text-2xl flex rounded-md duration-300 text-white" />
             </a>
