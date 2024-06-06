@@ -1,18 +1,20 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import { FaDiscord, FaGithub, FaTwitter } from 'react-icons/fa'
-import footer_icon from '../assets/hive.svg'
-import { Link } from "react-router-dom";
+import { FaDiscord, FaGithub, FaTwitter } from 'react-icons/fa';
+import footer_icon from '../assets/hive.svg';
+import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const Footer = () => {
+  const theme = useSelector(store => store.theme.toggletheme)
   return (
-    <footer className="text-gray-400 bg-gradient-to-r from-gray-700 via-gray-900 to-black bg-animate body-font">
+    <footer className={!theme ?"text-gray-400 bg-gradient-to-r from-gray-700 via-gray-900 to-black bg-animate body-font" :"text-gray-400  bg-animate body-font"}>
       <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <Link
           to="/"
           className="flex order-first  title-font font-medium items-center text-white  mb-4 md:mb-0"
         >
-          <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
+          <a className={!theme ? "flex title-font font-medium items-center md:justify-start justify-center text-white" :  "flex title-font font-medium items-center md:justify-start justify-center text-black"}>
             <span className="text-xl">Starter Hive</span>
             <img className="object-contain h-6 w-6 ml-3 " src={footer_icon} />
           </a>
@@ -56,7 +58,7 @@ const Footer = () => {
         </span>
       </div>
     </footer>
-  )
-}
+  );
+};
 
 export default Footer;

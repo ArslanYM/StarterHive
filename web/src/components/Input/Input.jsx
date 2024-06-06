@@ -1,7 +1,14 @@
 import PropTypes from 'prop-types';
 
-export const Input = ({ innerRef, name, value, placeholder, onClick, onChange, type }) => {
-
+export const Input = ({
+  innerRef,
+  name,
+  value,
+  placeholder,
+  onClick,
+  onChange,
+  type,
+}) => {
   return (
     <input
       ref={innerRef}
@@ -14,7 +21,7 @@ export const Input = ({ innerRef, name, value, placeholder, onClick, onChange, t
       placeholder={placeholder}
     />
   );
-}
+};
 Input.propTypes = {
   innerRef: PropTypes.object,
   name: PropTypes.string,
@@ -22,5 +29,13 @@ Input.propTypes = {
   placeholder: PropTypes.string,
   onClick: PropTypes.func,
   onChange: PropTypes.func,
-  type: PropTypes.oneOf(['search', 'text', 'number', 'email', 'password', 'url', 'tel'])
-}
+  type: PropTypes.oneOf([
+    'search',
+    'text',
+    'number',
+    'email',
+    'password',
+    'url',
+    'tel',
+  ]),
+};

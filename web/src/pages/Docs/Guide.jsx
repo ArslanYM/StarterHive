@@ -4,13 +4,13 @@ import Code from './CodeBlock';
 import { Fab } from '../../components/Fab/Fab';
 import { useInterectionObserver } from '../../hooks/useInterectionObserver';
 
-const Guide = () => {
+const Guide = ({theme}) => {
   const { isIntersecting, observerRef } = useInterectionObserver('200px');
 
   return (
     <main className="py-16">
-      <div className="container max-w-screen-lg px-8 mx-auto space-y-8 text-white text-lg">
-        <h1 className="text-3xl md:text-5xl font-bold text-white">
+      <div className={!theme ? "container max-w-screen-lg px-8 mx-auto space-y-8 text-white text-lg" : "container max-w-screen-lg px-8 mx-auto space-y-8 text-gray-400 text-lg"}>
+        <h1 className={!theme ? "text-3xl md:text-5xl font-bold text-white" :"text-3xl md:text-5xl font-bold text-gray-600"}>
           Getting started 🗺️
         </h1>
         <p ref={observerRef}>

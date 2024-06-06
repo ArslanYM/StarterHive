@@ -1,25 +1,27 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
-import ContributorsList from "./ContributorsList";
-import { Fab } from "../../components/Fab/Fab";
-import { useInterectionObserver } from "../../hooks/useInterectionObserver";
+import React from 'react';
+import ContributorsList from './ContributorsList';
+import { Fab } from '../../components/Fab/Fab';
+import { useInterectionObserver } from '../../hooks/useInterectionObserver';
+import {useSelector} from 'react-redux'
 
 const Contributors = () => {
   const { observerRef, isIntersecting } = useInterectionObserver('200px');
+  const theme = useSelector(store => store.theme.toggletheme)
 
   return (
     <section className="text-gray-400 body-font min-h-screen">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <h1
-            className="sm:text-3xl text-2xl font-bold title-font mb-4 text-white"
+            className={!theme ? "sm:text-3xl text-2xl font-bold title-font mb-4 text-white" : "sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-500"}
             ref={observerRef}
           >
-            {" "}
-            A{" "}
+            {' '}
+            A{' '}
             <span className="text-4xl text-yellow-400 font-extrabold animate-pulse">
               Big Thanks
-            </span>{" "}
+            </span>{' '}
             to all our Contributors.
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed italic md:text-base lg:text-xl">
@@ -30,7 +32,7 @@ const Contributors = () => {
             your collaborative spirit and commitment to the community.
           </p>
         </div>
-        <ContributorsList />
+        <ContributorsList  theme = {theme}/>
       </div>
       <Fab isVisible={isIntersecting} />
     </section>
