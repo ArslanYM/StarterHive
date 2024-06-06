@@ -2,12 +2,17 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { VscGithubAlt, VscChromeClose } from 'react-icons/vsc';
-import { AiOutlineCoffee } from 'react-icons/ai'
-
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
+import { AiOutlineCoffee } from 'react-icons/ai';
 import logo from '../assets/hive.svg';
+import { useDispatch, useSelector } from 'react-redux';
+import { toggletheme } from '../utils/Themeslice';
 
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const dispatch = useDispatch()
+  const [theme,settheme] = useState(true)
+  const thmee = useSelector(store =>store.theme.toggletheme)
 
   const location = useLocation();
   const path = location.pathname;
@@ -19,7 +24,10 @@ const Header = () => {
   const closeDrawer = () => {
     setIsDrawerOpen(false);
   };
-
+  const  handlechange = ( ) =>{
+    settheme(!theme)
+    dispatch(toggletheme(theme))
+  }
   const MENU_ITEMS = [
     {
       title: 'Home',
@@ -40,8 +48,8 @@ const Header = () => {
   ];
 
   return (
-    <header className="text-gray-400 bg-gradient-to-r from-gray-700 via-gray-900 to-black bg-animate body-font flex-nowrap">
-      <nav className="md:mx-auto container ">
+    <header className={!thmee? "text-gray-400 bg-gradient-to-r from-gray-700 via-gray-900 to-black bg-animate body-font flex-nowrap " :"text-gray-400 bg-white bg-animate body-font flex-nowrap " }>
+      <nav className="md:mx-auto container "  >
         <div className=" flex flex-wrap items-center justify-between  p-4 ">
           <div className=" md:hidden ">
             <button
@@ -77,33 +85,40 @@ const Header = () => {
               to="/"
               className="flex order-first  title-font font-medium items-center text-white "
             >
-              <span className="text-white text-xl  font-bold cursor-pointer">
+              <span className={!thmee ? "text-white text-xl  font-bold cursor-pointer" : "text-black text-xl  font-bold cursor-pointer"}>
                 Starter Hive{' '}
               </span>
               <img src={logo} alt="Logo" className="ml-3 w-6" />
             </Link>
           </div>
 
-          <div className="flex md:order-2">
+          <div className="flex md:order-2 gap-3">
+          <DarkModeSwitch 
+          onChange={handlechange}
+          
+          checked={theme}
+          size={20}/>
             <a
               href="https://github.com/ArslanYM/StarterHive"
               aria-label="github-link"
               target="_blank"
               rel="noreferrer"
-              className="mr-3 space-x-2 flex items-center"
+              className=" space-x-2 flex items-center  w-8 justify-center"
             >
-              <VscGithubAlt className="p-0.5 hover:text-3xl text-2xl flex rounded-md duration-300 text-white" />
+              <VscGithubAlt className={!thmee ? "p-0.5 hover:text-3xl text-2xl flex rounded-md duration-300 text-white" : "p-0.5 hover:text-3xl text-2xl flex rounded-md duration-300 text-black"} />
+             
             </a>
+           
             <a
               href="https://www.buymeacoffee.com/arslanymalik"
               aria-label="support-link"
               target="_blank"
               rel="noreferrer"
-              className="space-x-2 flex items-center"
+              className="space-x-2 flex items-center w-8 justify-center"
             >
-              <AiOutlineCoffee className="p-0.5 hover:text-3xl text-2xl flex rounded-md duration-300 text-white" />
+              <AiOutlineCoffee className={!thmee ? "p-0.5 hover:text-3xl text-2xl flex rounded-md duration-300 text-white" : "p-0.5 hover:text-3xl text-2xl flex rounded-md duration-300 text-black"  }/>
             </a>
-           
+            
           </div>
           <div
             className={`  ${
