@@ -5,11 +5,11 @@ import SearchTerm from './search/Search';
 
 import axios from 'axios';
 
-const ContributorsList = () => {
+const ContributorsList = ({theme}) => {
   const [contributors, setContributors] = useState([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
-  const [pageNo, setPageNo] = useState(1); 
+  const [pageNo, setPageNo] = useState(1);
   const [isMoreContributors, setIsMoreContributors] = useState(true); // Flag to check if there are more contributors to fetch
 
   useEffect(() => {
@@ -42,7 +42,7 @@ const ContributorsList = () => {
   return (
     <>
       <div className="flex flex-wrap -m-2 justify-center items-center">
-        <ScaleLoader loading={loading} color="white" />
+        <ScaleLoader loading={loading} color={!theme ? "white" : "black"} />
 
         {!loading ? <SearchTerm setTerm={setSearch} /> : ''}
 
@@ -54,12 +54,13 @@ const ContributorsList = () => {
                   name={contributor.login}
                   url={contributor.html_url}
                   key={index}
+                  theme= {theme}
                 />
               );
             })
           : loading
-          ? ''
-          : `No result for ${search}`}
+            ? ''
+            : `No result for ${search}`}
       </div>
       <div className="flex w-full justify-center items-center mt-12 my-8">
         {isMoreContributors ? (

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import Placeholder from "../../../assets/img-placeholder.jpg"
+import Placeholder from '../../../assets/img-placeholder.jpg';
 import axios from 'axios';
 import { useState } from 'react';
 import { BsBookmark, BsFillBookmarkCheckFill } from 'react-icons/bs';
@@ -13,31 +13,32 @@ const ProjectCard = ({
   tags: propsTags,
   bookMarkProjects,
   getBookMarkProjects,
+  theme
 }) => {
-
   const navigate = useNavigate();
   const [issues, setIssues] = useState(null);
-  const [issueType , setIssueType] = useState("goodfirstissues")
+  const [issueType, setIssueType] = useState('goodfirstissues');
   //TODO: create an option to choose betweeen goodfirstissues, firsttimersonly, help wanted issues
-  const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(false);
   const [isBookmarked, setIsBookmarked] = useState(
     bookMarkProjects.includes(projectLink)
   );
 
   const getIssues = async () => {
-    setIsLoading(true)
-    console.log("Finding Issues for link : " + projectLink);
+    setIsLoading(true);
+    console.log('Finding Issues for link : ' + projectLink);
     const getLastTwoHeaders = (link) => link.split('/').slice(-2);
     const lastTwoHeaders = getLastTwoHeaders(projectLink);
     var orgName = lastTwoHeaders[0];
     var projectName = lastTwoHeaders[1];
-    const response = await axios.get(`https://issue-finder-api.vercel.app/api/${issueType}/${orgName}/${projectName}`);
+    const response = await axios.get(
+      `https://issue-finder-api.vercel.app/api/${issueType}/${orgName}/${projectName}`
+    );
     const data = response.data;
     setIssues(data.issues);
     setIsLoading(false);
-     navigate('/issues', { state: { issues: data.issues } });
-  }
-
+    navigate('/issues', { state: { issues: data.issues } });
+  };
 
   const tags = propsTags.map((tag, key) => (
     <span
@@ -88,7 +89,7 @@ const ProjectCard = ({
   };
 
   return (
-    <div className="flex self-auto flex-col h-full w-96 max-w-full border rounded-lg shadow bg-gray-800 border-gray-700 relative">
+    <div className={!theme? "flex self-auto flex-col h-full w-96 max-w-full border rounded-lg shadow bg-gray-800 border-gray-700 relative": "flex self-auto flex-col h-full w-96 max-w-full border rounded-lg shadow bg-gray-300 border-gray-400 relative"}>
       <div
         className="absolute text-2xl right-2 top-2 text-yellow-400 cursor-pointer"
         onClick={handleClick}
@@ -103,14 +104,17 @@ const ProjectCard = ({
           src={logoLink}
           alt=""
           onError={(e) => {
-            e.target.className = "bg-white h-28 overflow-hidden object-scale-down mx-auto w-full rounded-t-lg"
-            e.target.src = Placeholder
+            e.target.className =
+              'bg-white h-28 overflow-hidden object-scale-down mx-auto w-full rounded-t-lg';
+            e.target.src = Placeholder;
           }}
         />
       </a>
       <div className="grid grid-cols-1 h-full p-5">
         <a href={projectLink}>
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-white capitalize">{name}</h5>
+          <h5 className={!theme ? "mb-2 text-2xl font-bold tracking-tight text-white capitalize" : "mb-2 text-2xl font-bold tracking-tight text-gray-600 capitalize"}>
+            {name}
+          </h5>
         </a>
         <p className="mb-3 font-normal text-gray-400">{description}</p>
         <div className="mb-3">{tags}</div>
@@ -119,13 +123,9 @@ const ProjectCard = ({
             <a
               target="_blank"
               rel="noreferrer"
-              className="issue-btn inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-900 rounded-lg hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 "
+              className={!theme ?"issue-btn inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-900 rounded-lg hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 " : "issue-btn inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-500 focus:ring-4 focus:outline-none focus:ring-blue-300 "}
             >
-              {
-                isLoading ?
-                  "Loading..." :
-                  "Find Issues"
-              }
+              {isLoading ? 'Loading...' : 'Find Issues'}
               <svg
                 className="w-3.5 h-3.5 ml-2"
                 aria-hidden="true"
@@ -143,7 +143,6 @@ const ProjectCard = ({
               </svg>
             </a>
           </button>
-
         </div>
       </div>
     </div>
